@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#372f23", "inverse-on-surface": "#feeedd", "primary-fixed": "#f2dfd5", "tertiary-fixed": "#ffddb7", "surface-container-highest": "#efe0cf", "outline-variant": "#d1c4be", "surface-tint": "#6a5b54", "surface-dim": "#e6d8c7", "secondary-container": "#ffd79c", "secondary-fixed-dim": "#e7c088", "on-secondary": "#ffffff", "tertiary-container": "#3a2200", "on-primary": "#ffffff", "surface-variant": "#efe0cf", "on-tertiary-container": "#b3864c", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "background": "#fff8f3", "tertiary": "#1e0f00", "primary-container": "#30251f", "primary-fixed-dim": "#d6c3ba", "on-tertiary-fixed": "#2a1700", "surface-container-low": "#fff2e3", "surface-container": "#fbecda", "on-tertiary-fixed-variant": "#623f0a", "tertiary-fixed-dim": "#f1bd7e", "on-secondary-container": "#795c2c", "on-surface-variant": "#4e4540", "on-secondary-fixed-variant": "#5c4215", "secondary": "#76592a", "on-secondary-fixed": "#281800", "on-surface": "#221a10", "surface": "#fff8f3", "on-primary-container": "#9c8b83", "on-background": "#221a10", "secondary-fixed": "#ffddaf", "outline": "#807570", "primary": "#1a110b", "on-tertiary": "#ffffff", "on-error": "#ffffff", "error": "#ba1a1a", "surface-bright": "#fff8f3", "on-primary-fixed": "#231914", "inverse-primary": "#d6c3ba", "on-primary-fixed-variant": "#51443d", "on-error-container": "#93000a", "surface-container-high": "#f5e6d4" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-xl": "2.5rem", "margin": "3rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-sm": [ "EB Garamond" ], "label-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-lg": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "label-md": [ "Inter" ], "body-lg": [ "Inter" ], "label-lg": [ "Inter" ], "body-sm": [ "Inter" ], "display-lg": [ "EB Garamond" ], "display-lg-mobile": [ "EB Garamond" ], "headline-lg-mobile": [ "EB Garamond" ] }, "fontSize": { "headline-sm": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "0.005em", "fontWeight": "600" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.006em", "fontWeight": "400" } ], "headline-lg": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.011em", "fontWeight": "400" } ], "label-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg": [ "3.25rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface-container font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[250px] bg-primary-container z-50 flex flex-col justify-between select-none shadow-[2px_0_12px_rgba(30,15,0,0.18)]"><div class="flex flex-col flex-1 min-h-0"><div class="pt-space-lg px-space-md pb-space-md border-b border-outline-variant/20 flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Refined geometric circular judicial seal emblem for NYAAYCHAKRA featuring a balanced scale of justice, concentric archival rings, and subtle chakra geometry in Espresso, Antique Brass, and Muted Gold." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold tracking-wider leading-none">NYAAYCHAKRA</span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-[0.14em] uppercase leading-tight mt-1">Judicial Intelligence</span></div></div></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-md flex flex-col gap-space-md" data-active-classes="bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim"><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Workspace</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="overview" href="#">Overview</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-radar" href="#">Conflict Radar</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="statute-explorer" href="#">Statute Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Investigation</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-investigation" href="#">Conflict Investigation</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="evidence-explorer" href="#">Evidence Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Operations</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="ingest-judgments" href="#">Ingest Judgments</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="live-processing" href="#">Live Processing</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="run-history" href="#">Run History</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Intelligence</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim" data-path="evaluation-metrics" href="#">Evaluation &amp; Metrics</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="forum-risk-briefs" href="#">Forum-Risk Briefs</a></div></nav></div><div class="p-space-md border-t border-outline-variant/20 flex flex-col gap-space-xs bg-primary/40"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim shadow-[0_0_8px_#e7c088]"></span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-wider uppercase font-semibold">System Status: Operational</span></div><p class="font-label-sm text-label-sm text-on-primary-container tracking-tight">NYAAYCHAKRA / JUDICIAL INTELLIGENCE • v4.8</p></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-highest z-40 px-space-lg flex items-center justify-between shadow-[0_1px_6px_rgba(48,37,31,0.03)]"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Workspace</span><span class="text-outline text-sm">/</span><span class="font-body-md text-body-md text-on-surface-variant font-medium">Evaluation &amp; Metrics</span></div><span class="hidden lg:inline-block h-4 w-px bg-surface-container-highest"></span><div class="hidden lg:flex items-center gap-2 text-outline font-label-sm text-label-sm tracking-wide uppercase"><span class="material-symbols-outlined text-[15px] text-secondary">monitoring</span><span>Judicial Alignment Benchmark — Validation &amp; Recall Audits</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded-DEFAULT border border-surface-container-highest"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>Sync Status: Synced • GET /api/v4/eval</span></div><span class="px-2.5 py-1 bg-surface-container font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider rounded-DEFAULT border border-secondary-fixed-dim/40">Active Bench Workspace</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-container px-space-lg py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Control Bar / Header Extension -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.14em] text-secondary font-semibold">Diagnostic Registry</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Protocol Verification</span>
+</div>
+<div class="flex items-baseline gap-space-md">
+<h1 class="font-headline-lg text-headline-lg text-primary font-semibold tracking-tight">System Health</h1>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-secondary-container font-label-sm text-label-sm font-semibold uppercase tracking-[0.12em] rounded-DEFAULT">Platform Status</span>
+</div>
+</div>
+<!-- Telemetry Badges & Action -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-lowest shadow-sm rounded-DEFAULT">
+<span class="material-symbols-outlined text-[15px] text-outline">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Last Audited: <span class="text-primary font-semibold" id="audit-timestamp">04 Aug 2024 • 11:24:02 IST</span></span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low shadow-sm rounded-DEFAULT">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">GET /api/health</span>
+</div>
+<button class="flex items-center gap-2 px-3 py-1.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold rounded-DEFAULT shadow-sm hover:bg-primary-container transition-all active:scale-[0.98]" id="refresh-health-btn">
+<span class="material-symbols-outlined text-[16px] transition-transform duration-700" id="refresh-icon">refresh</span>
+<span>Check Health</span>
+</button>
+</div>
+</div>
+<!-- Hero Visual: Primary Operational Seal & Attestation -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-DEFAULT p-space-xl shadow-sm">
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-space-lg text-center sm:text-left">
+<!-- Archival Status Seal -->
+<div class="relative shrink-0 flex items-center justify-center w-28 h-28 rounded-full bg-surface-container-low shadow-inner">
+<svg class="absolute inset-0 w-full h-full text-secondary/30" fill="none" viewbox="0 0 112 112">
+<circle cx="56" cy="56" r="53" stroke="currentColor" stroke-dasharray="3 3" stroke-width="1.5"></circle>
+<circle cx="56" cy="56" r="47" stroke="currentColor" stroke-width="1"></circle>
+<circle cx="56" cy="56" r="42" stroke="currentColor" stroke-dasharray="1 2" stroke-width="0.75"></circle>
+</svg>
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[36px]" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</div>
+<span class="absolute -top-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed-dim opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-primary-container"></span>
+</span>
+</div>
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+<span class="px-2.5 py-1 bg-surface-container text-on-surface font-label-sm text-label-sm font-bold tracking-[0.14em] uppercase rounded-DEFAULT flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Operational
+            </span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase font-semibold">Consensus Verdict: Validated</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary font-semibold leading-snug">
+            All Foundational Judicial Intelligence Services Nominally Responding
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Zero protocol deviation detected. Core LangGraph inference graph, legislative statutory cross-checkers, and external foundation models attest verified integrity across the active session ledger.
+          </p>
+</div>
+</div>
+<!-- Quick Registry Meta Strip -->
+<div class="shrink-0 flex flex-col gap-2 bg-surface-container p-space-md rounded-DEFAULT min-w-[240px]">
+<div class="flex items-center justify-between pb-1.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Health Status</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Nominal</span>
+</div>
+<div class="flex items-center justify-between pb-1.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Audit Frequency</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">On-Demand / SSE</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Security Profile</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Air-Gapped TLS 1.3</span>
+</div>
+</div>
+</div>
+</div>
+<!-- System Architecture & Handshake Flow Diagram -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">account_tree</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Judicial Pipe Architecture &amp; Handshake Map</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Synchronous Dispatch Pipeline</span>
+</div>
+<!-- 3-Stage Component Flow Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md relative pt-2">
+<!-- Stage 1 -->
+<div class="relative bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Node 01 • Client</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-DEFAULT font-semibold">CONNECTED</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-DEFAULT bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">desktop_windows</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[1.1rem] leading-tight text-primary font-semibold">NYAAYCHAKRA Interface</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Constitutional Bench Workstation</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-DEFAULT mt-auto flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Transport Layer</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">HTTP/SSE Handshake</span>
+</div>
+</div>
+<!-- Stage 2 -->
+<div class="relative bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Node 02 • Orchestrator</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-DEFAULT font-semibold">ACTIVE</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-DEFAULT bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[1.1rem] leading-tight text-primary font-semibold">Backend API Engine</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">FastAPI / LangGraph Graph 4.8</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-DEFAULT mt-auto flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Verification Stream</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Authenticated Dispatch</span>
+</div>
+</div>
+<!-- Stage 3 -->
+<div class="relative bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Node 03 • Foundation</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-DEFAULT font-semibold">READY</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-DEFAULT bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">psychology</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[1.1rem] leading-tight text-primary font-semibold">Configured LLM Provider</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Bench Model Reasoning Harness</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-DEFAULT mt-auto flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Entailment Invariant</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Zero-Hallucination Bound</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Side-by-Side Core Information Panels -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Panel 1: Backend Connectivity -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.14em] text-secondary font-bold">Service Subsystem</span>
+</div>
+<span class="px-2.5 py-0.5 bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold rounded-DEFAULT uppercase tracking-wider">OPERATIONAL</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Backend Orchestration Layer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Core statutory alignment engine, LangGraph state machine, and gazette digest parser bindings.</p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT flex flex-col gap-2 mt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Target Endpoint</span>
+<code class="font-body-sm text-body-sm text-primary font-semibold">GET /api/health</code>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Protocol Harness</span>
+<span class="font-body-sm text-body-sm text-on-surface">HTTP REST &amp; Server-Sent Events</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Contract Payload</span>
+<code class="font-label-sm text-label-sm bg-surface-container-lowest px-2 py-0.5 rounded text-primary">{"status": "healthy"}</code>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Gazette Verification</span>
+<span class="font-body-sm text-body-sm text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+              Bound &amp; Active
+            </span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Engine Integrity</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold tracking-wider uppercase">LangGraph v4.8 • Core Nominal</span>
+</div>
+</div>
+<!-- Panel 2: Configured LLM Provider -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.14em] text-secondary font-bold">Model Infrastructure</span>
+</div>
+<span class="px-2.5 py-0.5 bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold rounded-DEFAULT uppercase tracking-wider">AVAILABLE</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Configured LLM Provider</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Foundation reasoning harness instantiated via environment judicial configuration profile.</p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT flex flex-col gap-2 mt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Active Provider</span>
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-body-sm text-primary font-semibold">Anthropic (Claude 3.5 Sonnet / Opus)</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Fallback Alternate</span>
+<span class="font-body-sm text-body-sm text-on-surface">Gemini 1.5 Pro (Configured Fallback)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Contract Payload</span>
+<code class="font-label-sm text-label-sm bg-surface-container-lowest px-2 py-0.5 rounded text-primary">{"llm_provider": "configured_and_available"}</code>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Reasoning Entailment</span>
+<span class="font-body-sm text-body-sm text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">security</span>
+              Zero-Hallucination Premise Active
+            </span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Dispatch State</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold tracking-wider uppercase">Active Bench Dispatch</span>
+</div>
+</div>
+</div>
+<!-- Runtime Specifications & Diagnostic Resolution Guidelines -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Specifications Dossier -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-DEFAULT p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">tune</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Platform Runtime Specifications</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Immutable Environment Matrix</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-1">
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Execution Boundary</span>
+<p class="font-body-md text-body-md text-primary font-semibold">Production Air-Gapped Bench Workspace</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Isolated judicial compute fabric</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Gazette Invariant Engine</span>
+<p class="font-body-md text-body-md text-primary font-semibold">Surya-OCR + PDFMiner.six</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">High-fidelity bilingual judgment extraction</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Ledger &amp; Document Vault</span>
+<p class="font-body-md text-body-md text-primary font-semibold">Immutable Local &amp; S3 Vault</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cryptographically signed legal archives</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Access Authorization</span>
+<p class="font-body-md text-body-md text-primary font-semibold">Judicial Bench Token (Session Active)</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mutual TLS key-pair validation</span>
+</div>
+</div>
+</div>
+<!-- Diagnostic State Protocol Reference -->
+<div class="bg-surface-container-lowest rounded-DEFAULT p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment_turned_in</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Status Protocols</h3>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- State 1 -->
+<div class="p-2.5 bg-surface-container-low rounded-DEFAULT flex items-start gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shrink-0 mt-1"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase">Operational (Current)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[0.8rem]">All judicial contracts match nominal schema without interruption.</p>
+</div>
+</div>
+<!-- State 2 -->
+<div class="p-2.5 bg-surface-container-low rounded-DEFAULT flex items-start gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim shrink-0 mt-1"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-secondary-container font-bold uppercase">Checking (Simulation)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[0.8rem]">Handshake polling active. Responses evaluated against schema rules.</p>
+</div>
+</div>
+<!-- State 3 -->
+<div class="p-2.5 bg-surface-container-low rounded-DEFAULT flex items-start gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-outline shrink-0 mt-1"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase">Degraded / Failover Protocol</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[0.8rem]">Fallback routes automatically dispatch to secondary air-gapped models.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const refreshBtn = document.getElementById('refresh-health-btn');
+    const refreshIcon = document.getElementById('refresh-icon');
+    const timestampElem = document.getElementById('audit-timestamp');
+
+    if (refreshBtn && refreshIcon && timestampElem) {
+      refreshBtn.addEventListener('click', function() {
+        refreshIcon.classList.add('rotate-180');
+        refreshBtn.classList.add('opacity-70');
+        
+        setTimeout(function() {
+          const now = new Date();
+          const day = String(now.getDate()).padStart(2, '0');
+          const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+          const month = months[now.getMonth()];
+          const year = now.getFullYear();
+          const hours = String(now.getHours()).padStart(2, '0');
+          const mins = String(now.getMinutes()).padStart(2, '0');
+          const secs = String(now.getSeconds()).padStart(2, '0');
+          
+          timestampElem.textContent = `${day} ${month} ${year} • ${hours}:${mins}:${secs} IST`;
+          refreshIcon.classList.remove('rotate-180');
+          refreshBtn.classList.remove('opacity-70');
+        }, 450);
+      });
+    }
+  })();
+</script></main></div></body></html>

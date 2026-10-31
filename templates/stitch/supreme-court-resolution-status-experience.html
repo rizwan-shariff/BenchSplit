@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#372f23", "inverse-on-surface": "#feeedd", "primary-fixed": "#f2dfd5", "tertiary-fixed": "#ffddb7", "surface-container-highest": "#efe0cf", "outline-variant": "#d1c4be", "surface-tint": "#6a5b54", "surface-dim": "#e6d8c7", "secondary-container": "#ffd79c", "secondary-fixed-dim": "#e7c088", "on-secondary": "#ffffff", "tertiary-container": "#3a2200", "on-primary": "#ffffff", "surface-variant": "#efe0cf", "on-tertiary-container": "#b3864c", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "background": "#fff8f3", "tertiary": "#1e0f00", "primary-container": "#30251f", "primary-fixed-dim": "#d6c3ba", "on-tertiary-fixed": "#2a1700", "surface-container-low": "#fff2e3", "surface-container": "#fbecda", "on-tertiary-fixed-variant": "#623f0a", "tertiary-fixed-dim": "#f1bd7e", "on-secondary-container": "#795c2c", "on-surface-variant": "#4e4540", "on-secondary-fixed-variant": "#5c4215", "secondary": "#76592a", "on-secondary-fixed": "#281800", "on-surface": "#221a10", "surface": "#fff8f3", "on-primary-container": "#9c8b83", "on-background": "#221a10", "secondary-fixed": "#ffddaf", "outline": "#807570", "primary": "#1a110b", "on-tertiary": "#ffffff", "on-error": "#ffffff", "error": "#ba1a1a", "surface-bright": "#fff8f3", "on-primary-fixed": "#231914", "inverse-primary": "#d6c3ba", "on-primary-fixed-variant": "#51443d", "on-error-container": "#93000a", "surface-container-high": "#f5e6d4" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-xl": "2.5rem", "margin": "3rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-sm": [ "EB Garamond" ], "label-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-lg": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "label-md": [ "Inter" ], "body-lg": [ "Inter" ], "label-lg": [ "Inter" ], "body-sm": [ "Inter" ], "display-lg": [ "EB Garamond" ], "display-lg-mobile": [ "EB Garamond" ], "headline-lg-mobile": [ "EB Garamond" ] }, "fontSize": { "headline-sm": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "0.005em", "fontWeight": "600" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.006em", "fontWeight": "400" } ], "headline-lg": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.011em", "fontWeight": "400" } ], "label-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg": [ "3.25rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface-container font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[250px] bg-primary-container z-50 flex flex-col justify-between select-none shadow-[2px_0_12px_rgba(30,15,0,0.18)]"><div class="flex flex-col flex-1 min-h-0"><div class="pt-space-lg px-space-md pb-space-md border-b border-outline-variant/20 flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Refined geometric circular judicial seal emblem for NYAAYCHAKRA featuring a balanced scale of justice, concentric archival rings, and subtle chakra geometry in Espresso, Antique Brass, and Muted Gold." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold tracking-wider leading-none">NYAAYCHAKRA</span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-[0.14em] uppercase leading-tight mt-1">Judicial Intelligence</span></div></div></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-md flex flex-col gap-space-md" data-active-classes="bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim"><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Workspace</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="overview" href="#">Overview</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-radar" href="#">Conflict Radar</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="statute-explorer" href="#">Statute Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Investigation</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-investigation" href="#">Conflict Investigation</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="evidence-explorer" href="#">Evidence Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Operations</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="ingest-judgments" href="#">Ingest Judgments</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="live-processing" href="#">Live Processing</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="run-history" href="#">Run History</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Intelligence</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim" data-path="evaluation-metrics" href="#">Evaluation &amp; Metrics</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="forum-risk-briefs" href="#">Forum-Risk Briefs</a></div></nav></div><div class="p-space-md border-t border-outline-variant/20 flex flex-col gap-space-xs bg-primary/40"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim shadow-[0_0_8px_#e7c088]"></span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-wider uppercase font-semibold">System Status: Operational</span></div><p class="font-label-sm text-label-sm text-on-primary-container tracking-tight">NYAAYCHAKRA / JUDICIAL INTELLIGENCE • v4.8</p></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-highest z-40 px-space-lg flex items-center justify-between shadow-[0_1px_6px_rgba(48,37,31,0.03)]"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Workspace</span><span class="text-outline text-sm">/</span><span class="font-body-md text-body-md text-on-surface-variant font-medium">Evaluation &amp; Metrics</span></div><span class="hidden lg:inline-block h-4 w-px bg-surface-container-highest"></span><div class="hidden lg:flex items-center gap-2 text-outline font-label-sm text-label-sm tracking-wide uppercase"><span class="material-symbols-outlined text-[15px] text-secondary">monitoring</span><span>Judicial Alignment Benchmark — Validation &amp; Recall Audits</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded-DEFAULT border border-surface-container-highest"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>Sync Status: Synced • GET /api/v4/eval</span></div><span class="px-2.5 py-1 bg-surface-container font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider rounded-DEFAULT border border-secondary-fixed-dim/40">Active Bench Workspace</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-container px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Interactive State Scripts and Event Listeners -->
+<script>
+    function switchScenario(scenarioId) {
+      const bannerA = document.getElementById('scenario-banner-a');
+      const bannerB = document.getElementById('scenario-banner-b');
+      const triadContainer = document.getElementById('tripartite-architecture');
+      const emptyStateContainer = document.getElementById('empty-state-architecture');
+      const tabA = document.getElementById('btn-scenario-a');
+      const tabB = document.getElementById('btn-scenario-b');
+
+      if (scenarioId === 'A') {
+        bannerA.classList.remove('hidden');
+        bannerB.classList.add('hidden');
+        triadContainer.classList.remove('hidden');
+        emptyStateContainer.classList.add('hidden');
+        tabA.classList.add('bg-primary', 'text-surface-container-lowest');
+        tabA.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        tabB.classList.remove('bg-primary', 'text-surface-container-lowest');
+        tabB.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      } else {
+        bannerA.classList.add('hidden');
+        bannerB.classList.remove('hidden');
+        triadContainer.classList.add('hidden');
+        emptyStateContainer.classList.remove('hidden');
+        tabB.classList.add('bg-primary', 'text-surface-container-lowest');
+        tabB.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        tabA.classList.remove('bg-primary', 'text-surface-container-lowest');
+        tabA.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      }
+    }
+
+    function copyCitation(text) {
+      navigator.clipboard.writeText(text);
+      const pill = document.getElementById('toast-copy');
+      if (pill) {
+        pill.classList.remove('opacity-0', 'pointer-events-none');
+        pill.classList.add('opacity-100');
+        setTimeout(() => {
+          pill.classList.remove('opacity-100');
+          pill.classList.add('opacity-0', 'pointer-events-none');
+        }, 2200);
+      }
+    }
+  </script>
+<!-- Notification Toast for Copy Action -->
+<div class="fixed bottom-6 right-8 z-50 transition-opacity duration-300 opacity-0 pointer-events-none bg-primary text-surface-container-lowest px-4 py-2.5 rounded-lg shadow-xl flex items-center gap-2 font-label-md text-label-md" id="toast-copy">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span>Verbatim Supreme Court holding &amp; neutral citation copied to clipboard</span>
+</div>
+<!-- Editorial Top Bar & Navigation Actions -->
+<div class="flex flex-col gap-y-4 mb-space-lg">
+<!-- Breadcrumb & Backend Live Sync Bar -->
+<div class="flex flex-wrap items-center justify-between gap-y-2 pb-space-sm border-b border-surface-container-highest">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[15px]">arrow_back</span>
+<span>Investigation</span>
+</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Conflict Investigation</a>
+<span class="text-outline-variant">/</span>
+<span class="font-semibold text-primary">#CNF-2024-PMLA-014</span>
+<span class="text-outline-variant">/</span>
+<span class="text-secondary font-semibold">Supreme Court Status</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-1 rounded-DEFAULT shadow-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
+<span>Sync Status: <span class="text-primary font-semibold">Synced</span> • GET /api/conflicts/cnf_pmla_014 • 16ms</span>
+</div>
+<span class="px-2.5 py-1 bg-primary text-secondary-fixed font-label-sm text-label-sm tracking-wider uppercase font-bold rounded-DEFAULT">
+          Constitutional Bench Review
+        </span>
+</div>
+</div>
+<!-- Main Title & Operational Buttons -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1 max-w-3xl">
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm tracking-[0.16em] uppercase font-bold">
+<span class="material-symbols-outlined text-[16px]">gavel</span>
+<span>Judicial Authority // Supreme Court Status</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight leading-tight">
+          Supreme Court Status &amp; Precedent Treatment
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Examine authoritative Supreme Court treatment of detected high court antinomies across scanned appellate reporter sets. Grounded in verbatim gazette propositions.
+        </p>
+</div>
+<div class="flex items-center flex-wrap gap-2.5 shrink-0">
+<button class="flex items-center gap-1.5 px-3.5 py-2 bg-surface-container-lowest text-primary hover:bg-surface-container-high transition-colors font-label-md text-label-md rounded-DEFAULT shadow-sm">
+<span class="material-symbols-outlined text-[16px]">west</span>
+<span>Return to Conflict Investigation (#CNF-2024-PMLA-014)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 bg-primary text-surface-container-lowest hover:bg-primary-container transition-colors font-label-md text-label-md rounded-DEFAULT shadow-md">
+<span>View in Conflict Radar (PMLA § 45)</span>
+<span class="material-symbols-outlined text-[16px]">east</span>
+</button>
+</div>
+</div>
+<!-- Case Descriptor Context Strip & Ledger Metadata -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md border-l-4 border-secondary">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<img alt="Seal" class="w-7 h-7 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Active Subject Antinomy</span>
+<span class="font-headline-sm text-headline-sm text-primary font-medium">
+            PMLA § 45(1) Twin Bail Conditions vs. Article 21 Speedy Trial Guarantee
+          </span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2 font-label-sm text-label-sm">
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1.5 rounded-DEFAULT">
+          Scanned Precedent Ledger: <strong class="text-primary font-semibold">1,420 Appellate Decisions</strong> (SC: 542 • HC: 878)
+        </span>
+<span class="bg-secondary-fixed/40 text-on-secondary-container px-2.5 py-1.5 rounded-DEFAULT font-medium">
+          Lossless Corpus Bounds
+        </span>
+</div>
+</div>
+</div>
+<!-- State Scenario Switcher (Live Backend Emulation) -->
+<div class="flex items-center justify-between mb-4 px-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-bold">API State Emulation:</span>
+<div class="inline-flex p-0.5 bg-surface-container-highest rounded-DEFAULT shadow-inner">
+<button class="px-3 py-1 font-label-sm text-label-sm rounded-DEFAULT transition-all bg-primary text-surface-container-lowest" id="btn-scenario-a" onclick="switchScenario('A')">
+          Scenario A: Resolved Precedent (sc_prop available)
+        </button>
+<button class="px-3 py-1 font-label-sm text-label-sm rounded-DEFAULT transition-all bg-surface-container-high text-on-surface-variant" id="btn-scenario-b" onclick="switchScenario('B')">
+          Scenario B: sc_status: UNRESOLVED_IN_SCANNED_SET
+        </button>
+</div>
+</div>
+<span class="hidden md:inline font-label-sm text-label-sm text-outline-variant italic">
+      GET /api/conflicts/cnf_pmla_014/sc_resolution • Schema v4.8
+    </span>
+</div>
+<!-- SCENARIO A: Supreme Court Precedent Identified Banner -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm mb-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-l-4 border-[#426B53]" id="scenario-banner-a">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-[#426B53]/15 text-[#426B53] flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-[#426B53]/10 text-[#426B53] font-label-sm text-label-sm font-bold uppercase rounded-DEFAULT tracking-wider">
+            Supreme Court Bench Treatment Recorded (SC 2023 INSC 866)
+          </span>
+<span class="font-label-sm text-label-sm text-outline font-medium">Neutral Citation Registered</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+<strong>Authoritative Ruling Identified in Scanned Set:</strong> The Supreme Court Division Bench in <em>Pankaj Bansal v. Union of India</em> directly addresses Section 19 written communication of grounds of arrest. Note: Scanned corpus reflects decisions through October 2024; does not assert exhaustive omniscience over unreported chamber orders.
+        </p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-2">
+<span class="bg-[#426B53]/15 text-[#426B53] px-3 py-1.5 rounded-DEFAULT font-label-sm text-label-sm font-semibold uppercase tracking-wider">
+        Ratio Decidendi Matched
+      </span>
+</div>
+</div>
+<!-- SCENARIO B: No Resolution Found Cautionary Banner (Initially Hidden) -->
+<div class="hidden bg-surface-container-lowest p-space-md rounded-lg shadow-sm mb-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-l-4 border-secondary" id="scenario-banner-b">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed/50 text-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">pending</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold uppercase rounded-DEFAULT tracking-wider">
+            No SC Resolution Found in Scanned Judgments
+          </span>
+<span class="font-label-sm text-label-sm text-outline font-medium">sc_status: UNRESOLVED_IN_SCANNED_SET</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+<strong>Absence of evidence is not proof of judicial vacuum:</strong> Scanned database includes 542 Supreme Court reporter folios. An unresolved status denotes zero matching ratio decidendi within the indexed gazette registry to date. The conflict remains an open inter-circuit split across High Courts.
+        </p>
+</div>
+</div>
+<div class="shrink-0">
+<button class="px-3 py-1.5 bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-DEFAULT uppercase tracking-wider font-semibold">
+        Trigger Deeper Registry Scan
+      </button>
+</div>
+</div>
+<!-- EMPTY STATE FOR SCENARIO B (Displayed when Scenario B is active) -->
+<div class="hidden bg-surface-container-lowest p-space-xl rounded-lg shadow-md flex flex-col items-center justify-center text-center my-6 max-w-3xl mx-auto" id="empty-state-architecture">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center mb-4 text-outline">
+<span class="material-symbols-outlined text-[36px]">balance</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold mb-2">
+      Inter-High Court Split Persists Without Direct Supreme Court Binding Holding
+    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mb-6">
+      Within the active scanned boundary (542 Supreme Court folios), no judgment specifically resolves whether oral intimation of Section 19 grounds constitutes valid constitutional compliance under Article 22(1).
+    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full text-left">
+<div class="p-4 bg-surface-container-low rounded-DEFAULT">
+<span class="font-label-sm text-label-sm text-[#913F40] uppercase font-bold tracking-wider">High Court Split Status</span>
+<p class="font-body-sm text-body-sm text-primary mt-1 font-semibold">Divergent Jurisprudence Alive</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Delhi HC (Oral compliance allowed) vs Bombay HC (Written memo strictly mandatory).</p>
+</div>
+<div class="p-4 bg-surface-container-low rounded-DEFAULT">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Recommended Action</span>
+<p class="font-body-sm text-body-sm text-primary mt-1 font-semibold">Generate Forum-Risk Brief</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Counsel must cite bench differences when framing special leave petitions under Article 136.</p>
+</div>
+</div>
+</div>
+<!-- TRI-PARTITE ARCHITECTURE (Comparative 3-Column Node Graph) -->
+<div class="flex flex-col gap-6 mb-space-xl" id="tripartite-architecture">
+<!-- Visual Subhead -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold">
+          Tri-Partite Precedent Architecture &amp; Doctrinal Alignment
+        </h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-medium tracking-wide">
+        Lossless Node Synthesis • 2 Inter-Circuit Nodes &amp; 1 Overarching Precedent Node
+      </span>
+</div>
+<!-- 3-Column Comparison Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch relative">
+<!-- LEFT COLUMN: Proposition Alpha (Delhi High Court) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col justify-between border-t-4 border-[#913F40] relative">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 bg-[#913F40]/10 text-[#913F40] font-label-sm text-label-sm font-bold uppercase rounded-DEFAULT tracking-wider">
+              Proposition Alpha • Divergent
+            </span>
+<span class="font-label-sm text-label-sm text-outline">18 May 2023</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase font-semibold">Originating Jurisdiction</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">High Court of Delhi</h3>
+<p class="font-label-md text-label-md text-secondary font-medium">Neutral Citation: 2023:DHC:4921</p>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-DEFAULT text-on-surface-variant font-label-sm text-label-sm flex flex-col gap-1">
+<span class="font-semibold text-primary">Ram Kripal v. Directorate of Enforcement</span>
+<span>Bench: Division Bench (2 Judges)</span>
+<span>CNR: DLHC01-004921-2023</span>
+</div>
+<div class="flex flex-col gap-1.5 mt-2">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Question of Law</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+              Whether non-furnishing of written grounds of arrest at the time of arrest under Section 19 PMLA vitiates remand ab initio?
+            </p>
+</div>
+<div class="flex flex-col gap-1.5 mt-2 p-3 bg-surface-container-high rounded-DEFAULT border-l-2 border-[#913F40]">
+<span class="font-label-sm text-label-sm text-[#913F40] font-bold uppercase tracking-wider">Verbatim Holding Excerpt</span>
+<blockquote class="font-headline-sm text-body-md italic text-on-surface leading-snug">
+              “Oral intimation of grounds of arrest satisfies constitutional requisites of Article 22(1) provided substantial compliance is registered in arrest memo...”
+            </blockquote>
+</div>
+</div>
+<div class="mt-6 pt-3 border-t border-surface-container-highest flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-[#913F40] font-semibold">
+<span class="material-symbols-outlined text-[15px]">cancel</span>
+<span>Superseded by Supreme Court</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">Entailment: Rejected</span>
+</div>
+</div>
+<!-- CENTER COLUMN: Supreme Court Resolution (sc_prop) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-lg p-space-md shadow-md flex flex-col justify-between border-t-4 border-[#426B53] relative z-10 scale-[1.02]">
+<!-- Verified Grounding Badge Header -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 bg-[#426B53]/15 text-[#426B53] font-label-sm text-label-sm font-bold uppercase rounded-DEFAULT tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span>Authoritative Apex Resolution</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">03 Oct 2023</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase font-bold">Supreme Court of India</span>
+<span class="px-1.5 py-0.2 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] uppercase font-bold rounded-DEFAULT">Article 141 Law</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Pankaj Bansal v. Union of India &amp; Anr.</h3>
+<p class="font-label-md text-label-md text-secondary font-semibold">Citation: (2023) 10 SCC 616 • 2023 INSC 866</p>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-DEFAULT text-on-surface-variant font-label-sm text-label-sm flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<span class="font-semibold text-primary">Division Bench: A.S. Bopanna &amp; S.V.N. Bhatti, JJ.</span>
+<span class="text-[#426B53] font-bold">2-Judge Bench</span>
+</div>
+<span>Neutral Citation: 2023 INSC 866 • Case No: Crl.A. Nos. 3051-3052 of 2023</span>
+<span class="text-outline">CNR: SC-IN-2023-866-DEL</span>
+</div>
+<!-- Central Relationship Connector Indicators -->
+<div class="flex flex-col gap-2 my-1">
+<div class="p-2 bg-[#426B53]/10 rounded-DEFAULT flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[#426B53] text-[18px]">alt_route</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] font-bold text-[#426B53] uppercase tracking-wider">Doctrinal Impact on Delhi HC:</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-tight">Disapproves oral intimation rule articulated in <em>2023:DHC:4921</em>.</span>
+</div>
+</div>
+<div class="p-2 bg-secondary-fixed/30 rounded-DEFAULT flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">sync_alt</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] font-bold text-secondary uppercase tracking-wider">Doctrinal Impact on Bombay HC:</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-tight">Affirms and elevates mandatory written grounds rule from <em>2023:BHC-OS:2819</em>.</span>
+</div>
+</div>
+</div>
+<!-- Apex Holding Quote Box -->
+<div class="p-3 bg-surface-container-high rounded-DEFAULT border-l-2 border-[#426B53]">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-[#426B53] font-bold uppercase tracking-wider">Authoritative Holding (§ 32)</span>
+<button class="text-outline hover:text-primary transition-colors flex items-center gap-0.5 font-label-sm text-label-sm" onclick="copyCitation('Communication of grounds of arrest in writing to the arrestee is not a mere formality but a sacrosanct constitutional safeguard flowing from Article 22(1). Mere oral reading does not suffice... (Pankaj Bansal v. UOI, 2023 INSC 866)')">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copy</span>
+</button>
+</div>
+<blockquote class="font-headline-sm text-body-md italic text-on-surface leading-snug">
+              “Communication of grounds of arrest in writing to the arrestee is not a mere formality but a sacrosanct constitutional safeguard flowing from Article 22(1). Mere oral reading does not suffice... written grounds must be furnished forthwith.”
+            </blockquote>
+</div>
+</div>
+<div class="mt-6 pt-3 border-t border-surface-container-highest flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#426B53]"></span>
+<span class="font-label-sm text-label-sm text-[#426B53] font-bold tracking-wider uppercase">Entailment Gate Passed</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded-DEFAULT text-primary font-semibold">Score: 0.9984</span>
+</div>
+</div>
+<!-- RIGHT COLUMN: Proposition Beta (Bombay High Court) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-lg p-space-md shadow-sm flex flex-col justify-between border-t-4 border-secondary relative">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 bg-secondary-fixed/40 text-on-secondary-container font-label-sm text-label-sm font-bold uppercase rounded-DEFAULT tracking-wider">
+              Proposition Beta • Aligned
+            </span>
+<span class="font-label-sm text-label-sm text-outline">14 Aug 2023</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase font-semibold">Originating Jurisdiction</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">High Court of Judicature at Bombay</h3>
+<p class="font-label-md text-label-md text-secondary font-medium">Neutral Citation: 2023:BHC-OS:2819</p>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-DEFAULT text-on-surface-variant font-label-sm text-label-sm flex flex-col gap-1">
+<span class="font-semibold text-primary">Chhagan Bhujbal v. Enforcement Directorate</span>
+<span>Bench: Division Bench (2 Judges)</span>
+<span>CNR: BHC01-002819-2023</span>
+</div>
+<div class="flex flex-col gap-1.5 mt-2">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Question of Law</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+              Does compliance under Section 19 require physical communication of reasons to satisfy Constitutional Article 22(5)?
+            </p>
+</div>
+<div class="flex flex-col gap-1.5 mt-2 p-3 bg-surface-container-high rounded-DEFAULT border-l-2 border-secondary">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Verbatim Holding Excerpt</span>
+<blockquote class="font-headline-sm text-body-md italic text-on-surface leading-snug">
+              “Furnishing of grounds of arrest in writing is mandatory under Section 19 to enable effective representation under Article 22(5)... oral recitation is ineffective.”
+            </blockquote>
+</div>
+</div>
+<div class="mt-6 pt-3 border-t border-surface-container-highest flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-[#426B53] font-semibold">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span>Doctrine Affirmed &amp; Codified</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline">Harmonized</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SOURCE GAZETTE FOLIO INSPECTION SECTION -->
+<div class="flex flex-col gap-4 mb-space-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">find_in_page</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold">
+          Source Gazette Folio Inspection • Verbatim Grounding Evidence
+        </h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline font-mono">GET /api/evidence/sc_prop_pankaj_bansal_p32/page.png</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm rounded-DEFAULT">200 OK</span>
+</div>
+</div>
+<!-- Parchment Inspection Split Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-surface-container-lowest p-space-lg rounded-lg shadow-md">
+<!-- Visualized Archival Parchment Page Slice (Left 7 Columns) -->
+<div class="lg:col-span-7 flex flex-col bg-surface-container-low p-space-md rounded-DEFAULT shadow-inner relative overflow-hidden">
+<!-- Folio Header Banner -->
+<div class="flex items-center justify-between border-b border-surface-container-highest pb-2 mb-4 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">menu_book</span>
+<span class="font-semibold uppercase text-primary">Supreme Court Report • 2023 INSC 866</span>
+</div>
+<span>Folio 24 of 48 • Criminal Appellate Jurisdiction</span>
+</div>
+<!-- Simulated Gazette Folio Page Slice with Line Margins -->
+<div class="bg-surface p-6 rounded-DEFAULT shadow-sm relative font-serif text-on-surface select-text">
+<!-- Gazette Court Header -->
+<div class="text-center mb-6 border-b border-surface-container-highest pb-3">
+<p class="font-label-sm text-[10px] tracking-[0.2em] uppercase font-bold text-on-surface-variant">In The Supreme Court of India</p>
+<p class="font-headline-sm text-[15px] font-semibold text-primary">Criminal Appellate Jurisdiction</p>
+<p class="font-label-sm text-label-sm text-outline">Criminal Appeal Nos. 3051-3052 of 2023</p>
+</div>
+<!-- Paragraph Lines with Marginal Rules -->
+<div class="relative pl-8 pr-2 flex flex-col gap-4 text-justify font-headline-sm text-[14.5px] leading-relaxed text-on-surface">
+<!-- Marginal Rule Line Indicators -->
+<div class="absolute left-0 top-0 bottom-0 w-6 flex flex-col justify-between text-outline-variant font-mono text-[9px] select-none border-r border-surface-container-highest">
+<span>01</span>
+<span>05</span>
+<span>10</span>
+<span>15</span>
+<span>20</span>
+<span>25</span>
+<span>30</span>
+<span>35</span>
+</div>
+<!-- Paragraph 31 (Preceding Context) -->
+<p class="text-on-surface-variant/75 text-[13.5px]">
+              [31] In terms of Section 19(1) of the Act of 2002, the authorized officer is bound to inform the arrestee of the grounds for such arrest. In the present case, respondent enforcement officials contend that reading the grounds orally to the appellant fulfilled the mandate of statutory communication...
+            </p>
+<!-- Paragraph 32 (Focal Grounded Ratio - Gold/Brass Highlight Box) -->
+<div class="relative p-3.5 bg-secondary-fixed/20 rounded-DEFAULT shadow-sm -mx-2 border-l-4 border-secondary">
+<div class="absolute -top-2.5 right-3 px-2 py-0.5 bg-primary text-secondary-fixed font-label-sm text-[9px] uppercase tracking-widest font-bold rounded-DEFAULT">
+                Grounding Target Paragraph 32
+              </div>
+<p class="text-primary font-medium">
+<strong>[32] To be noted, the expression “inform him of the grounds”</strong> in Section 19(1) of the Act of 2002 must be read contextually with Article 22(1) of the Constitution of India. The purpose of informing the arrestee is not merely ceremonial; it is to enable him to seek legal counsel and present a meaningful challenge to his detention. <strong>We hold that it is mandatory that a copy of written grounds of arrest be furnished to the arrested person as a matter of course and without exception.</strong> Oral recitation does not satisfy the constitutional guarantee enshrined in Article 22(1).
+              </p>
+</div>
+<!-- Paragraph 33 (Succeeding Context) -->
+<p class="text-on-surface-variant/75 text-[13.5px]">
+              [33] In the event written grounds are not served concurrently at the moment of arrest, such omission cannot be cured by post-facto remand affidavits...
+            </p>
+</div>
+<!-- Archival Stamp Overlay Emblem -->
+<div class="mt-6 pt-4 border-t border-surface-container-highest flex items-center justify-between text-outline font-label-sm text-[11px]">
+<span>Official Court Stenographer Copy • Certified Verbatim</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span>
+<span>Archival Checksum Verified</span>
+</div>
+</div>
+</div>
+<!-- Folio Controls Footer -->
+<div class="flex items-center justify-between mt-3 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">zoom_in</span>
+<span>Surya-OCR Bounding Box: [x: 142, y: 512, w: 780, h: 210]</span>
+</span>
+<span class="font-mono text-outline">Resolution: 300 DPI Lossless TIFF-Slice</span>
+</div>
+</div>
+<!-- Lossless Metadata & Forensic Verification Panel (Right 5 Columns) -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container-highest">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Evidentiary Verification Dossier</span>
+<span class="bg-[#426B53]/15 text-[#426B53] px-2 py-0.5 rounded-DEFAULT font-label-sm text-label-sm font-semibold">100% Verbatim Match</span>
+</div>
+<!-- Grounding Metadata Details List -->
+<div class="flex flex-col gap-3 font-body-sm text-body-sm">
+<div class="bg-surface-container-low p-3 rounded-DEFAULT flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">OCR Confidence &amp; Token Edit Distance</span>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">Surya-OCR Grounding Confidence</span>
+<span class="font-mono text-[#426B53] font-semibold">0.9984</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Levenshtein Token Distance</span>
+<span class="font-mono font-medium">0.0000 (Exact String Match)</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-DEFAULT flex flex-col gap-1 font-mono text-[11px] text-on-surface-variant break-all">
+<span class="font-label-sm text-label-sm text-outline uppercase font-sans font-semibold">Cryptographic Digest</span>
+<span class="text-primary font-semibold">SHA-256 Digest:</span>
+<span class="bg-surface-container-high p-1.5 rounded-DEFAULT text-primary">8f3c7e112a9e002094df4bfece081264cbba367129f1092aef37b</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-DEFAULT flex flex-col gap-1 font-mono text-[11px] text-on-surface-variant break-all">
+<span class="font-label-sm text-label-sm text-outline uppercase font-sans font-semibold">Immutable Vault Storage URI</span>
+<span class="text-secondary font-medium">s3://nyaaychakra-archival-vault/sc/2023/insc_866_folio_24.png</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-DEFAULT flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Active Bench Composition</span>
+<div class="flex items-center justify-between">
+<span class="text-primary">Justice A.S. Bopanna</span>
+<span class="font-label-sm text-label-sm text-outline">Authoring Judge</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-primary">Justice S.V.N. Bhatti</span>
+<span class="font-label-sm text-label-sm text-outline">Concurring</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Control Buttons -->
+<div class="flex flex-col gap-2 mt-6 pt-4 border-t border-surface-container-highest">
+<button class="w-full py-2.5 px-4 bg-primary text-surface-container-lowest font-label-md text-label-md rounded-DEFAULT flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm" onclick="copyCitation('Pankaj Bansal v. Union of India &amp; Anr., (2023) 10 SCC 616 : 2023 INSC 866, Paragraph 32')">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+<span>Copy Verbatim Holding Citation</span>
+</button>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-3 bg-surface-container-high hover:bg-surface-container-highest transition-colors text-primary font-label-md text-label-md rounded-DEFAULT flex items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Inspect Folio Scan</span>
+</button>
+<button class="py-2 px-3 bg-surface-container-high hover:bg-surface-container-highest transition-colors text-primary font-label-md text-label-md rounded-DEFAULT flex items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Certified Folio Slice (PDF)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CAUTIOUS JURISPRUDENTIAL LIMITATION AUDIT & STATE CONTROLS -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm mb-space-lg flex flex-col gap-4">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">policy</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">
+          Cautious Jurisprudential Limitation Audit &amp; Guardrails
+        </h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">
+        Archival Intelligence Protocol 4.8
+      </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Guardrail 1 -->
+<div class="flex flex-col gap-1.5 p-3.5 bg-surface-container-low rounded-DEFAULT">
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">rule_folder</span>
+<span>1. Defined Corpus Perimeter</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+          Indexed scope strictly comprises <strong>542 Supreme Court reported judgments</strong> and 878 High Court decisions. Does not index unreported chamber applications or administrative interim bail sheets.
+        </p>
+</div>
+<!-- Guardrail 2 -->
+<div class="flex flex-col gap-1.5 p-3.5 bg-surface-container-low rounded-DEFAULT">
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">no_sim</span>
+<span>2. No Predictive Speculation</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+          The engine never generates synthetic judicial reasoning or speculates on future constitutional bench rulings. Alignment reflects explicit, settled judicial text only.
+        </p>
+</div>
+<!-- Guardrail 3 -->
+<div class="flex flex-col gap-1.5 p-3.5 bg-surface-container-low rounded-DEFAULT">
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>3. Zero Hallucination Protocol</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+          Every proposition requires an unbroken chain of verified gazette string tokens. Unmatched ratios are systematically dropped by the entailment verification gate.
+        </p>
+</div>
+</div>
+<!-- Footnote Audit Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-2 pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Registry Checksum: <code class="font-mono text-primary font-semibold">SHA256:4ae0...8b1</code></span>
+<span>• Last Benchmark Run: 14 Oct 2024</span>
+</div>
+<span class="text-outline">Supreme Court Gazette Gazette Series • Part II Sec. 3</span>
+</div>
+</div>
+</div></main></div></body></html>

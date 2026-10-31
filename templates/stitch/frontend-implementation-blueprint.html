@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#372f23", "inverse-on-surface": "#feeedd", "primary-fixed": "#f2dfd5", "tertiary-fixed": "#ffddb7", "surface-container-highest": "#efe0cf", "outline-variant": "#d1c4be", "surface-tint": "#6a5b54", "surface-dim": "#e6d8c7", "secondary-container": "#ffd79c", "secondary-fixed-dim": "#e7c088", "on-secondary": "#ffffff", "tertiary-container": "#3a2200", "on-primary": "#ffffff", "surface-variant": "#efe0cf", "on-tertiary-container": "#b3864c", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "background": "#fff8f3", "tertiary": "#1e0f00", "primary-container": "#30251f", "primary-fixed-dim": "#d6c3ba", "on-tertiary-fixed": "#2a1700", "surface-container-low": "#fff2e3", "surface-container": "#fbecda", "on-tertiary-fixed-variant": "#623f0a", "tertiary-fixed-dim": "#f1bd7e", "on-secondary-container": "#795c2c", "on-surface-variant": "#4e4540", "on-secondary-fixed-variant": "#5c4215", "secondary": "#76592a", "on-secondary-fixed": "#281800", "on-surface": "#221a10", "surface": "#fff8f3", "on-primary-container": "#9c8b83", "on-background": "#221a10", "secondary-fixed": "#ffddaf", "outline": "#807570", "primary": "#1a110b", "on-tertiary": "#ffffff", "on-error": "#ffffff", "error": "#ba1a1a", "surface-bright": "#fff8f3", "on-primary-fixed": "#231914", "inverse-primary": "#d6c3ba", "on-primary-fixed-variant": "#51443d", "on-error-container": "#93000a", "surface-container-high": "#f5e6d4" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-xl": "2.5rem", "margin": "3rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-sm": [ "EB Garamond" ], "label-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-lg": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "label-md": [ "Inter" ], "body-lg": [ "Inter" ], "label-lg": [ "Inter" ], "body-sm": [ "Inter" ], "display-lg": [ "EB Garamond" ], "display-lg-mobile": [ "EB Garamond" ], "headline-lg-mobile": [ "EB Garamond" ] }, "fontSize": { "headline-sm": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "0.005em", "fontWeight": "600" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.006em", "fontWeight": "400" } ], "headline-lg": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.011em", "fontWeight": "400" } ], "label-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg": [ "3.25rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface-container font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[250px] bg-primary-container z-50 flex flex-col justify-between select-none shadow-[2px_0_12px_rgba(30,15,0,0.18)]"><div class="flex flex-col flex-1 min-h-0"><div class="pt-space-lg px-space-md pb-space-md border-b border-outline-variant/20 flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Refined geometric circular judicial seal emblem for NYAAYCHAKRA featuring a balanced scale of justice, concentric archival rings, and subtle chakra geometry in Espresso, Antique Brass, and Muted Gold." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold tracking-wider leading-none">NYAAYCHAKRA</span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-[0.14em] uppercase leading-tight mt-1">Judicial Intelligence</span></div></div></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-md flex flex-col gap-space-md" data-active-classes="bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim"><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Workspace</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="overview" href="#">Overview</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-radar" href="#">Conflict Radar</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="statute-explorer" href="#">Statute Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Investigation</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-investigation" href="#">Conflict Investigation</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="evidence-explorer" href="#">Evidence Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Operations</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="ingest-judgments" href="#">Ingest Judgments</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="live-processing" href="#">Live Processing</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="run-history" href="#">Run History</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Intelligence</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim" data-path="evaluation-metrics" href="#">Evaluation &amp; Metrics</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="forum-risk-briefs" href="#">Forum-Risk Briefs</a></div></nav></div><div class="p-space-md border-t border-outline-variant/20 flex flex-col gap-space-xs bg-primary/40"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim shadow-[0_0_8px_#e7c088]"></span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-wider uppercase font-semibold">System Status: Operational</span></div><p class="font-label-sm text-label-sm text-on-primary-container tracking-tight">NYAAYCHAKRA / JUDICIAL INTELLIGENCE • v4.8</p></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-highest z-40 px-space-lg flex items-center justify-between shadow-[0_1px_6px_rgba(48,37,31,0.03)]"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Workspace</span><span class="text-outline text-sm">/</span><span class="font-body-md text-body-md text-on-surface-variant font-medium">Evaluation &amp; Metrics</span></div><span class="hidden lg:inline-block h-4 w-px bg-surface-container-highest"></span><div class="hidden lg:flex items-center gap-2 text-outline font-label-sm text-label-sm tracking-wide uppercase"><span class="material-symbols-outlined text-[15px] text-secondary">monitoring</span><span>Judicial Alignment Benchmark — Validation &amp; Recall Audits</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded-DEFAULT border border-surface-container-highest"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>Sync Status: Synced • GET /api/v4/eval</span></div><span class="px-2.5 py-1 bg-surface-container font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider rounded-DEFAULT border border-secondary-fixed-dim/40">Active Bench Workspace</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-container px-space-lg py-space-lg"><div class="flex flex-col w-full text-on-surface antialiased selection:bg-secondary-fixed selection:text-primary">
+<!-- ========================================== -->
+<!-- 00. META SPECIFICATION & ARCHITECTURAL MAST -->
+<!-- ========================================== -->
+<header class="relative bg-surface-container-lowest p-space-xl rounded-DEFAULT shadow-sm mb-space-xl overflow-hidden">
+<div class="absolute -right-16 -top-16 w-96 h-96 rounded-full bg-secondary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute right-12 top-10 hidden xl:flex flex-col items-end opacity-85 pointer-events-none">
+<span class="font-headline-sm text-secondary tracking-widest text-xs uppercase">CONFIDENTIAL // ARCHITECTURAL DRAFT</span>
+<span class="font-label-sm text-outline text-[11px] tracking-mono">SCHEMA VERSION: CLIENT-CONTRACT-4.8.2-RELEASE</span>
+<span class="font-label-sm text-outline text-[11px]">BENCH REVISION: SUPREME COURT OF INDIA ALIGNMENT</span>
+</div>
+<div class="relative z-10 max-w-5xl">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-label-sm text-[10px] tracking-[0.18em] uppercase font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+          Engineering Reference System
+        </span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-secondary tracking-wider uppercase text-xs font-semibold">Tier-1 Judicial Graph Client</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight font-medium mb-space-xs leading-none">
+        NYAAYCHAKRA <span class="text-secondary font-light italic font-headline-lg">// Frontend Implementation Blueprint</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-4xl font-normal leading-relaxed mb-space-lg">
+        Authoritative React 18.3 + TypeScript + Vite + Tailwind CSS Architecture Specification. Grounding the algorithmic synthesis of constitutional jurisprudence, high-frequency conflict graphs, and zero-hallucination LangGraph verification engines.
+      </p>
+<!-- Technology Chips -->
+<div class="flex flex-wrap items-center gap-2 mb-space-lg pt-space-xs">
+<span class="px-2.5 py-1 bg-surface-container-low rounded-DEFAULT text-primary font-label-sm text-[11px] font-semibold tracking-wide">React 18.3.1 (Concurrent Mode)</span>
+<span class="px-2.5 py-1 bg-surface-container-low rounded-DEFAULT text-primary font-label-sm text-[11px] font-semibold tracking-wide">TypeScript 5.5.3 (Strict Nulls)</span>
+<span class="px-2.5 py-1 bg-surface-container-low rounded-DEFAULT text-primary font-label-sm text-[11px] font-semibold tracking-wide">Tailwind CSS v3.4.10</span>
+<span class="px-2.5 py-1 bg-surface-container-low rounded-DEFAULT text-primary font-label-sm text-[11px] font-semibold tracking-wide">Cytoscape.js 3.30.2 (Canvas 2D)</span>
+<span class="px-2.5 py-1 bg-surface-container-low rounded-DEFAULT text-primary font-label-sm text-[11px] font-semibold tracking-wide">FastAPI REST + W3C SSE Stream</span>
+<span class="px-2.5 py-1 bg-surface-container-low rounded-DEFAULT text-primary font-label-sm text-[11px] font-semibold tracking-wide">Lucide React &amp; Material Icons</span>
+<span class="px-2.5 py-1 bg-surface-container-highest/60 text-secondary rounded-DEFAULT font-label-sm text-[11px] font-bold tracking-wide">Lossless Folio Anchoring</span>
+</div>
+<!-- Quick Nav Chips -->
+<div class="pt-space-md bg-surface-container-low/70 -mx-space-xl -mb-space-xl px-space-xl pb-space-md flex flex-wrap items-center gap-x-4 gap-y-2">
+<span class="font-label-sm text-[10px] uppercase tracking-widest text-outline font-bold">Quick Jump:</span>
+<a class="font-label-sm text-xs text-primary hover:text-secondary transition-colors underline decoration-outline-variant/60 underline-offset-4" href="#macro-arch">01 Topology</a>
+<a class="font-label-sm text-xs text-primary hover:text-secondary transition-colors underline decoration-outline-variant/60 underline-offset-4" href="#component-tree">02 Component Tree</a>
+<a class="font-label-sm text-xs text-primary hover:text-secondary transition-colors underline decoration-outline-variant/60 underline-offset-4" href="#api-contract">03 API Contract</a>
+<a class="font-label-sm text-xs text-primary hover:text-secondary transition-colors underline decoration-outline-variant/60 underline-offset-4" href="#data-pipelines">04 Data Pipelines</a>
+<a class="font-label-sm text-xs text-primary hover:text-secondary transition-colors underline decoration-outline-variant/60 underline-offset-4" href="#type-contracts">05 TypeScript Types</a>
+<a class="font-label-sm text-xs text-primary hover:text-secondary transition-colors underline decoration-outline-variant/60 underline-offset-4" href="#component-matrix">06 Reuse Matrix</a>
+<a class="font-label-sm text-xs text-primary hover:text-secondary transition-colors underline decoration-outline-variant/60 underline-offset-4" href="#state-architecture">07 State Tiers</a>
+<a class="font-label-sm text-xs text-primary hover:text-secondary transition-colors underline decoration-outline-variant/60 underline-offset-4" href="#directory-tree">08 File Tree</a>
+<a class="font-label-sm text-xs text-primary hover:text-secondary transition-colors underline decoration-outline-variant/60 underline-offset-4" href="#engineering-roadmap">09 Roadmap</a>
+</div>
+</div>
+</header>
+<!-- ========================================== -->
+<!-- SECTION 01: MACRO ARCHITECTURE & TOPOLOGY -->
+<!-- ========================================== -->
+<section class="mb-space-xl scroll-mt-20" id="macro-arch">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-secondary font-bold text-xs uppercase tracking-widest">Section 01</span>
+<span class="text-outline text-xs">/</span>
+<span class="font-headline-sm text-primary text-headline-sm font-semibold">Master Runtime Topology &amp; Transport Layers</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Bi-directional telemetry between the Client Workbench and the Python LangGraph backend.</p>
+</div>
+<span class="px-2.5 py-1 bg-surface-container-highest text-on-surface-variant rounded-DEFAULT font-label-sm text-[11px] font-medium">Asynchronous HTTP/2 + Server-Sent Events</span>
+</div>
+<!-- Architectural Topology Diagram -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col gap-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-space-md relative">
+<!-- Node 1: Client Shell -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-[10px] text-secondary font-bold tracking-widest uppercase">Layer 01</span>
+<span class="material-symbols-outlined text-[16px] text-outline">desktop_windows</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-primary font-semibold leading-snug">Vite / React 18 Shell</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 leading-relaxed">Concurrent rendering, React Suspense fallbacks, Error Boundary containment.</p>
+</div>
+<div class="mt-4 pt-2 bg-surface-container-lowest p-2 rounded-DEFAULT font-label-sm text-[11px] text-outline flex items-center justify-between">
+<span>Root DOM</span>
+<span class="text-primary font-mono text-[10px]">#root</span>
+</div>
+</div>
+<!-- Node 2: AppLayout Shell -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-[10px] text-secondary font-bold tracking-widest uppercase">Layer 02</span>
+<span class="material-symbols-outlined text-[16px] text-outline">space_dashboard</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-primary font-semibold leading-snug">AppLayout Shell</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 leading-relaxed">250px Espresso sidebar, 64px header, breadcrumbs, sync heartbeat badges.</p>
+</div>
+<div class="mt-4 pt-2 bg-surface-container-lowest p-2 rounded-DEFAULT font-label-sm text-[11px] text-outline flex items-center justify-between">
+<span>Spatial Constraint</span>
+<span class="text-primary font-mono text-[10px]">Fixed Frame</span>
+</div>
+</div>
+<!-- Node 3: React Router -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-[10px] text-secondary font-bold tracking-widest uppercase">Layer 03</span>
+<span class="material-symbols-outlined text-[16px] text-outline">alt_route</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-primary font-semibold leading-snug">React Router v6</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 leading-relaxed">Declarative routing, pre-fetch loaders, deep linking into dispute nodes.</p>
+</div>
+<div class="mt-4 pt-2 bg-surface-container-lowest p-2 rounded-DEFAULT font-label-sm text-[11px] text-outline flex items-center justify-between">
+<span>11 Routes</span>
+<span class="text-primary font-mono text-[10px]">BrowserHistory</span>
+</div>
+</div>
+<!-- Node 4: Domain Workspace -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-[10px] text-secondary font-bold tracking-widest uppercase">Layer 04</span>
+<span class="material-symbols-outlined text-[16px] text-outline">hub</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-primary font-semibold leading-snug">Specialized Views</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 leading-relaxed">Cytoscape interactive canvas, proposition readers, folio inspection panels.</p>
+</div>
+<div class="mt-4 pt-2 bg-surface-container-lowest p-2 rounded-DEFAULT font-label-sm text-[11px] text-outline flex items-center justify-between">
+<span>Renderer</span>
+<span class="text-primary font-mono text-[10px]">Canvas/DOM</span>
+</div>
+</div>
+<!-- Node 5: API Client Layer -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-[10px] text-secondary font-bold tracking-widest uppercase">Layer 05</span>
+<span class="material-symbols-outlined text-[16px] text-outline">sync_alt</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-primary font-semibold leading-snug">API Transport Layer</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 leading-relaxed">Axios HTTP client + native EventSource SSE stream with auto-reconnect backoff.</p>
+</div>
+<div class="mt-4 pt-2 bg-surface-container-lowest p-2 rounded-DEFAULT font-label-sm text-[11px] text-outline flex items-center justify-between">
+<span>Protocols</span>
+<span class="text-primary font-mono text-[10px]">REST + SSE</span>
+</div>
+</div>
+<!-- Node 6: Backend Engine -->
+<div class="bg-primary text-surface-container-lowest p-space-md rounded-DEFAULT flex flex-col justify-between shadow-md">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-[10px] text-secondary-fixed-dim font-bold tracking-widest uppercase">Host Backend</span>
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed-dim">terminal</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-surface-container-lowest font-semibold leading-snug">FastAPI + LangGraph</h4>
+<p class="font-body-sm text-[12px] text-primary-fixed-dim mt-1 leading-relaxed">SQLite database, PyMuPDF folio extractor, 7-stage entailment pipeline.</p>
+</div>
+<div class="mt-4 pt-2 bg-primary-container p-2 rounded-DEFAULT font-label-sm text-[11px] text-secondary-fixed flex items-center justify-between">
+<span>Runtime</span>
+<span class="font-mono text-[10px]">Python 3.11</span>
+</div>
+</div>
+</div>
+<!-- Parallel Real-Time Event Channel Callout -->
+<div class="bg-surface-container p-space-md rounded-DEFAULT flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary/15 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">stream</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-base text-primary font-bold">Parallel Real-Time Pipeline Stream</span>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-secondary/20 text-secondary font-label-sm text-[10px] font-bold uppercase tracking-wider">SSE Protocol</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Endpoint <code class="font-mono text-xs bg-surface-container-lowest px-1.5 py-0.5 rounded-DEFAULT text-primary">GET /api/runs/{run_id}/events</code> feeds the LiveProcessing visualizer with 50ms latency.
+            </p>
+</div>
+</div>
+<!-- Reconnection State Machine Steps -->
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1.5 rounded-DEFAULT overflow-x-auto w-full lg:w-auto">
+<div class="px-3 py-1 bg-surface-container rounded-DEFAULT text-center">
+<span class="block font-label-sm text-[9px] uppercase tracking-widest text-outline">01</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-medium">CONNECTING</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[14px]">arrow_forward</span>
+<div class="px-3 py-1 bg-secondary-container/60 rounded-DEFAULT text-center">
+<span class="block font-label-sm text-[9px] uppercase tracking-widest text-secondary font-bold">02</span>
+<span class="font-label-sm text-[11px] text-on-secondary-container font-semibold">CONNECTED</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[14px]">arrow_forward</span>
+<div class="px-3 py-1 bg-surface-container rounded-DEFAULT text-center">
+<span class="block font-label-sm text-[9px] uppercase tracking-widest text-outline">03</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-medium">DISCONNECTED</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[14px]">arrow_forward</span>
+<div class="px-3 py-1 bg-surface-container-highest rounded-DEFAULT text-center">
+<span class="block font-label-sm text-[9px] uppercase tracking-widest text-primary font-bold">04</span>
+<span class="font-label-sm text-[11px] text-primary font-bold">COMPLETED</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 02: COMPONENT HIERARCHY TREE -->
+<!-- ========================================== -->
+<section class="mb-space-xl scroll-mt-20" id="component-tree">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-secondary font-bold text-xs uppercase tracking-widest">Section 02</span>
+<span class="text-outline text-xs">/</span>
+<span class="font-headline-sm text-primary text-headline-sm font-semibold">Application Component Hierarchy Tree</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Rigid containment and atomic decomposition of the legal intelligence client.</p>
+</div>
+<span class="font-label-sm text-xs text-outline font-mono">React 18.3 Strict Mode Compliant</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Branch A: Shell & Frame Primitives -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">shelves</span>
+<h3 class="font-headline-sm text-base text-primary font-semibold">I. Shell &amp; Frame Primitives</h3>
+</div>
+<span class="font-label-sm text-[10px] text-outline uppercase font-mono">6 Nodes</span>
+</div>
+<ul class="space-y-2.5 font-body-sm text-body-sm">
+<li class="flex items-start gap-2 bg-surface-container-low/60 p-2 rounded-DEFAULT">
+<span class="font-mono text-secondary text-xs font-bold shrink-0">App</span>
+<span class="text-on-surface-variant text-xs">Root wrapper, QueryClientProvider, ToastContextProvider, ErrorBoundary.</span>
+</li>
+<li class="flex items-start gap-2 bg-surface-container-low/60 p-2 rounded-DEFAULT ml-3">
+<span class="font-mono text-secondary text-xs font-bold shrink-0">AppLayout</span>
+<span class="text-on-surface-variant text-xs">Fixed 250px Espresso sidebar slot, 64px header slot, dynamic main wrapper.</span>
+</li>
+<li class="flex items-start gap-2 bg-surface-container-low/60 p-2 rounded-DEFAULT ml-6">
+<span class="font-mono text-primary text-xs font-semibold shrink-0">SidebarNav</span>
+<span class="text-on-surface-variant text-xs">Grouped navigation items (Workspace, Investigation, Operations, Intelligence).</span>
+</li>
+<li class="flex items-start gap-2 bg-surface-container-low/60 p-2 rounded-DEFAULT ml-6">
+<span class="font-mono text-primary text-xs font-semibold shrink-0">TopHeader</span>
+<span class="text-on-surface-variant text-xs">Route breadcrumb renderer, live API status badge, user identity avatar.</span>
+</li>
+<li class="flex items-start gap-2 bg-surface-container-low/60 p-2 rounded-DEFAULT ml-6">
+<span class="font-mono text-primary text-xs font-semibold shrink-0">SystemStatusIndicator</span>
+<span class="text-on-surface-variant text-xs">Real-time health indicator pill querying <code>/api/health</code> every 30s.</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low p-2 rounded-DEFAULT text-outline font-label-sm text-[10px]">
+          Target File: <span class="font-mono text-primary">src/components/layout/AppLayout.tsx</span>
+</div>
+</div>
+<!-- Branch B: Shared UI Kit Primitives -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">widgets</span>
+<h3 class="font-headline-sm text-base text-primary font-semibold">II. Common UI Primitives</h3>
+</div>
+<span class="font-label-sm text-[10px] text-outline uppercase font-mono">10 Elements</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-xs">
+<div class="bg-surface-container-low p-2 rounded-DEFAULT">
+<span class="font-mono font-semibold text-primary block">Button</span>
+<span class="text-[11px] text-on-surface-variant">Primary Espresso, Secondary Brass border, Ghost</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-DEFAULT">
+<span class="font-mono font-semibold text-primary block">Badge</span>
+<span class="text-[11px] text-on-surface-variant">Settled Precedent, Oxblood Conflict, Processing</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-DEFAULT">
+<span class="font-mono font-semibold text-primary block">Modal</span>
+<span class="text-[11px] text-on-surface-variant">Parchment modal with ambient daylight drop</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-DEFAULT">
+<span class="font-mono font-semibold text-primary block">Dropdown</span>
+<span class="text-[11px] text-on-surface-variant">Custom statute &amp; bench filter trigger</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-DEFAULT">
+<span class="font-mono font-semibold text-primary block">MetricPanel</span>
+<span class="text-[11px] text-on-surface-variant">High-contrast numeral + archival label</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-DEFAULT">
+<span class="font-mono font-semibold text-primary block">MetadataRow</span>
+<span class="text-[11px] text-on-surface-variant">Archival registry key-value record strip</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-DEFAULT">
+<span class="font-mono font-semibold text-primary block">LoadingState</span>
+<span class="text-[11px] text-on-surface-variant">Ivory shimmer placeholder matrix</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-DEFAULT">
+<span class="font-mono font-semibold text-primary block">EmptyState</span>
+<span class="text-[11px] text-on-surface-variant">Archival concordance balance notice</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low p-2 rounded-DEFAULT text-outline font-label-sm text-[10px]">
+          Target Directory: <span class="font-mono text-primary">src/components/ui/*</span>
+</div>
+</div>
+<!-- Branch C: Judicial Intelligence Domain Components -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">account_balance</span>
+<h3 class="font-headline-sm text-base text-primary font-semibold">III. Domain Components</h3>
+</div>
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase font-mono">Specialized Core</span>
+</div>
+<div class="space-y-2">
+<div class="bg-surface-container-low p-2 rounded-DEFAULT">
+<div class="flex items-center justify-between">
+<span class="font-mono text-xs font-bold text-primary">RelationshipGraph</span>
+<span class="font-label-sm text-[9px] px-1.5 py-0.5 rounded-DEFAULT bg-secondary/15 text-secondary">Cytoscape 3.30</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1">Interactive legal citation network, node clustering, force-directed layout, edge conflict coloring.</p>
+</div>
+<div class="bg-surface-container-low p-2 rounded-DEFAULT">
+<div class="flex items-center justify-between">
+<span class="font-mono text-xs font-bold text-primary">ConflictInspector</span>
+<span class="font-label-sm text-[9px] px-1.5 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest">Dual Folio</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1">Proposition Alpha vs Proposition Beta contradiction viewer with Supreme Court grounding.</p>
+</div>
+<div class="bg-surface-container-low p-2 rounded-DEFAULT">
+<div class="flex items-center justify-between">
+<span class="font-mono text-xs font-bold text-primary">PipelineVisualizer</span>
+<span class="font-label-sm text-[9px] px-1.5 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed">7-Stage LangGraph</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1">Live animated stage progress: Ingest &gt; Select &gt; Extract &gt; Verify &gt; Repair &gt; Entail &gt; Commit.</p>
+</div>
+<div class="bg-surface-container-low p-2 rounded-DEFAULT">
+<div class="flex items-center justify-between">
+<span class="font-mono text-xs font-bold text-primary">FolioViewer</span>
+<span class="font-label-sm text-[9px] px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-highest text-primary">PyMuPDF Slice</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1">Lossless judgment page slice renderer with pixel-accurate bbox highlight overlays.</p>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs bg-surface-container-low p-2 rounded-DEFAULT text-outline font-label-sm text-[10px]">
+          Target Directory: <span class="font-mono text-primary">src/components/domain/*</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 03: API INTEGRATION & CONTRACT MAP -->
+<!-- ========================================== -->
+<section class="mb-space-xl scroll-mt-20" id="api-contract">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-secondary font-bold text-xs uppercase tracking-widest">Section 03</span>
+<span class="text-outline text-xs">/</span>
+<span class="font-headline-sm text-primary text-headline-sm font-semibold">Backend API Endpoint Contract Matrix</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Direct wire specifications binding FastAPI route handlers to user interface screens.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-xs font-mono text-on-surface-variant">FastAPI 0.111 / Pydantic v2</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-DEFAULT shadow-sm overflow-x-auto">
+<table class="w-full text-left text-xs font-body-sm">
+<thead class="bg-surface-container-low text-on-surface uppercase font-label-sm text-[11px] tracking-wider">
+<tr>
+<th class="py-3 px-4 font-bold">Method &amp; Endpoint</th>
+<th class="py-3 px-4 font-bold">Target UI View</th>
+<th class="py-3 px-4 font-bold">Request Payload / Params</th>
+<th class="py-3 px-4 font-bold">Response Contract &amp; Schema</th>
+<th class="py-3 px-4 font-bold">Cache Strategy</th>
+</tr>
+</thead>
+<tbody class="text-on-surface-variant divide-y divide-surface-container-low">
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-mono font-bold text-primary whitespace-nowrap">
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-highest text-primary mr-1 text-[10px]">GET</span>
+              /api/health
+            </td>
+<td class="py-3.5 px-4 font-medium text-on-surface">TopHeader, System Status Indicator</td>
+<td class="py-3.5 px-4 font-mono text-outline">None</td>
+<td class="py-3.5 px-4 font-mono text-[11px]">
+              { status: "ok", llm_provider: "anthropic-claude-3-5-sonnet", db: "sqlite-attached" }
+            </td>
+<td class="py-3.5 px-4"><span class="px-2 py-0.5 bg-surface-container rounded-DEFAULT text-primary text-[10px] font-mono">Poll 30s</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-mono font-bold text-primary whitespace-nowrap">
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-highest text-primary mr-1 text-[10px]">GET</span>
+              /api/statutes
+            </td>
+<td class="py-3.5 px-4 font-medium text-on-surface">Statute Explorer, Conflict Radar Selector, Briefs</td>
+<td class="py-3.5 px-4 font-mono text-outline">?query=...&amp;page=1</td>
+<td class="py-3.5 px-4 font-mono text-[11px]">
+              StatuteSummary[] (total_judgments, verified, conflicts, sc_status)
+            </td>
+<td class="py-3.5 px-4"><span class="px-2 py-0.5 bg-secondary/15 rounded-DEFAULT text-secondary text-[10px] font-mono font-semibold">StaleTime: 5m</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-mono font-bold text-primary whitespace-nowrap">
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-highest text-primary mr-1 text-[10px]">GET</span>
+              /api/statutes/{statute_key}/graph
+            </td>
+<td class="py-3.5 px-4 font-medium text-on-surface">Conflict Radar, Overview Mini Graph</td>
+<td class="py-3.5 px-4 font-mono text-outline">statute_key: string</td>
+<td class="py-3.5 px-4 font-mono text-[11px]">
+              { nodes: GraphNode[], edges: GraphEdge[], clusters: string[] }
+            </td>
+<td class="py-3.5 px-4"><span class="px-2 py-0.5 bg-secondary/15 rounded-DEFAULT text-secondary text-[10px] font-mono font-semibold">StaleTime: 10m</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-mono font-bold text-primary whitespace-nowrap">
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-highest text-primary mr-1 text-[10px]">GET</span>
+              /api/conflicts/{conflict_id}
+            </td>
+<td class="py-3.5 px-4 font-medium text-on-surface">Conflict Investigation, Evidence Explorer</td>
+<td class="py-3.5 px-4 font-mono text-outline">conflict_id: string</td>
+<td class="py-3.5 px-4 font-mono text-[11px]">
+              ConflictDetail (prop_alpha, prop_beta, sc_harmonization, confidence)
+            </td>
+<td class="py-3.5 px-4"><span class="px-2 py-0.5 bg-surface-container rounded-DEFAULT text-primary text-[10px] font-mono">Immutable</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-mono font-bold text-primary whitespace-nowrap">
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-highest text-primary mr-1 text-[10px]">GET</span>
+              /api/evidence/{proposition_id}/page.png
+            </td>
+<td class="py-3.5 px-4 font-medium text-on-surface">Evidence Explorer, FolioViewer Modal</td>
+<td class="py-3.5 px-4 font-mono text-outline">proposition_id: string, ?dpi=150</td>
+<td class="py-3.5 px-4 font-mono text-[11px] text-secondary">
+              image/png (Binary image folio with coordinate header)
+            </td>
+<td class="py-3.5 px-4"><span class="px-2 py-0.5 bg-surface-container rounded-DEFAULT text-primary text-[10px] font-mono">HTTP Cache Max</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-mono font-bold text-secondary whitespace-nowrap">
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed mr-1 text-[10px]">POST</span>
+              /api/ingest
+            </td>
+<td class="py-3.5 px-4 font-medium text-on-surface">Ingest Judgments (Multipart Upload)</td>
+<td class="py-3.5 px-4 font-mono text-[11px]">FormData: { file: .pdf, court: "SC|DEL" }</td>
+<td class="py-3.5 px-4 font-mono text-[11px]">
+              { run_id: "run_8f29c0", status: "queued", statute_inferred: "PMLA_2002" }
+            </td>
+<td class="py-3.5 px-4"><span class="px-2 py-0.5 bg-surface-container-highest text-primary text-[10px] font-mono">No-Cache</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-secondary/5">
+<td class="py-3.5 px-4 font-mono font-bold text-secondary whitespace-nowrap">
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-secondary text-surface-container-lowest mr-1 text-[10px]">SSE</span>
+              /api/runs/{run_id}/events
+            </td>
+<td class="py-3.5 px-4 font-medium text-on-surface">Live Processing (Real-Time Pipeline)</td>
+<td class="py-3.5 px-4 font-mono text-outline">run_id: string</td>
+<td class="py-3.5 px-4 font-mono text-[11px]">
+              Stream of text/event-stream: RunEvent (stage, progress, tokens, state)
+            </td>
+<td class="py-3.5 px-4"><span class="px-2 py-0.5 bg-secondary text-surface-container-lowest rounded-DEFAULT text-[10px] font-mono font-bold">EventSource</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-mono font-bold text-primary whitespace-nowrap">
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-highest text-primary mr-1 text-[10px]">GET</span>
+              /api/eval/summary
+            </td>
+<td class="py-3.5 px-4 font-medium text-on-surface">Evaluation &amp; Metrics Dashboard</td>
+<td class="py-3.5 px-4 font-mono text-outline">?benchmark_id=sc_delhi_2024</td>
+<td class="py-3.5 px-4 font-mono text-[11px]">
+              EvalMetrics (f1: 0.942, precision, recall, confusion_matrix, drop_rate)
+            </td>
+<td class="py-3.5 px-4"><span class="px-2 py-0.5 bg-secondary/15 rounded-DEFAULT text-secondary text-[10px] font-mono font-semibold">StaleTime: 1m</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-4 font-mono font-bold text-primary whitespace-nowrap">
+<span class="px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-highest text-primary mr-1 text-[10px]">GET</span>
+              /api/briefs/{statute_key}.pdf
+            </td>
+<td class="py-3.5 px-4 font-medium text-on-surface">Forum-Risk Briefs (PDF Exporter)</td>
+<td class="py-3.5 px-4 font-mono text-outline">statute_key: string</td>
+<td class="py-3.5 px-4 font-mono text-[11px]">
+              application/pdf (Binary compiled bench brief)
+            </td>
+<td class="py-3.5 px-4"><span class="px-2 py-0.5 bg-surface-container rounded-DEFAULT text-primary text-[10px] font-mono">Blob Stream</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 04: CORE INTERACTION DATA FLOWS -->
+<!-- ========================================== -->
+<section class="mb-space-xl scroll-mt-20" id="data-pipelines">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-secondary font-bold text-xs uppercase tracking-widest">Section 04</span>
+<span class="text-outline text-xs">/</span>
+<span class="font-headline-sm text-primary text-headline-sm font-semibold">Core Interaction Data Flow Pipelines</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Lifecycle state machines translating raw judicial responses into visual representations.</p>
+</div>
+<span class="font-label-sm text-xs text-outline uppercase font-mono">Lossless Citation Grounding</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Flow A: Statute Explorer to Cytoscape -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-2 py-0.5 bg-surface-container rounded-DEFAULT font-label-sm text-[10px] text-primary uppercase font-bold">Pipeline Alpha</span>
+<span class="font-label-sm text-xs text-secondary font-mono">Conflict Radar Graph Flow</span>
+</div>
+<h4 class="font-headline-sm text-base text-primary font-bold mb-space-sm">Statute Exploration &amp; Graph Instantiation</h4>
+<div class="space-y-3 font-body-sm text-xs">
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">1</span>
+<div>
+<span class="font-semibold text-primary block">Fetch Active Statute Catalog</span>
+<code class="text-[11px] text-outline font-mono">GET /api/statutes</code> hydrates dropdown filter tray.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">2</span>
+<div>
+<span class="font-semibold text-primary block">Fetch Precedent Citation Matrix</span>
+<code class="text-[11px] text-outline font-mono">GET /api/statutes/{key}/graph</code> loads nodes and conflict edges.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">3</span>
+<div>
+<span class="font-semibold text-primary block">Cytoscape Element Transformation</span>
+                Maps raw graph response into Cytoscape data models with conflict badges.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-secondary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">4</span>
+<div>
+<span class="font-semibold text-secondary block">CoLA Force-Directed Simulation</span>
+                Positions nodes hierarchically with Supreme Court decisions at top rank.
+              </div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 bg-surface-container-low p-2 rounded-DEFAULT flex items-center justify-between text-[11px]">
+<span class="text-outline">Engine:</span>
+<span class="font-mono text-primary font-bold">Cytoscape.js Canvas 2D + WebGL Fallback</span>
+</div>
+</div>
+<!-- Flow B: Conflict Investigation -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-2 py-0.5 bg-surface-container rounded-DEFAULT font-label-sm text-[10px] text-primary uppercase font-bold">Pipeline Beta</span>
+<span class="font-label-sm text-xs text-secondary font-mono">Judicial Conflict Investigation</span>
+</div>
+<h4 class="font-headline-sm text-base text-primary font-bold mb-space-sm">Dual-Pane Precedent Contradiction Review</h4>
+<div class="space-y-3 font-body-sm text-xs">
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">1</span>
+<div>
+<span class="font-semibold text-primary block">User Clicks Conflicted Red Edge</span>
+                Event triggers edge selection and extracts target <code>conflict_id</code>.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">2</span>
+<div>
+<span class="font-semibold text-primary block">Fetch Dual Proposition Dossier</span>
+<code class="text-[11px] text-outline font-mono">GET /api/conflicts/{id}</code> returns Proposition Alpha and Beta.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">3</span>
+<div>
+<span class="font-semibold text-primary block">Request Grounding Folio Slices</span>
+                Parallel requests fetch page PNG slices with coordinate bounding boxes.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-secondary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">4</span>
+<div>
+<span class="font-semibold text-secondary block">Side-by-Side Contradiction Render</span>
+                Dual-pane folio viewer synchronizes highlight boxes with Supreme Court rules.
+              </div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 bg-surface-container-low p-2 rounded-DEFAULT flex items-center justify-between text-[11px]">
+<span class="text-outline">Verification:</span>
+<span class="font-mono text-secondary font-bold">100% Lossless Folio Coordinate Anchoring</span>
+</div>
+</div>
+<!-- Flow C: Ingest & Real-Time Pipeline -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-2 py-0.5 bg-surface-container rounded-DEFAULT font-label-sm text-[10px] text-primary uppercase font-bold">Pipeline Gamma</span>
+<span class="font-label-sm text-xs text-secondary font-mono">LangGraph Ingestion Stream</span>
+</div>
+<h4 class="font-headline-sm text-base text-primary font-bold mb-space-sm">Asynchronous Execution &amp; SSE Stream</h4>
+<div class="space-y-3 font-body-sm text-xs">
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">1</span>
+<div>
+<span class="font-semibold text-primary block">Multipart PDF Judgment Drop</span>
+<code class="text-[11px] text-outline font-mono">POST /api/ingest</code> uploads file and returns <code>run_id</code>.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">2</span>
+<div>
+<span class="font-semibold text-primary block">Initialize SSE Event Channel</span>
+<code class="text-[11px] text-outline font-mono">new EventSource('/api/runs/{id}/events')</code> opens connection.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-secondary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">3</span>
+<div>
+<span class="font-semibold text-secondary block">7-Stage LangGraph State Progression</span>
+                Live visualizer steps through extraction, verification, repair, and entailment.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">4</span>
+<div>
+<span class="font-semibold text-primary block">Graph Mutation &amp; Cache Invalidation</span>
+                SSE complete event triggers TanStack query invalidation on active statutes.
+              </div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 bg-surface-container-low p-2 rounded-DEFAULT flex items-center justify-between text-[11px]">
+<span class="text-outline">Stream Mechanism:</span>
+<span class="font-mono text-primary font-bold">W3C Server-Sent Events with Heartbeat Watchdog</span>
+</div>
+</div>
+<!-- Flow D: Evaluation Bench Flow -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-2 py-0.5 bg-surface-container rounded-DEFAULT font-label-sm text-[10px] text-primary uppercase font-bold">Pipeline Delta</span>
+<span class="font-label-sm text-xs text-secondary font-mono">Judicial Benchmark Evaluation</span>
+</div>
+<h4 class="font-headline-sm text-base text-primary font-bold mb-space-sm">F1 Precision-Recall Alignment Metrics</h4>
+<div class="space-y-3 font-body-sm text-xs">
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">1</span>
+<div>
+<span class="font-semibold text-primary block">Request Bench Alignment Summary</span>
+<code class="text-[11px] text-outline font-mono">GET /api/eval/summary</code> queries metrics dataset.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">2</span>
+<div>
+<span class="font-semibold text-primary block">Parse Confusion Matrix Cell Counts</span>
+                Calculates True Positives, False Positives, and False Negatives.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-secondary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">3</span>
+<div>
+<span class="font-semibold text-secondary block">Telemetry on Hallucination Drops</span>
+                Tracks propositions rejected during the zero-hallucination verification step.
+              </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center shrink-0 font-mono text-[10px]">4</span>
+<div>
+<span class="font-semibold text-primary block">Export Verified Bench Dossier</span>
+                Generates verifiable CSV/JSON report for judicial auditing.
+              </div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 bg-surface-container-low p-2 rounded-DEFAULT flex items-center justify-between text-[11px]">
+<span class="text-outline">Threshold:</span>
+<span class="font-mono text-secondary font-bold">F1 ≥ 0.942 on Supreme Court Bench Test</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 05: TYPESCRIPT DATA MODELS -->
+<!-- ========================================== -->
+<section class="mb-space-xl scroll-mt-20" id="type-contracts">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-secondary font-bold text-xs uppercase tracking-widest">Section 05</span>
+<span class="text-outline text-xs">/</span>
+<span class="font-headline-sm text-primary text-headline-sm font-semibold">Strict TypeScript Domain Contracts</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Single source of truth matching FastAPI Pydantic v2 validation models.</p>
+</div>
+<span class="font-label-sm text-xs font-mono text-outline">src/types/judicial.ts</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Type Card 1: Statute & Graph Types -->
+<div class="bg-primary-container text-surface-container-lowest p-space-md rounded-DEFAULT shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 bg-primary -mx-space-md -mt-space-md px-space-md pt-space-sm">
+<span class="font-mono text-xs font-semibold text-secondary-fixed">StatuteSummary &amp; Graph</span>
+<span class="font-label-sm text-[10px] text-outline-variant">Core Topology</span>
+</div>
+<pre class="font-mono text-[11px] leading-relaxed text-surface-container-high overflow-x-auto"><code>export interface StatuteSummary {
+  statute_key: string;
+  display_name: string;
+  total_judgments: number;
+  verified_propositions: number;
+  dropped_hallucinations: number;
+  conflict_count: number;
+  sc_status_badge: 'SETTLED' | 'CONFLICT' | 'REVIEW';
+}
+
+export interface GraphNode {
+  id: string;
+  label: string;
+  court: 'SC' | 'DELHI_HC' | 'BOMBAY_HC';
+  year: number;
+  citation: string;
+  type: 'precedent' | 'statute' | 'provision';
+  status: 'affirmed' | 'overruled' | 'distinguished';
+}
+
+export interface GraphEdge {
+  id: string;
+  source: string;
+  target: string;
+  conflict_id?: string;
+  relationship: 'entails' | 'contradicts' | 'cites';
+  confidence: number;
+}</code></pre>
+</div>
+<div class="mt-4 pt-2 bg-primary p-2 rounded-DEFAULT text-primary-fixed-dim text-[10px] font-mono">
+          Maps into Cytoscape.ElementDefinition
+        </div>
+</div>
+<!-- Type Card 2: Conflict & Evidence Types -->
+<div class="bg-primary-container text-surface-container-lowest p-space-md rounded-DEFAULT shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 bg-primary -mx-space-md -mt-space-md px-space-md pt-space-sm">
+<span class="font-mono text-xs font-semibold text-secondary-fixed">ConflictDetail &amp; Evidence</span>
+<span class="font-label-sm text-[10px] text-outline-variant">Folio Grounding</span>
+</div>
+<pre class="font-mono text-[11px] leading-relaxed text-surface-container-high overflow-x-auto"><code>export interface BoundingBox {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  page_number: number;
+}
+
+export interface PropositionEvidence {
+  proposition_id: string;
+  judgment_title: string;
+  citation: string;
+  quote_text: string;
+  bench_composition: string[];
+  page_number: number;
+  bbox: BoundingBox;
+}
+
+export interface ConflictDetailResponse {
+  conflict_id: string;
+  statute_key: string;
+  legal_question: string;
+  proposition_alpha: PropositionEvidence;
+  proposition_beta: PropositionEvidence;
+  sc_harmonization?: {
+    ruling_title: string;
+    settled_rule: string;
+    bench_strength: number;
+  };
+  contradiction_score: number;
+}</code></pre>
+</div>
+<div class="mt-4 pt-2 bg-primary p-2 rounded-DEFAULT text-primary-fixed-dim text-[10px] font-mono">
+          BBox maps directly to FolioViewer highlight overlay
+        </div>
+</div>
+<!-- Type Card 3: Eval & SSE Payload Types -->
+<div class="bg-primary-container text-surface-container-lowest p-space-md rounded-DEFAULT shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 bg-primary -mx-space-md -mt-space-md px-space-md pt-space-sm">
+<span class="font-mono text-xs font-semibold text-secondary-fixed">EvalMetrics &amp; SSE Event</span>
+<span class="font-label-sm text-[10px] text-outline-variant">Telemetry &amp; Stream</span>
+</div>
+<pre class="font-mono text-[11px] leading-relaxed text-surface-container-high overflow-x-auto"><code>export interface EvalMetricsResponse {
+  benchmark_id: string;
+  f1_score: number;
+  precision: number;
+  recall: number;
+  hallucination_drop_rate: number;
+  total_propositions_tested: number;
+  confusion_matrix: {
+    tp: number;
+    fp: number;
+    tn: number;
+    fn: number;
+  };
+}
+
+export type PipelineStage = 
+  | 'INGEST' | 'SELECT' | 'EXTRACT' 
+  | 'VERIFY' | 'REPAIR' | 'ENTAIL' | 'COMMIT';
+
+export interface RunEventPayload {
+  run_id: string;
+  timestamp: string;
+  stage: PipelineStage;
+  stage_progress: number;
+  message: string;
+  extracted_propositions?: number;
+  status: 'running' | 'completed' | 'failed';
+}</code></pre>
+</div>
+<div class="mt-4 pt-2 bg-primary p-2 rounded-DEFAULT text-primary-fixed-dim text-[10px] font-mono">
+          useRunEvents hook parses raw SSE into this payload
+        </div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 06: COMPONENT REUSABILITY MATRIX -->
+<!-- ========================================== -->
+<section class="mb-space-xl scroll-mt-20" id="component-matrix">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-secondary font-bold text-xs uppercase tracking-widest">Section 06</span>
+<span class="text-outline text-xs">/</span>
+<span class="font-headline-sm text-primary text-headline-sm font-semibold">Component-to-Page Reusability Matrix</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Cross-matrix audit covering 11 views against 9 domain UI components.</p>
+</div>
+<div class="flex items-center gap-4 text-xs font-body-sm">
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-primary rounded-DEFAULT"></span> Primary Core</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-secondary-fixed rounded-DEFAULT"></span> Shared Preview</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-surface-container rounded-DEFAULT"></span> Inactive</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-DEFAULT shadow-sm overflow-x-auto">
+<table class="w-full text-center text-xs font-body-sm">
+<thead class="bg-surface-container-low text-on-surface uppercase font-label-sm text-[10px] tracking-wider">
+<tr>
+<th class="py-3 px-3 text-left font-bold">Page View Module</th>
+<th class="py-3 px-2 font-bold">RelationshipGraph</th>
+<th class="py-3 px-2 font-bold">ConflictInspector</th>
+<th class="py-3 px-2 font-bold">PropositionPanel</th>
+<th class="py-3 px-2 font-bold">FolioViewer</th>
+<th class="py-3 px-2 font-bold">PipelineVisualizer</th>
+<th class="py-3 px-2 font-bold">EventTimeline</th>
+<th class="py-3 px-2 font-bold">EvalChart</th>
+<th class="py-3 px-2 font-bold">ConfusionGrid</th>
+<th class="py-3 px-2 font-bold">BriefPreview</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low">
+<!-- Overview -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-2.5 px-3 text-left font-semibold text-primary">Overview</td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed font-bold text-[10px]">Preview</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed font-bold text-[10px]">Recent</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed font-bold text-[10px]">Status</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed font-bold text-[10px]">Recent</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed font-bold text-[10px]">Gauge</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+</tr>
+<!-- Conflict Radar -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-2.5 px-3 text-left font-semibold text-primary">Conflict Radar</td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-bold text-[10px]">Active Primary</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed font-bold text-[10px]">Drawer</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+</tr>
+<!-- Statute Explorer -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-2.5 px-3 text-left font-semibold text-primary">Statute Explorer</td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed font-bold text-[10px]">Sub-graph</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-bold text-[10px]">Active</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+</tr>
+<!-- Conflict Investigation -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-2.5 px-3 text-left font-semibold text-primary">Conflict Investigation</td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed font-bold text-[10px]">Edge Context</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-bold text-[10px]">Active Primary</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-bold text-[10px]">Dual Panel</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed font-bold text-[10px]">Split</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+</tr>
+<!-- Evidence Explorer -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-2.5 px-3 text-left font-semibold text-primary">Evidence Explorer</td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed font-bold text-[10px]">Linked</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-bold text-[10px]">Active</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-bold text-[10px]">Active Primary</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+</tr>
+<!-- Live Processing -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-2.5 px-3 text-left font-semibold text-primary">Live Processing</td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-bold text-[10px]">Active Primary</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-bold text-[10px]">Live Stream</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+</tr>
+<!-- Evaluation & Metrics -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-2.5 px-3 text-left font-semibold text-primary">Evaluation &amp; Metrics</td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-bold text-[10px]">Active Primary</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-bold text-[10px]">Active Primary</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+</tr>
+<!-- Forum-Risk Briefs -->
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-2.5 px-3 text-left font-semibold text-primary">Forum-Risk Briefs</td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed font-bold text-[10px]">Static Snap</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="text-outline text-xs">-</span></td>
+<td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-bold text-[10px]">Active Primary</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 07: CLIENT STATE ARCHITECTURE -->
+<!-- ========================================== -->
+<section class="mb-space-xl scroll-mt-20" id="state-architecture">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-secondary font-bold text-xs uppercase tracking-widest">Section 07</span>
+<span class="text-outline text-xs">/</span>
+<span class="font-headline-sm text-primary text-headline-sm font-semibold">Client State Architecture &amp; Lifecycle Handling</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Strict boundary separation between Server Caches, Local UI states, and SSE live streams.</p>
+</div>
+<span class="font-label-sm text-xs font-mono text-outline">TanStack Query + Custom SSE Hooks</span>
+</div>
+<!-- 3 Tier State Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg mb-space-lg">
+<!-- Tier 1: Server Cache -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md">
+<span class="font-label-sm text-xs font-bold text-primary uppercase">Tier 01: Server Cache</span>
+<span class="font-label-sm text-[10px] text-secondary font-mono">TanStack Query v5</span>
+</div>
+<p class="text-xs text-on-surface-variant mb-3 leading-relaxed">Handles all asynchronous REST resources, deduping parallel requests and managing background revalidation.</p>
+<ul class="text-xs space-y-1.5 font-mono text-on-surface">
+<li class="bg-surface-container-low p-1.5 rounded-DEFAULT">['statutes', filterQuery]</li>
+<li class="bg-surface-container-low p-1.5 rounded-DEFAULT">['graph', statuteKey]</li>
+<li class="bg-surface-container-low p-1.5 rounded-DEFAULT">['conflict', conflictId]</li>
+<li class="bg-surface-container-low p-1.5 rounded-DEFAULT">['eval-summary', benchId]</li>
+</ul>
+</div>
+<div class="mt-4 pt-2 text-[11px] text-outline">
+          Default Stale Time: <strong>5 minutes</strong>. Automatic window-focus revalidation enabled for active bench.
+        </div>
+</div>
+<!-- Tier 2: Local UI State -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md">
+<span class="font-label-sm text-xs font-bold text-primary uppercase">Tier 02: Local UI State</span>
+<span class="font-label-sm text-[10px] text-primary font-mono">React useState / Reducer</span>
+</div>
+<p class="text-xs text-on-surface-variant mb-3 leading-relaxed">Ephemeral presentation states confined to single view modules or synchronized via URL query params.</p>
+<ul class="text-xs space-y-1.5 font-mono text-on-surface">
+<li class="bg-surface-container-low p-1.5 rounded-DEFAULT">selectedNodeId: string | null</li>
+<li class="bg-surface-container-low p-1.5 rounded-DEFAULT">graphZoomLevel: number</li>
+<li class="bg-surface-container-low p-1.5 rounded-DEFAULT">activeDossierTab: 'alpha' | 'beta'</li>
+<li class="bg-surface-container-low p-1.5 rounded-DEFAULT">isFolioModalOpen: boolean</li>
+</ul>
+</div>
+<div class="mt-4 pt-2 text-[11px] text-outline">
+          No external state overhead. URLSearchParams maintains shareable deep links.
+        </div>
+</div>
+<!-- Tier 3: Live SSE Stream -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-2 mb-3 bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md">
+<span class="font-label-sm text-xs font-bold text-secondary uppercase">Tier 03: Live Stream State</span>
+<span class="font-label-sm text-[10px] text-secondary font-mono font-bold">useRunEvents Hook</span>
+</div>
+<p class="text-xs text-on-surface-variant mb-3 leading-relaxed">Real-time unbuffered message consumer managing the LangGraph execution lifecycle state machine.</p>
+<ul class="text-xs space-y-1.5 font-mono text-on-surface">
+<li class="bg-surface-container-low p-1.5 rounded-DEFAULT">connectionState: ConnectionStatus</li>
+<li class="bg-surface-container-low p-1.5 rounded-DEFAULT">timelineEvents: RunEventPayload[]</li>
+<li class="bg-surface-container-low p-1.5 rounded-DEFAULT">currentStage: PipelineStage</li>
+<li class="bg-surface-container-low p-1.5 rounded-DEFAULT">accumulatedTokens: number</li>
+</ul>
+</div>
+<div class="mt-4 pt-2 text-[11px] text-secondary font-medium">
+          Automatic reconnect with exponential backoff on dropped connection.
+        </div>
+</div>
+</div>
+<!-- Standardized Lifecycle States Reference -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm">
+<h4 class="font-headline-sm text-sm text-primary font-bold uppercase tracking-wider mb-space-sm">Standardized Client State Presentation Primitives</h4>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm">
+<!-- Loading State Pattern -->
+<div class="bg-surface-container-low p-3 rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-[10px] font-bold text-outline uppercase tracking-wider">LoadingState</span>
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+</div>
+<p class="text-[11px] text-on-surface-variant">Archival skeleton shimmer using ivory surfaces with no jarring blank flashes.</p>
+</div>
+<span class="font-mono text-[10px] text-outline mt-2">Suspense Fallback</span>
+</div>
+<!-- Empty State Pattern -->
+<div class="bg-surface-container-low p-3 rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-[10px] font-bold text-outline uppercase tracking-wider">EmptyState</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">balance</span>
+</div>
+<p class="text-[11px] text-on-surface-variant">Harmonious Precedent Notice: informs user that no doctrinal divergence exists in bench.</p>
+</div>
+<span class="font-mono text-[10px] text-outline mt-2">Zero-Conflict View</span>
+</div>
+<!-- Error State Pattern -->
+<div class="bg-surface-container-low p-3 rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-[10px] font-bold text-error uppercase tracking-wider">ErrorState</span>
+<span class="material-symbols-outlined text-[16px] text-error">error_outline</span>
+</div>
+<p class="text-[11px] text-on-surface-variant">Structured error message with raw API trace code and automatic retry trigger.</p>
+</div>
+<span class="font-mono text-[10px] text-error mt-2">ErrorBoundary Handled</span>
+</div>
+<!-- Reconnect State Pattern -->
+<div class="bg-surface-container-low p-3 rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-[10px] font-bold text-secondary uppercase tracking-wider">SSE Stream</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">wifi_protected_setup</span>
+</div>
+<p class="text-[11px] text-on-surface-variant">Non-blocking reconnection banner preserving previously extracted propositions.</p>
+</div>
+<span class="font-mono text-[10px] text-secondary mt-2">Lossless Continuity</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 08 & 09: PROJECT DIRECTORY & ROADMAP -->
+<!-- ========================================== -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Directory Tree (5 Cols) -->
+<section class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between scroll-mt-20" id="directory-tree">
+<div>
+<div class="flex items-center justify-between mb-space-sm pb-space-xs bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">folder_open</span>
+<span class="font-headline-sm text-base text-primary font-bold">Project Directory Tree</span>
+</div>
+<span class="font-label-sm text-[10px] font-mono text-outline">Vite + React Standard</span>
+</div>
+<pre class="font-mono text-[11px] leading-relaxed text-on-surface-variant overflow-x-auto p-2 bg-surface-container-low rounded-DEFAULT"><code>nyaaychakra-client/
+├── index.html
+├── vite.config.ts
+├── tailwind.config.js
+└── src/
+    ├── main.tsx
+    ├── app/
+    │   ├── App.tsx
+    │   ├── routes.tsx
+    │   └── providers.tsx
+    ├── components/
+    │   ├── layout/
+    │   │   ├── AppLayout.tsx
+    │   │   ├── SidebarNav.tsx
+    │   │   └── TopHeader.tsx
+    │   ├── ui/
+    │   │   ├── Button.tsx
+    │   │   ├── Badge.tsx
+    │   │   ├── Modal.tsx
+    │   │   └── MetricPanel.tsx
+    │   └── domain/
+    │       ├── graph/
+    │       │   ├── RelationshipGraph.tsx
+    │       │   └── CytoscapeStyles.ts
+    │       ├── conflict/
+    │       │   ├── ConflictInspector.tsx
+    │       │   └── PropositionPanel.tsx
+    │       └── live/
+    │           ├── PipelineVisualizer.tsx
+    │           └── EventTimeline.tsx
+    ├── pages/
+    │   ├── OverviewPage.tsx
+    │   ├── ConflictRadarPage.tsx
+    │   ├── StatuteExplorerPage.tsx
+    │   ├── ConflictInvestigationPage.tsx
+    │   ├── EvidenceExplorerPage.tsx
+    │   ├── LiveProcessingPage.tsx
+    │   └── EvaluationMetricsPage.tsx
+    ├── services/
+    │   ├── api.ts
+    │   ├── statutesService.ts
+    │   └── sseService.ts
+    ├── hooks/
+    │   ├── useRunEvents.ts
+    │   └── useCytoscapeGraph.ts
+    └── types/
+        └── judicial.ts</code></pre>
+</div>
+<div class="mt-4 pt-2 text-[11px] text-outline font-mono">
+        Strict modular separation: zero domain logic inside presentation primitives.
+      </div>
+</section>
+<!-- Engineering Roadmap (7 Cols) -->
+<section class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between scroll-mt-20" id="engineering-roadmap">
+<div>
+<div class="flex items-center justify-between mb-space-sm pb-space-xs bg-surface-container-low -mx-space-lg -mt-space-lg px-space-lg pt-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">checklist</span>
+<span class="font-headline-sm text-base text-primary font-bold">14-Step Engineering Roadmap</span>
+</div>
+<span class="font-label-sm text-[10px] font-bold text-secondary uppercase tracking-wider">Phased Implementation</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs font-body-sm">
+<!-- Step 1 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">01</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">Tokens &amp; Tailored Palette</span>
+<span class="text-[10px] text-on-surface-variant">Inject warm sand, espresso &amp; typography</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">02</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">Global AppLayout Shell</span>
+<span class="text-[10px] text-on-surface-variant">Fixed 250px rail &amp; header routing</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">03</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">React Router Skeleton</span>
+<span class="text-[10px] text-on-surface-variant">11 pages configured with empty boundaries</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">04</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">API Transport Layer</span>
+<span class="text-[10px] text-on-surface-variant">Axios instance + query factory patterns</span>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">05</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">Cytoscape Adapter</span>
+<span class="text-[10px] text-on-surface-variant">Conflict Radar graph renderer &amp; CoLA layout</span>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">06</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">Statute Explorer Screen</span>
+<span class="text-[10px] text-on-surface-variant">Taxonomy drill-down &amp; filtering matrix</span>
+</div>
+</div>
+<!-- Step 7 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">07</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">Conflict Investigation</span>
+<span class="text-[10px] text-on-surface-variant">Dual-pane alpha/beta comparison panel</span>
+</div>
+</div>
+<!-- Step 8 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">08</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">Evidence Folio Viewer</span>
+<span class="text-[10px] text-on-surface-variant">PyMuPDF image coordinate overlay highlight</span>
+</div>
+</div>
+<!-- Step 9 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">09</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">Multipart Judgment Ingestion</span>
+<span class="text-[10px] text-on-surface-variant">Drag-and-drop PDF upload with validation</span>
+</div>
+</div>
+<!-- Step 10 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">10</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">SSE Live Processing Stream</span>
+<span class="text-[10px] text-on-surface-variant">EventSource 7-stage state machine hook</span>
+</div>
+</div>
+<!-- Step 11 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">11</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">Evaluation Metrics &amp; Bench</span>
+<span class="text-[10px] text-on-surface-variant">F1 gauge &amp; confusion matrix grid</span>
+</div>
+</div>
+<!-- Step 12 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">12</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">Forum-Risk PDF Exporter</span>
+<span class="text-[10px] text-on-surface-variant">Blob download stream &amp; brief preview</span>
+</div>
+</div>
+<!-- Step 13 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">13</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">Live Simulator Demo Harness</span>
+<span class="text-[10px] text-on-surface-variant">Synthetic trigger runner for live court trials</span>
+</div>
+</div>
+<!-- Step 14 -->
+<div class="bg-surface-container-low p-2 rounded-DEFAULT flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shrink-0 font-mono text-[10px] font-bold">14</span>
+<div class="truncate">
+<span class="font-bold text-primary block truncate">Air-Gapped Benchmarking Audit</span>
+<span class="text-[10px] text-on-surface-variant">Production bundle validation &amp; zero-leakage</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Authority Signoff -->
+<div class="mt-4 pt-3 bg-surface-container-low p-3 rounded-DEFAULT flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<span class="text-xs text-on-surface-variant">Architecture sign-off: <strong>Lead Systems Architect &amp; Judicial Benchmark Fellow</strong></span>
+<span class="font-mono text-[10px] text-secondary font-bold">STATUS: READY FOR CLIENT IMPLEMENTATION</span>
+</div>
+</section>
+</div>
+</div></main></div></body></html>

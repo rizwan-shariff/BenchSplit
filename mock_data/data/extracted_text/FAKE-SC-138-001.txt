@@ -1,0 +1,12 @@
+FAKE TEST DATA ONLY. This is fabricated text and is not a real judgment.
+
+IN THE SUPREME COURT OF INDIA
+FAKE TEST: Apex Reference on Notice
+Case No. FAKE-CIV-004/2026
+Decision date: 2026-04-20
+
+Question: Does dispatch of a Section 138 notice to the last known address satisfy the notice requirement without proof of actual delivery?
+
+FAKE HOLDING: Section 138 notice compliance requires proof of receipt or deliberate avoidance; dispatch by itself does not complete service.
+
+A complaint under Section 138 requires proof that the statutory notice reached the drawer or was deliberately avoided.

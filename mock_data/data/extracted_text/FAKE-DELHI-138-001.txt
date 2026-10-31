@@ -1,0 +1,12 @@
+FAKE TEST DATA ONLY. This is fabricated text and is not a real judgment.
+
+IN THE HIGH COURT OF DELHI
+FAKE TEST: Northstar Exports v. State
+Case No. FAKE-CRL-002/2026
+Decision date: 2026-02-10
+
+Question: Does dispatch of a Section 138 notice to the last known address satisfy the notice requirement without proof of actual delivery?
+
+FAKE HOLDING: Dispatch alone is insufficient for Section 138 notice compliance; actual delivery must be proved before the complaint proceeds.
+
+A complaint under Section 138 cannot proceed unless actual delivery of the statutory notice is proved.

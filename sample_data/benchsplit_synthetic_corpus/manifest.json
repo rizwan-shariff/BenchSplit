@@ -1,0 +1,1034 @@
+{
+  "disclaimer": "SYNTHETIC DATA. Every case, party, judge, advocate, case number, CNR and citation here is fictional and was generated as a test fixture for BenchSplit. The statutory provisions are real; the rulings attributed to courts are invented. Not for citation or legal reliance.",
+  "counts": {
+    "bombay_hc": 5,
+    "supreme_court": 10,
+    "delhi_hc": 6,
+    "karnataka_hc": 7,
+    "total": 28
+  },
+  "sc_scanned_count": 10,
+  "judgments": [
+    {
+      "id": "D1",
+      "court_id": "DLHC",
+      "court_name": "High Court of Delhi",
+      "level": "HC",
+      "file": "delhi_hc/SYN_DLHC019000012023_1_2023-03-14.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_DLHC019000012023_1_2023-03-14.pdf",
+      "cnr": "DLHC019000012023",
+      "title": "Trilok Raj Arora v. M/s Shyamlal Khemka Traders & Anr.",
+      "decision_date": "2023-03-14",
+      "case_no": "CRL.M.C. 2417/2022",
+      "bench": [
+        "HON'BLE MR. JUSTICE ARVIND KUMAR BHALLA"
+      ],
+      "statute_key": "NI_ACT_S138",
+      "question": "Whether a complaint under Section 138 NI Act is maintainable where the cheque is issued towards a time-barred debt and the only promise relied upon is the cheque itself.",
+      "holding": "Not maintainable: a cheque for a time-barred debt, without a separate fresh written promise under Section 25(3) Contract Act, is not issued for a legally enforceable debt.",
+      "quote": "This Court therefore holds that a cheque issued towards a debt that is already barred by limitation, unaccompanied by a fresh written promise to pay within the meaning of Section 25(3) of the Indian Contract Act, 1872, is not issued in discharge of a “legally enforceable debt or other liability”, and no offence under Section 138 of the Negotiable Instruments Act, 1881 is made out.",
+      "quote_page": 2,
+      "n_pages": 3,
+      "pdf_sha256": "8f65dd55e593c9f97eddabbcab5f01cc829f4c000ccf4b70810f86fa45b646f1",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "D2",
+      "court_id": "DLHC",
+      "court_name": "High Court of Delhi",
+      "level": "HC",
+      "file": "delhi_hc/SYN_DLHC019000022022_1_2022-09-27.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_DLHC019000022022_1_2022-09-27.pdf",
+      "cnr": "DLHC019000022022",
+      "title": "Kartar Singh Malhi v. M/s Gurukripa Finance & Investment Co.",
+      "decision_date": "2022-09-27",
+      "case_no": "CRL.M.C. 1902/2022",
+      "bench": [
+        "HON'BLE MS. JUSTICE NEELAM SAHGAL RAO"
+      ],
+      "statute_key": "NI_ACT_S138",
+      "question": "Whether the power to direct interim compensation under Section 143A NI Act is mandatory or directory at the stage of framing of notice of accusation.",
+      "holding": "Directory: 'may' in Section 143A(1) confers a discretion; the Magistrate must record reasons having regard to prima facie case, defence and financial circumstances.",
+      "quote": "I hold that the expression “may” in Section 143A(1) of the Negotiable Instruments Act, 1881 confers a discretion on the Court and is directory; before directing interim compensation the Court must record reasons, having regard to the prima facie case, the nature of the defence raised and the financial circumstances of the drawer.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "a34fd50805ee11f32253a4650569ab63f5f063b3ee5c57fa247c2b7d84a7dd01",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "D3",
+      "court_id": "DLHC",
+      "court_name": "High Court of Delhi",
+      "level": "HC",
+      "file": "delhi_hc/SYN_DLHC019000032022_1_2022-12-08.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_DLHC019000032022_1_2022-12-08.pdf",
+      "cnr": "DLHC019000032022",
+      "title": "M/s Triveni Power Equipments Pvt. Ltd. v. M/s Kalindi Hydro Projects Ltd.",
+      "decision_date": "2022-12-08",
+      "case_no": "ARB.P. 1177/2022",
+      "bench": [
+        "HON'BLE MR. JUSTICE MANOHAR LAL DUGGAL"
+      ],
+      "statute_key": "ARB_ACT_S11",
+      "question": "Whether limitation for filing a Section 11(6) petition commences automatically on expiry of thirty days from receipt of the notice invoking arbitration (Article 137, Limitation Act).",
+      "holding": "Yes: limitation commences automatically on expiry of 30 days from receipt of notice invoking arbitration and is not extended by later correspondence or negotiations.",
+      "quote": "This Court holds that the limitation for filing a petition under Section 11(6) of the Arbitration and Conciliation Act, 1996 commences automatically upon the expiry of thirty days from the receipt of the notice invoking arbitration, and the period of three years prescribed by Article 137 of the Limitation Act, 1963 is not extended by subsequent correspondence or negotiations between the parties.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "d1d4d1edb291d86abbf7fdf179d5df99088c6558b2722b0978722fa49d4bd327",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "D4",
+      "court_id": "DLHC",
+      "court_name": "High Court of Delhi",
+      "level": "HC",
+      "file": "delhi_hc/SYN_DLHC019000042023_1_2023-02-02.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_DLHC019000042023_1_2023-02-02.pdf",
+      "cnr": "DLHC019000042023",
+      "title": "Harshvardhan Luthra v. State (Govt. of NCT of Delhi) & Anr.",
+      "decision_date": "2023-02-02",
+      "case_no": "CRL.M.C. 3004/2022",
+      "bench": [
+        "HON'BLE MS. JUSTICE SUNANDA KHANDEKAR"
+      ],
+      "statute_key": "CRPC_S482",
+      "question": "Whether a High Court can quash non-compoundable offences involving serious financial fraud under Section 482 CrPC solely on a post-FIR private settlement.",
+      "holding": "No: a post-FIR private settlement with one victim cannot by itself justify quashing of non-compoundable serious financial fraud affecting a large body of investors.",
+      "quote": "This Court holds that a post-FIR private settlement deed cannot, by itself, justify the quashing of non-compoundable offences involving serious financial fraud, and the High Court must decline to exercise its power under Section 482 of the Code of Criminal Procedure, 1973 where the fraud has affected a large body of victims and the public interest.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "6a70dc7a3d9187c7f4a3f38f03147ed6c485cd4abb2be8cffcc30134a57fc4ea",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "D5",
+      "court_id": "DLHC",
+      "court_name": "High Court of Delhi",
+      "level": "HC",
+      "file": "delhi_hc/SYN_DLHC019000052023_1_2023-04-20.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_DLHC019000052023_1_2023-04-20.pdf",
+      "cnr": "DLHC019000052023",
+      "title": "Sukhdev Raj Sehgal v. M/s Pragati Micro Finance",
+      "decision_date": "2023-04-20",
+      "case_no": "CRL.M.C. 1655/2023",
+      "bench": [
+        "HON'BLE MR. JUSTICE MANOHAR LAL DUGGAL"
+      ],
+      "statute_key": "NI_ACT_S138",
+      "question": "Whether a cheque given as security for a loan attracts Section 138 NI Act upon dishonour.",
+      "holding": "Yes, where on the date of presentation the liability has crystallised; describing the cheque as 'security' is no defence by itself.",
+      "quote": "A cheque issued as security for repayment of a loan attracts Section 138 of the Negotiable Instruments Act, 1881 if, on the date of presentation, the liability has crystallised and the amount covered by the cheque is legally due; describing the cheque as “security” is no defence by itself.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "744005ecd383c2f5eb545d824213be2ec8bcf0a62ddcd575ada990b8fef04baf",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "D6",
+      "court_id": "DLHC",
+      "court_name": "High Court of Delhi",
+      "level": "HC",
+      "file": "delhi_hc/SYN_DLHC019000062022_1_2022-10-13.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_DLHC019000062022_1_2022-10-13.pdf",
+      "cnr": "DLHC019000062022",
+      "title": "Gurmeet Singh Bedi v. State (Govt. of NCT of Delhi) & Anr.",
+      "decision_date": "2022-10-13",
+      "case_no": "CRL.M.C. 2850/2022",
+      "bench": [
+        "HON'BLE MS. JUSTICE NEELAM SAHGAL RAO"
+      ],
+      "statute_key": "CRPC_S482",
+      "question": "Whether the High Court under Section 482 CrPC may conduct a mini-trial or weigh evidence when asked to quash an FIR.",
+      "holding": "No: the Court must take the FIR allegations at face value and ask only whether they disclose a cognizable offence.",
+      "quote": "At the stage of Section 482 of the Code of Criminal Procedure, 1973 the High Court cannot conduct a mini-trial or weigh the evidence; it must take the allegations in the FIR at face value and ask only whether they disclose the commission of a cognizable offence.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "3a05215b32632ad0c76f18d635b912271fd55ed1587f81ceb484a3b9e7bc09fd",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "B1",
+      "court_id": "BOMHC",
+      "court_name": "High Court of Judicature at Bombay",
+      "level": "HC",
+      "file": "bombay_hc/SYN_HCBM019000072022_1_2022-11-17.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_HCBM019000072022_1_2022-11-17.pdf",
+      "cnr": "HCBM019000072022",
+      "title": "Narendra Harishchandra Shetty v. State of Maharashtra & Anr.",
+      "decision_date": "2022-11-17",
+      "case_no": "CRIMINAL WRIT PETITION NO. 1186 OF 2022",
+      "bench": [
+        "R. S. KOLHATKAR, J."
+      ],
+      "statute_key": "NI_ACT_S138",
+      "question": "Whether a complaint under Section 138 NI Act is maintainable where the cheque is issued towards a time-barred debt and the only promise relied upon is the cheque itself.",
+      "holding": "Maintainable: a signed cheque for a time-barred debt is itself a written signed promise under Section 25(3) Contract Act.",
+      "quote": "In my view, a cheque drawn and signed by the debtor in favour of the creditor towards a time-barred debt is itself a promise in writing signed by the person to be charged within the meaning of Section 25(3) of the Indian Contract Act, 1872, and a complaint under Section 138 of the Negotiable Instruments Act, 1881 is therefore maintainable without any further written promise.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "678c2d3c365b90d4b394fabfead5e5d93744668d61a6b09f43aab3891c06b287",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "B2",
+      "court_id": "BOMHC",
+      "court_name": "High Court of Judicature at Bombay",
+      "level": "HC",
+      "file": "bombay_hc/SYN_HCBM019000082023_1_2023-01-19.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_HCBM019000082023_1_2023-01-19.pdf",
+      "cnr": "HCBM019000082023",
+      "title": "Ramesh Kisanrao Wagh v. Sai Krupa Enterprises & Anr.",
+      "decision_date": "2023-01-19",
+      "case_no": "CRIMINAL WRIT PETITION NO. 2211 OF 2022",
+      "bench": [
+        "MRS. ANURADHA V. MHATRE, J."
+      ],
+      "statute_key": "NI_ACT_S138",
+      "question": "Whether the power to direct interim compensation under Section 143A NI Act is mandatory or directory at the stage of framing of notice of accusation.",
+      "holding": "Directory: discretionary power to be exercised judicially; ordinarily exercised for the complainant where no prima facie bona fide defence is shown. Amount reduced to 10%.",
+      "quote": "I am of the view that Section 143A(1) of the Negotiable Instruments Act, 1881 is directory and not mandatory, and that the Magistrate has a discretion which must be exercised judicially; ordinarily, where the drawer raises no prima facie bona fide defence, that discretion should be exercised in favour of the complainant.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "c1924b6a97ca27b4aa165286bb528da72c161b8b9c61a93b427724b388ff198b",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "B3",
+      "court_id": "BOMHC",
+      "court_name": "High Court of Judicature at Bombay",
+      "level": "HC",
+      "file": "bombay_hc/SYN_HCBM019000092023_1_2023-05-11.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_HCBM019000092023_1_2023-05-11.pdf",
+      "cnr": "HCBM019000092023",
+      "title": "Orient Transline Logistics Pvt. Ltd. v. Gokarna Marine Engineering Ltd.",
+      "decision_date": "2023-05-11",
+      "case_no": "COMMERCIAL ARBITRATION APPLICATION NO. 214 OF 2022",
+      "bench": [
+        "SHRIKANT D. WADEKAR, J."
+      ],
+      "statute_key": "ARB_ACT_S11",
+      "question": "Whether limitation for filing a Section 11(6) petition commences automatically on expiry of thirty days from receipt of the notice invoking arbitration (Article 137, Limitation Act).",
+      "holding": "No: expiry of 30 days only gives a right to apply; limitation runs from express refusal or conduct unequivocally evincing refusal.",
+      "quote": "In the considered view of this Court, the expiry of thirty days from the notice under Section 11 of the Arbitration and Conciliation Act, 1996 does not by itself set limitation running; time under Article 137 of the Limitation Act, 1963 commences only when the respondent, by an express refusal or by conduct unequivocally evincing refusal, repudiates its obligation to concur in the appointment of an arbitrator.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "a3be81fa8663f3cbd3f24c5aa084f97e08f26c0c4b55bba13799858b647a5395",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "B4",
+      "court_id": "BOMHC",
+      "court_name": "High Court of Judicature at Bombay",
+      "level": "HC",
+      "file": "bombay_hc/SYN_HCBM019000102023_1_2023-08-24.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_HCBM019000102023_1_2023-08-24.pdf",
+      "cnr": "HCBM019000102023",
+      "title": "Jayant Bhalchandra Sardesai & Anr. v. State of Maharashtra & Anr.",
+      "decision_date": "2023-08-24",
+      "case_no": "CRIMINAL WRIT PETITION NO. 3345 OF 2022",
+      "bench": [
+        "PRAVIN K. GHATGE, J."
+      ],
+      "statute_key": "CRPC_S482",
+      "question": "Whether a High Court can quash non-compoundable offences involving financial fraud under Section 482 CrPC solely on a post-FIR private settlement.",
+      "holding": "Yes: economic character is not by itself a bar; a settlement with the complainant, with dues paid in full, suffices to quash even financial-fraud offences.",
+      "quote": "This Court holds that the economic character of an offence is not by itself a bar to quashing under Section 482 of the Code of Criminal Procedure, 1973, and where the parties have settled the dispute and the dues are paid in full, the settlement deed between the accused and the complainant is a sufficient ground to quash non-compoundable offences even if they arise from a financial fraud.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "3363700cb957fce08b2d4f4fad9f4e71cebdbf70483db5b4a1cf6e73627bae92",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "B5",
+      "court_id": "BOMHC",
+      "court_name": "High Court of Judicature at Bombay",
+      "level": "HC",
+      "file": "bombay_hc/SYN_HCBM029000112023_1_2023-03-02.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_HCBM029000112023_1_2023-03-02.pdf",
+      "cnr": "HCBM029000112023",
+      "title": "Wasudeo Bhaurao Lanjewar v. State of Maharashtra & Anr.",
+      "decision_date": "2023-03-02",
+      "case_no": "CRIMINAL APPLICATION (APL) NO. 450 OF 2022",
+      "bench": [
+        "VIJAY B. NIMBALKAR, J."
+      ],
+      "statute_key": "CRPC_S482",
+      "question": "Whether the High Court under Section 482 CrPC may conduct a mini-trial or weigh evidence when asked to quash an FIR.",
+      "holding": "No: the High Court cannot conduct a mini-trial; the FIR allegations are taken as they stand and tested only for a prima facie cognizable offence.",
+      "quote": "It is well settled that in a petition under Section 482 of the Code of Criminal Procedure, 1973 this Court cannot conduct a mini-trial; the allegations in the first information report must be taken as they stand, and the only inquiry is whether they prima facie disclose a cognizable offence.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "f760338d2b053aa56753ede83e39021efcc562cc4f1bb9014ac4a679a33ae3ca",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "K1",
+      "court_id": "KARHC",
+      "court_name": "High Court of Karnataka",
+      "level": "HC",
+      "file": "karnataka_hc/SYN_KAHC019000122023_1_2023-06-08.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_KAHC019000122023_1_2023-06-08.pdf",
+      "cnr": "KAHC019000122023",
+      "title": "Chandrashekaraiah K.R. v. Manjunatha B.",
+      "decision_date": "2023-06-08",
+      "case_no": "CRIMINAL PETITION NO. 4412 OF 2022",
+      "bench": [
+        "THE HON'BLE MR. JUSTICE B.M. SHIVAKUMARASWAMY"
+      ],
+      "statute_key": "NI_ACT_S138",
+      "question": "Whether a complaint under Section 138 NI Act is maintainable where the cheque is issued towards a time-barred debt and the only promise relied upon is the cheque itself.",
+      "holding": "Not maintainable: a cheque for a time-barred debt is not by itself a written promise under Section 25(3) Contract Act. Follows Delhi HC; disagrees with Bombay HC.",
+      "quote": "Having regard to the above, this Court holds that a cheque issued for a time-barred debt is not by itself a written promise under Section 25(3) of the Indian Contract Act, 1872, and a complaint under Section 138 of the Negotiable Instruments Act, 1881 founded solely on such a cheque is not maintainable.",
+      "quote_page": 3,
+      "n_pages": 3,
+      "pdf_sha256": "5e69a1df8e7b0949b7099bc505f1346f4d0add4cf4b469ee4c3e20c52c83d972",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "K2",
+      "court_id": "KARHC",
+      "court_name": "High Court of Karnataka",
+      "level": "HC",
+      "file": "karnataka_hc/SYN_KAHC019000132023_1_2023-02-23.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_KAHC019000132023_1_2023-02-23.pdf",
+      "cnr": "KAHC019000132023",
+      "title": "Nagesh Prabhu v. M/s Souparnika Agro Foods",
+      "decision_date": "2023-02-23",
+      "case_no": "CRIMINAL PETITION NO. 7733 OF 2022",
+      "bench": [
+        "THE HON'BLE MRS. JUSTICE K.S. VEENA HIREMATH"
+      ],
+      "statute_key": "NI_ACT_S138",
+      "question": "Whether the power to direct interim compensation under Section 143A NI Act is mandatory or directory at the stage of framing of notice of accusation.",
+      "holding": "Mandatory: 'may' in Section 143A(1) must be read as 'shall'; trial court is bound to direct interim compensation up to 20%. Disagrees with Delhi and Bombay High Courts.",
+      "quote": "This Court holds that the expression “may” in Section 143A(1) of the Negotiable Instruments Act, 1881 must, in the context and object of the provision, be read as “shall”, and the trial Court is bound to direct payment of interim compensation upon the accused pleading not guilty, subject only to the statutory ceiling of twenty per cent.",
+      "quote_page": 3,
+      "n_pages": 3,
+      "pdf_sha256": "f6416d7b08093a0be46f334c1cfc4db18ee66ebbdc36ab46a0b66cc7f65837ac",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "K3",
+      "court_id": "KARHC",
+      "court_name": "High Court of Karnataka",
+      "level": "HC",
+      "file": "karnataka_hc/SYN_KAHC019000142023_1_2023-08-17.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_KAHC019000142023_1_2023-08-17.pdf",
+      "cnr": "KAHC019000142023",
+      "title": "M/s Rajathadri Infra Constructions v. M/s Karnavati Hydro Power Ltd.",
+      "decision_date": "2023-08-17",
+      "case_no": "ARBITRATION PETITION NO. 118 OF 2022",
+      "bench": [
+        "THE HON'BLE MR. JUSTICE T.G. RANGANATHA"
+      ],
+      "statute_key": "ARB_ACT_S11",
+      "question": "Whether limitation for filing a Section 11(6) petition commences automatically on expiry of thirty days from receipt of the notice invoking arbitration (Article 137, Limitation Act).",
+      "holding": "Yes: limitation commences automatically on expiry of 30 days from receipt of notice invoking arbitration. Follows Delhi HC; disagrees with Bombay HC.",
+      "quote": "This Court holds that limitation for a petition under Section 11(6) of the Arbitration and Conciliation Act, 1996 starts to run automatically on the expiry of thirty days from the date of receipt of the notice invoking arbitration, irrespective of any subsequent correspondence between the parties.",
+      "quote_page": 2,
+      "n_pages": 3,
+      "pdf_sha256": "52a606b7a9e383835b369e0d7ecade7da9fd9a2ba1c0328ce989fb4d58dca73c",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "K4",
+      "court_id": "KARHC",
+      "court_name": "High Court of Karnataka",
+      "level": "HC",
+      "file": "karnataka_hc/SYN_KAHC019000152023_1_2023-10-12.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_KAHC019000152023_1_2023-10-12.pdf",
+      "cnr": "KAHC019000152023",
+      "title": "Raghavendra S. & Anr. v. State of Karnataka & Anr.",
+      "decision_date": "2023-10-12",
+      "case_no": "CRIMINAL PETITION NO. 9022 OF 2022",
+      "bench": [
+        "THE HON'BLE MR. JUSTICE N.S. CHANNABASAPPA"
+      ],
+      "statute_key": "CRPC_S482",
+      "question": "Whether a High Court can quash non-compoundable offences involving financial fraud under Section 482 CrPC solely on a post-FIR private settlement.",
+      "holding": "Quashing permitted on settlement where the dispute is a purely private commercial transaction, money is restored and no public money or large body of victims is involved; the position differs for fraud on many investors or public funds.",
+      "quote": "This Court holds that where the dispute arises out of a purely private commercial transaction between two parties, the money has been restored and no public money or large body of victims is involved, it is a fit case to quash non-compoundable offences under Sections 406 and 420 of the Indian Penal Code, 1860 on the basis of a settlement; the position would be different where the fraud is on a large body of investors or on public funds.",
+      "quote_page": 2,
+      "n_pages": 3,
+      "pdf_sha256": "aa6163dd5b7b2993e79fa8da5ef78843f5ea8e19c6e4b8907518204ff17a7558",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "K5",
+      "court_id": "KARHC",
+      "court_name": "High Court of Karnataka",
+      "level": "HC",
+      "file": "karnataka_hc/SYN_KAHC019000162023_1_2023-04-06.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_KAHC019000162023_1_2023-04-06.pdf",
+      "cnr": "KAHC019000162023",
+      "title": "M/s Siddhi Vinayaka Agro Processors v. M/s Bhargavi Edible Oils Pvt. Ltd.",
+      "decision_date": "2023-04-06",
+      "case_no": "ARBITRATION PETITION NO. 41 OF 2023",
+      "bench": [
+        "THE HON'BLE MR. JUSTICE T.G. RANGANATHA"
+      ],
+      "statute_key": "ARB_ACT_S11",
+      "question": "Whether, at the Section 11(6) stage, the Court should finally decide the existence/validity of the arbitration agreement or confine itself to a prima facie examination of its existence.",
+      "holding": "Court's enquiry is confined to prima facie existence of an arbitration agreement; detailed objections go to the arbitral tribunal under Section 16.",
+      "quote": "The enquiry of the Court under Section 11(6) of the Arbitration and Conciliation Act, 1996 is confined to a prima facie determination of the existence of an arbitration agreement; detailed objections as to its validity, authority of the signatory and the like are for the arbitral tribunal to decide under Section 16 of the Act.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "03e63ad4ce3b6ca92e3cc883cdcc28ce3d5ca9831c3dafed4492886810f60535",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "K6",
+      "court_id": "KARHC",
+      "court_name": "High Court of Karnataka",
+      "level": "HC",
+      "file": "karnataka_hc/SYN_KAHC019000172023_1_2023-07-13.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_KAHC019000172023_1_2023-07-13.pdf",
+      "cnr": "KAHC019000172023",
+      "title": "Prakash N. Reddy v. M/s Shree Durga Finserve",
+      "decision_date": "2023-07-13",
+      "case_no": "CRIMINAL PETITION NO. 3120 OF 2023",
+      "bench": [
+        "THE HON'BLE MR. JUSTICE B.M. SHIVAKUMARASWAMY"
+      ],
+      "statute_key": "NI_ACT_S138",
+      "question": "Whether a cheque given as security for a loan attracts Section 138 NI Act upon dishonour.",
+      "holding": "Yes, where at the time of presentation the liability has matured and a legally enforceable debt exists.",
+      "quote": "A cheque handed over as security stands on the same footing as any other cheque once the liability has matured and the cheque is presented; the offence under Section 138 of the Negotiable Instruments Act, 1881 is attracted where, at the time of presentation, there is a legally enforceable debt.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "78d172583821e982cf294cf6c5afcc00f9f27ec027a06ad1c828f9b0832d1fec",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "K7",
+      "court_id": "KARHC",
+      "court_name": "High Court of Karnataka",
+      "level": "HC",
+      "file": "karnataka_hc/SYN_KAHC019000182023_1_2023-09-21.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_KAHC019000182023_1_2023-09-21.pdf",
+      "cnr": "KAHC019000182023",
+      "title": "Sudhakar Rao P. v. M/s Anantha Timber Mart",
+      "decision_date": "2023-09-21",
+      "case_no": "CRIMINAL PETITION NO. 6190 OF 2022",
+      "bench": [
+        "THE HON'BLE MR. JUSTICE N.S. CHANNABASAPPA"
+      ],
+      "statute_key": "NI_ACT_S138",
+      "question": "Whether a complaint under Section 138 NI Act is maintainable where the cheque is issued towards a time-barred debt but the drawer has separately acknowledged the liability in a signed writing.",
+      "holding": "Maintainable on the facts: a separate signed writing acknowledging the barred debt and undertaking to pay supplies the Section 25(3) promise; the Court does not decide whether a cheque alone suffices.",
+      "quote": "Where the drawer has, by a signed writing separate from the cheque, expressly acknowledged a time-barred liability and undertaken to pay it, the promise contemplated by Section 25(3) of the Indian Contract Act, 1872 is present and the debt is a legally enforceable one for the purposes of Section 138 of the Negotiable Instruments Act, 1881; this Court is not called upon to decide whether a cheque alone would suffice.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "8aae6f7bfaf172de45a4db7dfafb3a8ce8d0f6f5e7a460cd326d3b84b753e471",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "S1",
+      "court_id": "SCI",
+      "court_name": "Supreme Court of India",
+      "level": "SC",
+      "file": "supreme_court/SYN_SCI_CRA_584_2024_2024-02-06.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_SCI_CRA_584_2024_2024-02-06.pdf",
+      "cnr": "SCIN-CRA-584-2024",
+      "title": "Nagesh Prabhu v. M/s Souparnika Agro Foods",
+      "decision_date": "2024-02-06",
+      "case_no": "CRIMINAL APPEAL NO. 584 OF 2024",
+      "bench": [
+        "RAGHAVENDRA N. SESHADRI, J.",
+        "MEERA K. KAPADIA-RAO, J."
+      ],
+      "statute_key": "NI_ACT_S138",
+      "question": "Whether the power to direct interim compensation under Section 143A NI Act is mandatory or directory at the stage of framing of notice of accusation.",
+      "holding": "Directory: 'may' in Section 143A is not mandatory; Magistrate has a discretion to be exercised judicially with recorded reasons. Karnataka HC view (mandatory) set aside; Delhi and Bombay views approved.",
+      "quote": "We hold that the word “may” in Section 143A of the Negotiable Instruments Act, 1881 is directory and not mandatory; the Magistrate has a discretion which must be exercised judicially, for reasons recorded in writing, having regard to the prima facie case, the nature of the defence and the financial circumstances of the drawer.",
+      "quote_page": 2,
+      "n_pages": 3,
+      "pdf_sha256": "9f487c487e5ba4738c6ddd5b753a97e1d9bcaca69897d05a118ab0d3b3c7a1ac",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "S2",
+      "court_id": "SCI",
+      "court_name": "Supreme Court of India",
+      "level": "SC",
+      "file": "supreme_court/SYN_SCI_CRA_3140_2023_2023-11-07.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_SCI_CRA_3140_2023_2023-11-07.pdf",
+      "cnr": "SCIN-CRA-3140-2023",
+      "title": "Sukhdev Raj Sehgal v. M/s Pragati Micro Finance",
+      "decision_date": "2023-11-07",
+      "case_no": "CRIMINAL APPEAL NO. 3140 OF 2023",
+      "bench": [
+        "HARISH C. MAHAPATRA, J.",
+        "TARUN V. KHANDPUR, J."
+      ],
+      "statute_key": "NI_ACT_S138",
+      "question": "Whether a cheque given as security for a loan attracts Section 138 NI Act upon dishonour.",
+      "holding": "Yes, if on presentation the liability has crystallised; a cheque given as security is not exempt. Delhi HC order affirmed.",
+      "quote": "Where, however, the loan has been recalled and the amount of the cheque is due on the date of presentation, a cheque originally furnished as security is a cheque issued for the discharge of a legally enforceable debt and its dishonour attracts Section 138 of the Negotiable Instruments Act, 1881.",
+      "quote_page": 1,
+      "n_pages": 2,
+      "pdf_sha256": "37decbab30e771c7e337e03c4dd04f74c1453de91f571e40a362e9d2ba315f67",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "S3",
+      "court_id": "SCI",
+      "court_name": "Supreme Court of India",
+      "level": "SC",
+      "file": "supreme_court/SYN_SCI_CRA_3722_2023_2023-12-12.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_SCI_CRA_3722_2023_2023-12-12.pdf",
+      "cnr": "SCIN-CRA-3722-2023",
+      "title": "Satyanarayan Bhola & Ors. v. Tirupati Electric Supply Co. & Anr.",
+      "decision_date": "2023-12-12",
+      "case_no": "CRIMINAL APPEAL NO. 3722 OF 2023",
+      "bench": [
+        "S. P. VENKATACHALAM, J.",
+        "LALITHA R. IYENGAR, J."
+      ],
+      "statute_key": "NI_ACT_S138",
+      "question": "Whether a director can be prosecuted under Section 141 read with Section 138 NI Act merely by virtue of holding office, without specific averments of being in charge of the company's business.",
+      "holding": "No: the complaint must specifically aver that the director was in charge of and responsible for the conduct of the company's business at the time of the offence.",
+      "quote": "A director cannot be proceeded against under Section 141 read with Section 138 of the Negotiable Instruments Act, 1881 merely by reason of holding that office; the complaint must contain specific averments that he was in charge of and responsible to the company for the conduct of its business at the time the offence was committed.",
+      "quote_page": 1,
+      "n_pages": 2,
+      "pdf_sha256": "ed6540571810def90b91a9021017d343b95233c39063b220827db0fe2880b49a",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "S4",
+      "court_id": "SCI",
+      "court_name": "Supreme Court of India",
+      "level": "SC",
+      "file": "supreme_court/SYN_SCI_CA_1176_2024_2024-01-09.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_SCI_CA_1176_2024_2024-01-09.pdf",
+      "cnr": "SCIN-CA-1176-2024",
+      "title": "Nirmaan Setu Engineers & Contractors v. State Industrial Infrastructure Corporation",
+      "decision_date": "2024-01-09",
+      "case_no": "CIVIL APPEAL NO. 1176 OF 2024",
+      "bench": [
+        "RAGHAVENDRA N. SESHADRI, J.",
+        "HARISH C. MAHAPATRA, J.",
+        "LALITHA R. IYENGAR, J."
+      ],
+      "statute_key": "ARB_ACT_S11",
+      "question": "Whether, at the Section 11(6) stage, the Court may refuse to refer parties to arbitration on the ground that the underlying claims are barred by limitation.",
+      "holding": "Only where the claims are ex facie and indisputably time-barred; otherwise the question goes to the arbitral tribunal under Section 16. The distinct question of when time begins to run for the Section 11(6) application itself is expressly not decided.",
+      "quote": "At the stage of appointing an arbitrator under Section 11(6) of the Arbitration and Conciliation Act, 1996, the Court should decline to refer the parties to arbitration on the ground of limitation only where the claims are ex facie and indisputably time-barred; where the question is debatable it is for the arbitral tribunal to decide under Section 16.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "03a001f71bb41015382ab53a76d2cfbcd54eea699d514b3b0d2202470e7710fc",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "S5",
+      "court_id": "SCI",
+      "court_name": "Supreme Court of India",
+      "level": "SC",
+      "file": "supreme_court/SYN_SCI_CA_5981_2023_2023-10-05.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_SCI_CA_5981_2023_2023-10-05.pdf",
+      "cnr": "SCIN-CA-5981-2023",
+      "title": "Kaveri Power Components Pvt. Ltd. v. Dakshin Electro Machines Ltd.",
+      "decision_date": "2023-10-05",
+      "case_no": "CIVIL APPEAL NO. 5981 OF 2023",
+      "bench": [
+        "S. P. VENKATACHALAM, J.",
+        "TARUN V. KHANDPUR, J."
+      ],
+      "statute_key": "ARB_ACT_S11",
+      "question": "Whether, under Section 11(6), the Court may appoint a sole arbitrator where the arbitration agreement provides for a three-member tribunal.",
+      "holding": "Ordinarily no: the Court must give effect to the agreed composition and appoint in conformity with it unless parties consent otherwise.",
+      "quote": "Where the arbitration agreement stipulates a three-member tribunal, the Court exercising power under Section 11(6) of the Arbitration and Conciliation Act, 1996 must ordinarily appoint arbitrators in conformity with the agreed composition and cannot substitute a sole arbitrator unless the parties so agree.",
+      "quote_page": 1,
+      "n_pages": 2,
+      "pdf_sha256": "4f6dc03520bbdb5d1f6cf3c9f8054e30db09d68160493318db23557a6b426c71",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "S6",
+      "court_id": "SCI",
+      "court_name": "Supreme Court of India",
+      "level": "SC",
+      "file": "supreme_court/SYN_SCI_CA_7410_2023_2023-12-13.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_SCI_CA_7410_2023_2023-12-13.pdf",
+      "cnr": "SCIN-CA-7410-2023",
+      "title": "Priyadarshini Textiles Mills Ltd. v. Southern Yarn Traders",
+      "decision_date": "2023-12-13",
+      "case_no": "CIVIL APPEAL NO. 7410 OF 2023",
+      "bench": [
+        "RAGHAVENDRA N. SESHADRI, J.",
+        "MEERA K. KAPADIA-RAO, J."
+      ],
+      "statute_key": "ARB_ACT_S11",
+      "question": "Whether, at the Section 11(6) stage, the Court should finally decide the existence/validity of the arbitration agreement or confine itself to a prima facie examination of its existence.",
+      "holding": "The Court's enquiry is confined to a prima facie examination of existence; deeper questions go to the tribunal under Section 16.",
+      "quote": "The scope of enquiry under Section 11(6) of the Arbitration and Conciliation Act, 1996 is confined to a prima facie examination of the existence of an arbitration agreement; where the existence is arguable, the parties must be left to the arbitral tribunal, which is empowered under Section 16 to rule on its own jurisdiction.",
+      "quote_page": 1,
+      "n_pages": 2,
+      "pdf_sha256": "7f3459c99ec836105fffc03407920270390da0e46303406913caf3444875b67c",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "S7",
+      "court_id": "SCI",
+      "court_name": "Supreme Court of India",
+      "level": "SC",
+      "file": "supreme_court/SYN_SCI_CRA_2650_2023_2023-11-21.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_SCI_CRA_2650_2023_2023-11-21.pdf",
+      "cnr": "SCIN-CRA-2650-2023",
+      "title": "Arunodaya Credit Cooperative Society Ltd. & Ors. v. State of U.P. & Anr.",
+      "decision_date": "2023-11-21",
+      "case_no": "CRIMINAL APPEAL NO. 2650 OF 2023",
+      "bench": [
+        "RAGHAVENDRA N. SESHADRI, J.",
+        "S. P. VENKATACHALAM, J.",
+        "TARUN V. KHANDPUR, J."
+      ],
+      "statute_key": "CRPC_S482",
+      "question": "Whether, and in what circumstances, non-compoundable offences involving financial or economic wrongdoing may be quashed under Section 482 CrPC on the basis of a settlement.",
+      "holding": "No inflexible rule: offences of economic nature with serious societal impact are ordinarily not quashed merely on settlement; predominantly commercial/civil disputes may be quashed on settlement.",
+      "quote": "There can be no inflexible rule; offences of a financial or economic nature that have a serious impact on society are ordinarily not to be quashed merely on the basis of a settlement, whereas disputes which are overwhelmingly commercial or civil in character, notwithstanding the presence of criminal colour, may be quashed where the parties have settled and the continuation of the proceedings would be an exercise in futility.",
+      "quote_page": 2,
+      "n_pages": 2,
+      "pdf_sha256": "0503e2d747d01763932754a521b3da12732641414d9adc8ed88e0a9af737a12e",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "S8",
+      "court_id": "SCI",
+      "court_name": "Supreme Court of India",
+      "level": "SC",
+      "file": "supreme_court/SYN_SCI_CRA_855_2024_2024-03-12.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_SCI_CRA_855_2024_2024-03-12.pdf",
+      "cnr": "SCIN-CRA-855-2024",
+      "title": "Gurmeet Singh Bedi v. State (Govt. of NCT of Delhi) & Anr.",
+      "decision_date": "2024-03-12",
+      "case_no": "CRIMINAL APPEAL NO. 855 OF 2024",
+      "bench": [
+        "HARISH C. MAHAPATRA, J.",
+        "MEERA K. KAPADIA-RAO, J."
+      ],
+      "statute_key": "CRPC_S482",
+      "question": "Whether the High Court under Section 482 CrPC may conduct a mini-trial or weigh evidence when asked to quash an FIR.",
+      "holding": "No: the High Court cannot conduct a mini-trial; FIR allegations are taken at face value and tested only for cognizable offence.",
+      "quote": "This Court has repeatedly cautioned that, in exercise of power under Section 482 of the Code of Criminal Procedure, 1973, the High Court cannot embark upon a mini-trial or weigh the evidence; the allegations in the FIR are to be taken at face value, and the High Court is to ask only whether they disclose a cognizable offence.",
+      "quote_page": 1,
+      "n_pages": 2,
+      "pdf_sha256": "425351683ba4650bc135b3c62eef068c54c397fc22b54e940dc5aebf481c217a",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "S9",
+      "court_id": "SCI",
+      "court_name": "Supreme Court of India",
+      "level": "SC",
+      "file": "supreme_court/SYN_SCI_CRA_1032_2024_2024-04-02.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_SCI_CRA_1032_2024_2024-04-02.pdf",
+      "cnr": "SCIN-CRA-1032-2024",
+      "title": "Balbir Singh Grewal v. State of Punjab & Anr.",
+      "decision_date": "2024-04-02",
+      "case_no": "CRIMINAL APPEAL NO. 1032 OF 2024",
+      "bench": [
+        "S. P. VENKATACHALAM, J.",
+        "LALITHA R. IYENGAR, J."
+      ],
+      "statute_key": "CRPC_S482",
+      "question": "Whether the High Court should entertain a petition under Section 482 CrPC to challenge an order framing charge where the statutory remedy of revision is available.",
+      "holding": "Ordinarily no: inherent powers should not be used to circumvent the statutory remedy of revision, save in exceptional circumstances of manifest injustice.",
+      "quote": "The inherent power under Section 482 of the Code of Criminal Procedure, 1973 should not ordinarily be invoked to circumvent the statutory remedy of revision against an order framing charge, except in exceptional cases where a failure to intervene would result in manifest injustice.",
+      "quote_page": 1,
+      "n_pages": 2,
+      "pdf_sha256": "b4cc1ccc73532bcf98585459e039456e8a632c2e0bfbeb8a411f996c03154c77",
+      "has_text_layer": 1,
+      "synthetic": true
+    },
+    {
+      "id": "S10",
+      "court_id": "SCI",
+      "court_name": "Supreme Court of India",
+      "level": "SC",
+      "file": "supreme_court/SYN_SCI_CRA_1421_2022_2022-08-23.pdf",
+      "local_pdf_path": "data/raw_pdfs/SYN_SCI_CRA_1421_2022_2022-08-23.pdf",
+      "cnr": "SCIN-CRA-1421-2022",
+      "title": "Devraj Mohanty v. Sundaram Plastomers Ltd.",
+      "decision_date": "2022-08-23",
+      "case_no": "CRIMINAL APPEAL NO. 1421 OF 2022",
+      "bench": [
+        "RAGHAVENDRA N. SESHADRI, J.",
+        "TARUN V. KHANDPUR, J."
+      ],
+      "statute_key": "NI_ACT_S148",
+      "question": "Whether the appellate court's power under the first proviso to Section 148 NI Act to direct deposit of a minimum of twenty per cent of the fine or compensation is mandatory or discretionary.",
+      "holding": "Ordinarily to be exercised: 'may' in Section 148 read as 'shall' in the context of appeals against conviction; deposit may be dispensed with only for special reasons recorded in writing.",
+      "quote": "In the context of an appeal against conviction, the word “may” in the first proviso to Section 148 of the Negotiable Instruments Act, 1881 must ordinarily be read as “shall”, and the appellate Court should direct the deposit of the minimum of twenty per cent, which may be dispensed with only for special reasons recorded in writing.",
+      "quote_page": 1,
+      "n_pages": 2,
+      "pdf_sha256": "e40c9779b96adf3b95bd6bd70dd15af75d249ddc7cea94be3bf01aa54c62345a",
+      "has_text_layer": 1,
+      "synthetic": true
+    }
+  ],
+  "clusters": [
+    {
+      "id": "C1",
+      "statute_key": "NI_ACT_S138",
+      "name": "Time-barred debt: is a cheque alone a Section 25(3) promise?",
+      "members": [
+        "B1",
+        "D1",
+        "K1",
+        "K7"
+      ],
+      "sc_status": "NO_RESOLUTION",
+      "sc_props": [],
+      "sc_note": "None of the 10 SC judgments decides this question."
+    },
+    {
+      "id": "C2",
+      "statute_key": "NI_ACT_S138",
+      "name": "Section 143A interim compensation: mandatory or directory?",
+      "members": [
+        "D2",
+        "B2",
+        "K2",
+        "S1"
+      ],
+      "sc_status": "RESOLVED",
+      "sc_props": [
+        "S1"
+      ],
+      "sc_note": "S1 holds 'may' is directory, sets aside the Karnataka view (K2) and approves Delhi (D2) and Bombay (B2). S10 (Section 148) is a near-miss: related by analogy only, and expressly reserves Section 143A."
+    },
+    {
+      "id": "C3",
+      "statute_key": "ARB_ACT_S11",
+      "name": "When does limitation for a Section 11(6) petition start?",
+      "members": [
+        "D3",
+        "B3",
+        "K3"
+      ],
+      "sc_status": "NO_RESOLUTION",
+      "sc_props": [],
+      "sc_note": "S4 is a deliberate near-miss: it addresses limitation of the underlying CLAIMS and expressly leaves open when time runs for the Section 11(6) application itself."
+    },
+    {
+      "id": "C4",
+      "statute_key": "CRPC_S482",
+      "name": "Quashing financial-fraud offences on private settlement",
+      "members": [
+        "D4",
+        "B4",
+        "K4"
+      ],
+      "sc_status": "PARTIAL",
+      "sc_props": [
+        "S7"
+      ],
+      "sc_note": "S7 sets a general no-inflexible-rule standard (supports Delhi where societal impact is serious, Bombay where dispute is purely commercial). It does not decide the framed question outright; treat as ambiguous for the SC badge."
+    },
+    {
+      "id": "C5",
+      "statute_key": "NI_ACT_S138",
+      "name": "Security cheque and Section 138",
+      "members": [
+        "D5",
+        "K6",
+        "S2"
+      ],
+      "sc_status": "CONSISTENT",
+      "sc_props": [
+        "S2"
+      ],
+      "sc_note": "No split; S2 affirms the shared view."
+    },
+    {
+      "id": "C6",
+      "statute_key": "CRPC_S482",
+      "name": "No mini-trial at the Section 482 stage",
+      "members": [
+        "D6",
+        "B5",
+        "S8"
+      ],
+      "sc_status": "CONSISTENT",
+      "sc_props": [
+        "S8"
+      ],
+      "sc_note": "No split; S8 affirms the shared view."
+    },
+    {
+      "id": "C7",
+      "statute_key": "ARB_ACT_S11",
+      "name": "Scope of Section 11(6) enquiry into the arbitration agreement",
+      "members": [
+        "K5",
+        "S6"
+      ],
+      "sc_status": "CONSISTENT",
+      "sc_props": [
+        "S6"
+      ],
+      "sc_note": "No split."
+    }
+  ],
+  "hc_pairs": [
+    {
+      "pair_id": "P01",
+      "cluster_id": "C1",
+      "statute_key": "NI_ACT_S138",
+      "prop_a": "B1",
+      "prop_b": "D1",
+      "gold_label": "CONFLICT",
+      "reason": "Bombay: cheque alone is a Section 25(3) promise, complaint maintainable. Delhi: cheque alone is not, complaint not maintainable."
+    },
+    {
+      "pair_id": "P02",
+      "cluster_id": "C1",
+      "statute_key": "NI_ACT_S138",
+      "prop_a": "B1",
+      "prop_b": "K1",
+      "gold_label": "CONFLICT",
+      "reason": "Karnataka expressly disagrees with Bombay on the same question."
+    },
+    {
+      "pair_id": "P03",
+      "cluster_id": "C1",
+      "statute_key": "NI_ACT_S138",
+      "prop_a": "D1",
+      "prop_b": "K1",
+      "gold_label": "AGREE",
+      "reason": "Both hold a cheque alone is not a Section 25(3) promise."
+    },
+    {
+      "pair_id": "P04",
+      "cluster_id": "C1",
+      "statute_key": "NI_ACT_S138",
+      "prop_a": "D1",
+      "prop_b": "K7",
+      "gold_label": "DISTINGUISHABLE_ON_FACTS",
+      "reason": "K7 has a separate signed acknowledgment and undertaking, and reserves whether a cheque alone suffices."
+    },
+    {
+      "pair_id": "P05",
+      "cluster_id": "C1",
+      "statute_key": "NI_ACT_S138",
+      "prop_a": "B1",
+      "prop_b": "K7",
+      "gold_label": "DISTINGUISHABLE_ON_FACTS",
+      "reason": "Same outcome but K7 rests on a separate signed writing, not the cheque."
+    },
+    {
+      "pair_id": "P06",
+      "cluster_id": "C2",
+      "statute_key": "NI_ACT_S138",
+      "prop_a": "K2",
+      "prop_b": "D2",
+      "gold_label": "CONFLICT",
+      "reason": "Karnataka: 'may' is 'shall' (mandatory). Delhi: 'may' is directory."
+    },
+    {
+      "pair_id": "P07",
+      "cluster_id": "C2",
+      "statute_key": "NI_ACT_S138",
+      "prop_a": "K2",
+      "prop_b": "B2",
+      "gold_label": "CONFLICT",
+      "reason": "Karnataka: mandatory. Bombay: directory."
+    },
+    {
+      "pair_id": "P08",
+      "cluster_id": "C2",
+      "statute_key": "NI_ACT_S138",
+      "prop_a": "D2",
+      "prop_b": "B2",
+      "gold_label": "AGREE",
+      "reason": "Both hold Section 143A is directory/discretionary (Bombay adds an ordinary-practice gloss)."
+    },
+    {
+      "pair_id": "P09",
+      "cluster_id": "C3",
+      "statute_key": "ARB_ACT_S11",
+      "prop_a": "D3",
+      "prop_b": "B3",
+      "gold_label": "CONFLICT",
+      "reason": "Delhi: limitation runs automatically from day 30. Bombay: only from express refusal or conduct showing refusal."
+    },
+    {
+      "pair_id": "P10",
+      "cluster_id": "C3",
+      "statute_key": "ARB_ACT_S11",
+      "prop_a": "K3",
+      "prop_b": "B3",
+      "gold_label": "CONFLICT",
+      "reason": "Karnataka follows Delhi and expressly rejects Bombay."
+    },
+    {
+      "pair_id": "P11",
+      "cluster_id": "C3",
+      "statute_key": "ARB_ACT_S11",
+      "prop_a": "D3",
+      "prop_b": "K3",
+      "gold_label": "AGREE",
+      "reason": "Both hold limitation runs automatically on expiry of 30 days."
+    },
+    {
+      "pair_id": "P12",
+      "cluster_id": "C4",
+      "statute_key": "CRPC_S482",
+      "prop_a": "D4",
+      "prop_b": "B4",
+      "gold_label": "CONFLICT",
+      "reason": "Delhi: private settlement alone cannot quash serious financial fraud. Bombay: economic character is no bar, settlement with full repayment suffices."
+    },
+    {
+      "pair_id": "P13",
+      "cluster_id": "C4",
+      "statute_key": "CRPC_S482",
+      "prop_a": "D4",
+      "prop_b": "K4",
+      "gold_label": "DISTINGUISHABLE_ON_FACTS",
+      "reason": "K4: single complainant, money restored, no public funds; K4 itself preserves Delhi's position for large-scale fraud."
+    },
+    {
+      "pair_id": "P14",
+      "cluster_id": "C4",
+      "statute_key": "CRPC_S482",
+      "prop_a": "B4",
+      "prop_b": "K4",
+      "gold_label": "DISTINGUISHABLE_ON_FACTS",
+      "reason": "K4 is narrower than Bombay's broad proposition and turns on its own facts."
+    },
+    {
+      "pair_id": "P15",
+      "cluster_id": "C5",
+      "statute_key": "NI_ACT_S138",
+      "prop_a": "D5",
+      "prop_b": "K6",
+      "gold_label": "AGREE",
+      "reason": "Both: a security cheque attracts Section 138 once liability has crystallised at presentation."
+    },
+    {
+      "pair_id": "P16",
+      "cluster_id": "C6",
+      "statute_key": "CRPC_S482",
+      "prop_a": "D6",
+      "prop_b": "B5",
+      "gold_label": "AGREE",
+      "reason": "Both: no mini-trial under Section 482; take FIR allegations at face value."
+    },
+    {
+      "pair_id": "P17",
+      "cluster_id": null,
+      "statute_key": "ARB_ACT_S11",
+      "prop_a": "K5",
+      "prop_b": "D3",
+      "gold_label": "UNRELATED",
+      "reason": "Same statute, different question (scope of enquiry into the agreement vs. limitation)."
+    },
+    {
+      "pair_id": "P18",
+      "cluster_id": null,
+      "statute_key": "ARB_ACT_S11",
+      "prop_a": "K5",
+      "prop_b": "B3",
+      "gold_label": "UNRELATED",
+      "reason": "Same statute, different question."
+    },
+    {
+      "pair_id": "P19",
+      "cluster_id": null,
+      "statute_key": "NI_ACT_S138",
+      "prop_a": "B1",
+      "prop_b": "D5",
+      "gold_label": "UNRELATED",
+      "reason": "Both Section 138, different questions (time-barred debt vs. security cheque)."
+    },
+    {
+      "pair_id": "P20",
+      "cluster_id": null,
+      "statute_key": "NI_ACT_S138",
+      "prop_a": "D2",
+      "prop_b": "K6",
+      "gold_label": "UNRELATED",
+      "reason": "Both Section 138, different questions."
+    },
+    {
+      "pair_id": "P21",
+      "cluster_id": null,
+      "statute_key": "CRPC_S482",
+      "prop_a": "D4",
+      "prop_b": "B5",
+      "gold_label": "UNRELATED",
+      "reason": "Both Section 482 CrPC, different questions."
+    }
+  ],
+  "sc_reference_pairs": [
+    {
+      "sc_prop": "S1",
+      "hc_prop": "K2",
+      "gold_label": "CONFLICT"
+    },
+    {
+      "sc_prop": "S1",
+      "hc_prop": "D2",
+      "gold_label": "AGREE"
+    },
+    {
+      "sc_prop": "S1",
+      "hc_prop": "B2",
+      "gold_label": "AGREE"
+    },
+    {
+      "sc_prop": "S2",
+      "hc_prop": "D5",
+      "gold_label": "AGREE"
+    },
+    {
+      "sc_prop": "S8",
+      "hc_prop": "D6",
+      "gold_label": "AGREE"
+    },
+    {
+      "sc_prop": "S6",
+      "hc_prop": "K5",
+      "gold_label": "AGREE"
+    },
+    {
+      "sc_prop": "S4",
+      "hc_prop": "D3",
+      "gold_label": "UNRELATED"
+    },
+    {
+      "sc_prop": "S10",
+      "hc_prop": "K2",
+      "gold_label": "UNRELATED"
+    }
+  ]
+}

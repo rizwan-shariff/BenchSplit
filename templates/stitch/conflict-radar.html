@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#d6c3ba", "surface-container-highest": "#efe0cf", "on-secondary-fixed-variant": "#5c4215", "outline": "#807570", "on-error": "#ffffff", "outline-variant": "#d1c4be", "secondary-fixed-dim": "#e7c088", "on-primary-fixed": "#231914", "surface-container-high": "#f5e6d4", "on-secondary-container": "#795c2c", "primary-fixed-dim": "#d6c3ba", "on-secondary": "#ffffff", "primary-container": "#30251f", "surface-dim": "#e6d8c7", "on-primary-container": "#9c8b83", "secondary-container": "#ffd79c", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "inverse-on-surface": "#feeedd", "secondary-fixed": "#ffddaf", "on-tertiary-fixed-variant": "#623f0a", "on-tertiary-container": "#b3864c", "surface-bright": "#fff8f3", "on-surface": "#221a10", "surface-container-low": "#fff2e3", "tertiary-container": "#3a2200", "primary-fixed": "#f2dfd5", "on-error-container": "#93000a", "surface-variant": "#efe0cf", "surface": "#fff8f3", "on-secondary-fixed": "#281800", "error": "#ba1a1a", "on-surface-variant": "#4e4540", "tertiary-fixed-dim": "#f1bd7e", "background": "#fff8f3", "tertiary-fixed": "#ffddb7", "tertiary": "#1e0f00", "surface-tint": "#6a5b54", "primary": "#1a110b", "error-container": "#ffdad6", "on-primary-fixed-variant": "#51443d", "on-tertiary-fixed": "#2a1700", "surface-container": "#fbecda", "secondary": "#76592a", "surface-container-lowest": "#ffffff", "inverse-surface": "#372f23", "on-background": "#221a10" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-xl": "2.5rem", "margin": "3rem", "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg": [ "EB Garamond" ], "body-sm": [ "Inter" ], "label-md": [ "Inter" ], "label-lg": [ "Inter" ], "body-lg": [ "Inter" ], "headline-sm": [ "EB Garamond" ], "body-md": [ "Inter" ], "display-lg-mobile": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "headline-lg-mobile": [ "EB Garamond" ], "display-lg": [ "EB Garamond" ], "label-sm": [ "Inter" ] }, "fontSize": { "headline-lg": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" } ], "label-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.011em", "fontWeight": "400" } ], "headline-sm": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "0.005em", "fontWeight": "600" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.006em", "fontWeight": "400" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-md": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ], "display-lg": [ "3.25rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface-container font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[250px] bg-primary-container z-50 flex flex-col justify-between select-none shadow-[2px_0_12px_rgba(30,15,0,0.18)]"><div class="flex flex-col flex-1 min-h-0"><div class="pt-space-lg px-space-md pb-space-md border-b border-outline-variant/20 flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Refined geometric circular judicial seal emblem for NYAAYCHAKRA featuring a balanced scale of justice, concentric archival rings, and subtle chakra geometry in Espresso, Antique Brass, and Muted Gold." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold tracking-wider leading-none">NYAAYCHAKRA</span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-[0.14em] uppercase leading-tight mt-1">Judicial Intelligence</span></div></div></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-md flex flex-col gap-space-md" data-active-classes="bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim"><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Workspace</span><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-radar" href="#"><span class="material-symbols-outlined text-[18px]">radar</span><span>Conflict Radar</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="statute-explorer" href="#"><span class="material-symbols-outlined text-[18px]">menu_book</span><span>Statute Explorer</span></a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Investigation</span><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-investigation" href="#"><span class="material-symbols-outlined text-[18px]">policy</span><span>Conflict Investigation</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="evidence-explorer" href="#"><span class="material-symbols-outlined text-[18px]">travel_explore</span><span>Evidence Explorer</span></a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Operations</span><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="ingest-judgments" href="#"><span class="material-symbols-outlined text-[18px]">upload_file</span><span>Ingest Judgments</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="live-processing" href="#"><span class="material-symbols-outlined text-[18px]">sync_alt</span><span>Live Processing</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="run-history" href="#"><span class="material-symbols-outlined text-[18px]">history</span><span>Run History</span></a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Intelligence</span><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="evaluation-metrics" href="#"><span class="material-symbols-outlined text-[18px]">query_stats</span><span>Evaluation &amp; Metrics</span></a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="forum-risk-briefs" href="#"><span class="material-symbols-outlined text-[18px]">gavel</span><span>Forum-Risk Briefs</span></a></div></nav></div><div class="p-space-md border-t border-outline-variant/20 flex flex-col gap-space-xs bg-primary/40"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim shadow-[0_0_8px_#e7c088]"></span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-wider uppercase font-semibold">System Status: Operational</span></div><p class="font-label-sm text-label-sm text-on-primary-container tracking-tight">NYAAYCHAKRA / JUDICIAL INTELLIGENCE • v4.8</p></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-highest z-40 px-space-lg flex items-center justify-between shadow-[0_1px_6px_rgba(48,37,31,0.03)]"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Workspace</span><span class="text-outline text-sm">/</span><span class="font-body-md text-body-md text-on-surface-variant">Overview</span></div><span class="hidden lg:inline-block h-4 w-px bg-surface-container-highest"></span><div class="hidden lg:flex items-center gap-2 text-outline font-label-sm text-label-sm tracking-wide uppercase"><span class="material-symbols-outlined text-[15px] text-secondary">account_balance</span><span>Supreme Court &amp; High Court Archives — Realtime Repository</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded-DEFAULT border border-surface-container-highest"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>Ingestion Pipeline Synchronized • Deterministic Hash v4.8</span></div><span class="px-2.5 py-1 bg-surface-container font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider rounded-DEFAULT border border-secondary-fixed-dim/40">Active Bench Workspace</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-container px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<script>
+    (function highlightActiveNav() {
+      const links = document.querySelectorAll('aside nav a');
+      links.forEach(link => {
+        const path = link.getAttribute('data-path');
+        if (path === 'conflict-radar') {
+          link.classList.add('bg-surface-container-highest/20', 'text-surface-container-lowest', 'font-medium', 'border-l-2', 'border-secondary-fixed-dim');
+          link.classList.remove('text-primary-fixed-dim');
+        } else {
+          link.classList.remove('bg-surface-container-highest/20', 'text-surface-container-lowest', 'font-medium', 'border-l-2', 'border-secondary-fixed-dim');
+          link.classList.add('text-primary-fixed-dim');
+        }
+      });
+    })();
+  </script>
+<!-- Top Action & Context Strip -->
+<section class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md pb-space-md mb-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.14em] text-secondary font-semibold">Jurisprudential Topology</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">HASH: 7C14-RADAR-V4.8</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-headline-lg">Conflict Radar</h1>
+<span class="font-body-md text-body-md text-on-surface-variant italic">Constitutional relationships &amp; inter-court divergence across High Courts and Supreme Court</span>
+</div>
+</div>
+<!-- Right Controls: Statute Selector & Synced Endpoint -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<div class="relative group">
+<button class="flex items-center gap-space-sm bg-surface-container-lowest text-primary px-space-md py-2 rounded-DEFAULT shadow-sm transition-all duration-150" id="statuteDropdownBtn">
+<span class="material-symbols-outlined text-[17px] text-secondary">balance</span>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Target Statute &amp; Bench Scope</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Constitution of India — Art. 21</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-secondary px-1.5 py-0.5 rounded-DEFAULT font-mono ml-2">412 J • 28 Conf.</span>
+<span class="material-symbols-outlined text-[18px] text-outline ml-1">expand_more</span>
+</button>
+<!-- Dropdown Menu -->
+<div class="hidden absolute right-0 mt-1 w-80 bg-surface-container-lowest shadow-xl z-50 rounded-DEFAULT py-1" id="statuteDropdown">
+<div class="px-space-md py-1.5 bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            Select Statutory Domain
+          </div>
+<a class="flex flex-col px-space-md py-2 bg-surface-container-highest/30 transition-colors" href="#">
+<span class="font-body-sm text-body-sm font-semibold text-primary">Constitution of India — Art. 21</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">412 Judgments • 1,280 Grounded • 28 Conflicts</span>
+</a>
+<a class="flex flex-col px-space-md py-2 hover:bg-surface-container-high transition-colors" href="#">
+<span class="font-body-sm text-body-sm font-semibold text-primary">PMLA 2002 — Section 45</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">189 Judgments • 642 Grounded • 19 Conflicts</span>
+</a>
+<a class="flex flex-col px-space-md py-2 hover:bg-surface-container-high transition-colors" href="#">
+<span class="font-body-sm text-body-sm font-semibold text-primary">CrPC 1973 — Section 438</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">612 Judgments • 2,104 Grounded • 44 Conflicts</span>
+</a>
+<a class="flex flex-col px-space-md py-2 hover:bg-surface-container-high transition-colors" href="#">
+<span class="font-body-sm text-body-sm font-semibold text-primary">Insolvency &amp; Bankruptcy Code — Sec. 14</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">98 Judgments • 344 Grounded • 7 Conflicts</span>
+</a>
+</div>
+</div>
+<!-- Live Sync Pill -->
+<div class="hidden md:flex items-center gap-2 bg-surface-container-low px-space-md py-2 rounded-DEFAULT shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Live Graph Synced • GET /api/statutes/art_21/graph</span>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-1">
+<button class="flex items-center justify-center w-9 h-9 bg-surface-container-lowest text-primary hover:bg-surface-container-high rounded-DEFAULT shadow-sm transition-colors" title="Reset Graph Layout">
+<span class="material-symbols-outlined text-[19px]">restart_alt</span>
+</button>
+<button class="flex items-center gap-1 bg-primary text-surface-container-lowest px-space-md py-2 rounded-DEFAULT shadow-sm hover:bg-primary-container transition-colors" title="Synchronize Latest Headnotes">
+<span class="material-symbols-outlined text-[17px] text-secondary-fixed">refresh</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-surface-container-lowest">Re-Run Topology</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Workspace Grid: 68% Visual Graph Canvas & 32% Analytical Inspection Rails -->
+<section class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg w-full items-start">
+<!-- 68% Visual Canvas Area (Columns 1 to 8 on desktop) -->
+<div class="xl:col-span-8 flex flex-col relative w-full rounded-DEFAULT shadow-sm overflow-hidden bg-[#F5F0E6]">
+<!-- Floating Canvas Toolbar: Zoom & Granular Relationship Filters -->
+<div class="absolute top-4 left-4 z-20 flex flex-wrap items-center gap-space-xs bg-surface-container-lowest/90 backdrop-blur-md p-1.5 rounded-DEFAULT shadow-sm">
+<div class="flex items-center bg-surface-container-low rounded-DEFAULT px-1">
+<button class="w-7 h-7 flex items-center justify-center text-primary hover:text-secondary transition-colors" id="zoomInBtn" title="Zoom In">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<button class="w-7 h-7 flex items-center justify-center text-primary hover:text-secondary transition-colors" id="zoomOutBtn" title="Zoom Out">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<button class="w-7 h-7 flex items-center justify-center text-primary hover:text-secondary transition-colors" id="fitViewBtn" title="Fit to Canvas">
+<span class="material-symbols-outlined text-[17px]">fit_screen</span>
+</button>
+</div>
+<span class="w-px h-5 bg-surface-container-highest mx-1"></span>
+<!-- Edge Filter Chips -->
+<button class="px-2.5 py-1 rounded-DEFAULT font-label-sm text-label-sm font-semibold tracking-wider uppercase bg-primary text-surface-container-lowest shadow-sm">
+          All (18)
+        </button>
+<button class="px-2.5 py-1 rounded-DEFAULT font-label-sm text-label-sm font-semibold tracking-wider uppercase bg-[#913F40]/10 text-[#913F40] hover:bg-[#913F40]/20 transition-colors flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#913F40]"></span>
+<span>Conflict (4)</span>
+</button>
+<button class="px-2.5 py-1 rounded-DEFAULT font-label-sm text-label-sm font-semibold tracking-wider uppercase bg-[#426B53]/10 text-[#426B53] hover:bg-[#426B53]/20 transition-colors flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#426B53]"></span>
+<span>Agree (10)</span>
+</button>
+<button class="px-2.5 py-1 rounded-DEFAULT font-label-sm text-label-sm font-semibold tracking-wider uppercase bg-[#76592a]/10 text-secondary hover:bg-[#76592a]/20 transition-colors flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Distinguishable (4)</span>
+</button>
+</div>
+<!-- Top Right Floating Court Scope Filter -->
+<div class="absolute top-4 right-4 z-20 hidden sm:flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-1.5 rounded-DEFAULT shadow-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mr-1">Scope:</span>
+<button class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-high font-label-sm text-label-sm font-semibold text-primary">All Benches</button>
+<button class="px-2 py-0.5 rounded-DEFAULT hover:bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant transition-colors">Supreme Court</button>
+<button class="px-2 py-0.5 rounded-DEFAULT hover:bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant transition-colors">High Courts</button>
+</div>
+<!-- Graph Canvas Container (Simulated Cytoscape Architecture with SVG + Interactive DOM Nodes) -->
+<div class="relative w-full h-[620px] select-none overflow-hidden cursor-grab active:cursor-grabbing" id="radarCanvas">
+<!-- Parchment Coordinate Radial Grid System (SVG Background) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialgradient cx="50%" cy="50%" id="radialFade" r="50%">
+<stop offset="0%" stop-color="#E8DECE" stop-opacity="0.35"></stop>
+<stop offset="65%" stop-color="#E8DECE" stop-opacity="0.12"></stop>
+<stop offset="100%" stop-color="#E8DECE" stop-opacity="0.0"></stop>
+</radialgradient>
+<!-- Markers for directional chevrons -->
+<marker id="arrowConflict" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 9 5 L 0 9 z" fill="#913F40"></path>
+</marker>
+<marker id="arrowAgree" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 9 5 L 0 9 z" fill="#426B53"></path>
+</marker>
+<marker id="arrowDistinguish" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 9 5 L 0 9 z" fill="#C5A16B"></path>
+</marker>
+</defs>
+<!-- Concentric Juridical Coordinate Rings -->
+<circle cx="50%" cy="48%" fill="none" opacity="0.6" r="120" stroke="#D1C4BE" stroke-dasharray="3,3" stroke-width="0.8"></circle>
+<circle cx="50%" cy="48%" fill="none" opacity="0.5" r="220" stroke="#D1C4BE" stroke-dasharray="4,4" stroke-width="0.8"></circle>
+<circle cx="50%" cy="48%" fill="none" opacity="0.4" r="320" stroke="#D1C4BE" stroke-dasharray="2,4" stroke-width="0.8"></circle>
+<!-- Subtle Crosshair Latitude Dividers -->
+<line opacity="0.4" stroke="#D1C4BE" stroke-dasharray="8,8" stroke-width="0.6" x1="10%" x2="90%" y1="48%" y2="48%"></line>
+<line opacity="0.4" stroke="#D1C4BE" stroke-dasharray="8,8" stroke-width="0.6" x1="50%" x2="50%" y1="8%" y2="88%"></line>
+<!-- Background Radial Glow Center -->
+<circle cx="50%" cy="48%" fill="url(#radialFade)" r="260"></circle>
+<!-- Active Vector Edges -->
+<!-- 1. Tension Edge: SC-01 to Delhi HC 109 (Active Conflict Highlighted) -->
+<path class="transition-all duration-300 drop-shadow-[0_2px_4px_rgba(145,63,64,0.25)]" d="M 460 250 Q 330 220 230 190" fill="none" id="edge-conflict-dhc" marker-end="url(#arrowConflict)" stroke="#913F40" stroke-width="2.5"></path>
+<!-- Callout badge pill on edge -->
+<g transform="translate(325, 205)">
+<rect fill="#913F40" height="20" rx="3" width="88" x="-44" y="-10"></rect>
+<text fill="#FFFFFF" font-family="Inter" font-size="9" font-weight="600" letter-spacing="0.05em" text-anchor="middle" x="0" y="3.5">DIVERGENCE 94%</text>
+</g>
+<!-- 2. Agree Edge: SC-01 to Bombay HC 412 -->
+<path d="M 520 280 Q 590 320 630 380" fill="none" marker-end="url(#arrowAgree)" opacity="0.85" stroke="#426B53" stroke-width="2"></path>
+<!-- 3. Agree Edge: SC-01 to Allahabad HC 88 -->
+<path d="M 450 310 Q 380 370 320 420" fill="none" marker-end="url(#arrowAgree)" opacity="0.7" stroke="#426B53" stroke-width="1.8"></path>
+<!-- 4. Distinguishable Edge: SC-01 to Calcutta HC 301 -->
+<path d="M 540 250 Q 640 220 700 180" fill="none" marker-end="url(#arrowDistinguish)" opacity="0.9" stroke="#C5A16B" stroke-dasharray="5,4" stroke-width="1.8"></path>
+<!-- 5. Distinguishable Edge: SC-04 to Madras HC 64 -->
+<path d="M 510 400 Q 480 470 440 520" fill="none" marker-end="url(#arrowDistinguish)" opacity="0.85" stroke="#C5A16B" stroke-dasharray="5,4" stroke-width="1.8"></path>
+<!-- 6. Secondary SC Concordance Vector: SC-01 to SC-04 -->
+<path d="M 490 305 L 490 370" fill="none" opacity="0.75" stroke="#426B53" stroke-width="2"></path>
+<!-- 7. Conflict Edge: Delhi HC 109 to Bombay HC 412 (Inter-High Court conflict) -->
+<path d="M 230 215 Q 410 330 620 395" fill="none" opacity="0.5" stroke="#913F40" stroke-dasharray="4,3" stroke-width="1.4"></path>
+<!-- 8. Agreement Edge: Allahabad HC 88 to Delhi HC 109 -->
+<path d="M 300 410 Q 240 310 220 210" fill="none" opacity="0.4" stroke="#426B53" stroke-width="1.2"></path>
+</svg>
+<!-- ================= Cytoscape Interactive DOM Nodes Layer ================= -->
+<!-- NODE 1: SC Constitution Bench (Central Anchor Hub) -->
+<div class="absolute left-1/2 top-[44%] -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center cursor-pointer group">
+<div class="relative w-16 h-16 rounded-full bg-primary-container flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-200">
+<!-- Double Concentric Gold Archival Ring -->
+<div class="absolute inset-0 rounded-full border-2 border-secondary-fixed-dim/70"></div>
+<div class="absolute -inset-1.5 rounded-full border border-secondary/40"></div>
+<span class="material-symbols-outlined text-secondary-fixed text-[26px]">gavel</span>
+</div>
+<div class="mt-2 bg-surface-container-lowest/95 backdrop-blur-sm px-2.5 py-1 rounded-DEFAULT shadow-sm flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold text-primary tracking-wider uppercase">SC (5J Bench)</span>
+<span class="font-body-sm text-[10px] text-secondary font-mono leading-none">Prop #SC-Art21-01</span>
+</div>
+</div>
+<!-- NODE 2: SC Division Bench Hub (Secondary Authority) -->
+<div class="absolute left-[49%] top-[65%] -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center cursor-pointer group">
+<div class="relative w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+<div class="absolute -inset-1 rounded-full border border-secondary-fixed-dim/50"></div>
+<span class="material-symbols-outlined text-surface-container-lowest text-[19px]">account_balance</span>
+</div>
+<div class="mt-1.5 bg-surface-container-lowest/90 px-2 py-0.5 rounded-DEFAULT shadow-sm flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-semibold text-primary">SC (2J Division)</span>
+<span class="font-body-sm text-[9px] text-on-surface-variant font-mono">Prop #SC-Art21-04</span>
+</div>
+</div>
+<!-- NODE 3: Delhi HC (Full Bench) - SELECTED & ACTIVE TARGET WITH HALO -->
+<div class="absolute left-[20%] top-[30%] -translate-x-1/2 -translate-y-1/2 z-30 flex flex-col items-center cursor-pointer" id="nodeDHC">
+<!-- Active Brass / Amber Pulse Halo -->
+<div class="relative flex items-center justify-center">
+<div class="absolute -inset-3 rounded-full bg-secondary-fixed-dim/40 animate-ping duration-1000 opacity-75"></div>
+<div class="absolute -inset-2 rounded-full bg-secondary-container/60 shadow-md"></div>
+<div class="w-13 h-13 w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-lg relative z-10 ring-2 ring-secondary">
+<span class="material-symbols-outlined text-[#913F40] text-[22px]">policy</span>
+</div>
+</div>
+<div class="mt-2 bg-surface-container-lowest px-3 py-1.5 rounded-DEFAULT shadow-md flex flex-col items-center ring-1 ring-secondary">
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#913F40]"></span>
+<span class="font-label-sm text-label-sm font-bold text-primary tracking-wide">Delhi HC (Full Bench)</span>
+</div>
+<span class="font-body-sm text-[11px] font-semibold text-[#913F40] font-mono">Prop #DHC-109</span>
+</div>
+</div>
+<!-- NODE 4: Bombay HC (Division Bench) -->
+<div class="absolute left-[78%] top-[62%] -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center cursor-pointer group opacity-90 hover:opacity-100 transition-opacity">
+<div class="w-11 h-11 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[#426B53] text-[20px]">verified</span>
+</div>
+<div class="mt-1.5 bg-surface-container-lowest/90 px-2 py-0.5 rounded-DEFAULT shadow-sm flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-medium text-primary">Bombay HC (DB)</span>
+<span class="font-body-sm text-[9px] text-[#426B53] font-mono">Prop #BHC-412</span>
+</div>
+</div>
+<!-- NODE 5: Allahabad HC (Single Bench) -->
+<div class="absolute left-[36%] top-[70%] -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center cursor-pointer group opacity-85 hover:opacity-100 transition-opacity">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[#426B53] text-[18px]">verified</span>
+</div>
+<div class="mt-1.5 bg-surface-container-lowest/90 px-2 py-0.5 rounded-DEFAULT shadow-sm flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-medium text-primary">Allahabad HC (SB)</span>
+<span class="font-body-sm text-[9px] text-on-surface-variant font-mono">Prop #ALHC-88</span>
+</div>
+</div>
+<!-- NODE 6: Calcutta HC (Special Bench 3J) -->
+<div class="absolute left-[84%] top-[27%] -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center cursor-pointer group opacity-85 hover:opacity-100 transition-opacity">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-secondary text-[18px]">difference</span>
+</div>
+<div class="mt-1.5 bg-surface-container-lowest/90 px-2 py-0.5 rounded-DEFAULT shadow-sm flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-medium text-primary">Calcutta HC (3J)</span>
+<span class="font-body-sm text-[9px] text-secondary font-mono">Prop #CHC-301</span>
+</div>
+</div>
+<!-- NODE 7: Madras HC (Division Bench) -->
+<div class="absolute left-[44%] top-[86%] -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center cursor-pointer group opacity-80 hover:opacity-100 transition-opacity">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-secondary text-[18px]">rule_folder</span>
+</div>
+<div class="mt-1 bg-surface-container-lowest/90 px-2 py-0.5 rounded-DEFAULT shadow-sm flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-medium text-primary">Madras HC (DB)</span>
+<span class="font-body-sm text-[9px] text-on-surface-variant font-mono">Prop #MHC-64</span>
+</div>
+</div>
+</div>
+<!-- Compact Bottom Graph Legend Bar (Integrated into lower canvas) -->
+<div class="w-full bg-surface-container-lowest/95 backdrop-blur-md px-space-md py-2.5 flex flex-wrap items-center justify-between gap-space-md z-20">
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant">
+<!-- Supreme Court Hub -->
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-primary-container ring-1 ring-secondary inline-block"></span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Supreme Court Hub</span>
+</div>
+<!-- High Court Bench -->
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-surface-container-highest shadow-sm inline-block"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">High Court Bench</span>
+</div>
+<!-- Conflict Vector -->
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-0.5 bg-[#913F40] inline-block"></span>
+<span class="font-label-sm text-label-sm text-[#913F40] font-semibold">Conflict / Divergence</span>
+</div>
+<!-- Agree Vector -->
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-0.5 bg-[#426B53] inline-block"></span>
+<span class="font-label-sm text-label-sm text-[#426B53] font-medium">Agreement / Consensus</span>
+</div>
+<!-- Distinguishable Vector -->
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-0.5 border-t border-dashed border-[#C5A16B] inline-block"></span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Distinguishable on Facts</span>
+</div>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-outline font-mono">
+<span class="material-symbols-outlined text-[15px] text-secondary">hub</span>
+<span>18 proposition nodes • 24 relationship edges across 5 High Courts &amp; Supreme Court</span>
+</div>
+</div>
+</div>
+<!-- 32% Side Analysis & Inspection Rails (Columns 9 to 12) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md w-full">
+<!-- Selected Node Panel (Active Inspection for Node #DHC-109) -->
+<article class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm transition-all">
+<!-- Panel Header -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">policy</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Selected Node Inspector</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-[#913F40]/10 text-[#913F40] font-label-sm text-label-sm font-semibold uppercase">
+            Active Node
+          </span>
+</div>
+<!-- Node Identification Details -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-mono">PROP_ID</span>
+<span class="font-body-sm text-body-sm font-bold text-primary font-mono bg-surface-container-low px-2 py-0.5 rounded-DEFAULT">PROP_DHC_2023_09</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold leading-snug">
+            Delhi High Court <span class="text-on-surface-variant font-normal">(Full Bench • 3 Judges)</span>
+</h2>
+<div class="text-primary italic font-serif text-body-md font-medium">
+            Court on its own motion v. Union of India &amp; Ors.
+          </div>
+</div>
+<!-- Metadata Grid -->
+<div class="grid grid-cols-2 gap-space-xs p-space-sm bg-surface-container-low rounded-DEFAULT mb-space-md font-mono text-label-sm">
+<div>
+<span class="text-outline uppercase text-[10px] block">CNR NUMBER</span>
+<span class="text-primary font-semibold">DHC010049212023</span>
+</div>
+<div>
+<span class="text-outline uppercase text-[10px] block">DECISION DATE</span>
+<span class="text-primary font-semibold">04 Aug 2023</span>
+</div>
+<div class="col-span-2 pt-1">
+<span class="text-outline uppercase text-[10px] block">AUTHOR BENCH</span>
+<span class="text-primary">Satish Chandra Sharma C.J., Subramonium Prasad J.</span>
+</div>
+</div>
+<!-- Holding Extract / Ratio Preview -->
+<div class="flex flex-col gap-1 mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Holding Extract / Ratio Preview</span>
+<div class="p-space-sm bg-surface-container rounded-DEFAULT text-on-surface font-body-sm text-body-sm leading-relaxed italic">
+            “Interpreting procedural safeguards under Article 21 in custodial interrogation contexts; diverging from strict retrospective timelines where state agencies invoke specialized statutory security strictures.”
+          </div>
+</div>
+<!-- Archival S3 Vault Reference -->
+<div class="p-2 bg-surface-container-low rounded-DEFAULT flex items-center justify-between gap-2 mb-space-md font-mono text-label-sm">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0">draft</span>
+<span class="truncate text-on-surface-variant text-[11px]">s3://nyaay-court-vault/dhc/2023/ILR_2023_Del_1109.pdf#page=48</span>
+</div>
+<button class="text-outline hover:text-primary shrink-0" title="Copy Hash">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<!-- Action Button -->
+<button class="w-full flex items-center justify-center gap-2 bg-primary-container text-surface-container-lowest py-2.5 px-space-md rounded-DEFAULT shadow-sm hover:bg-primary transition-all">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary-fixed">View Primary Evidence</span>
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">arrow_forward</span>
+</button>
+</article>
+<!-- Selected Edge / Conflict Inspector (Active Tension Vector) -->
+<article class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm">
+<!-- Edge Status Header -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-[#913F40]">crisis_alert</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-[#913F40] font-bold">Conflict Tension Vector</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-[#913F40] text-surface-container-lowest font-label-sm text-label-sm font-bold uppercase tracking-wider">
+            Conflict Detected
+          </span>
+</div>
+<!-- Tension Metadata -->
+<div class="flex flex-col gap-space-xs mb-space-sm">
+<div class="flex items-center justify-between text-label-sm font-mono">
+<span class="text-outline">PAIR VECTOR ID</span>
+<span class="text-primary font-semibold">EDGE_CONF_8829</span>
+</div>
+<div class="flex items-center justify-between text-label-sm">
+<span class="text-outline font-label-sm">Relationship Nature</span>
+<span class="font-semibold text-primary">Substantive Jurisprudential Divergence</span>
+</div>
+<div class="flex items-center justify-between text-label-sm">
+<span class="text-outline font-label-sm">Algorithmic Confidence</span>
+<span class="font-mono font-bold text-[#913F40] bg-[#913F40]/10 px-2 py-0.5 rounded-DEFAULT">0.948 (High Certainty)</span>
+</div>
+</div>
+<!-- Substantive Reason Strip -->
+<div class="p-space-sm bg-surface-container rounded-DEFAULT mb-space-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Doctrinal Conflict Reason</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-normal">
+            Direct contradiction regarding standard of pre-trial liberty under Article 21 vs statutory embargo in special acts. Delhi HC broadens magistrate remand latitude beyond the five-judge Constitutional parameters.
+          </p>
+</div>
+<!-- Supreme Court Settlement / Binding Impact -->
+<div class="p-space-sm bg-surface-container-high rounded-DEFAULT mb-space-md flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Supreme Court Binding Status</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            Divergent from 5-Judge Constitution Bench settled ratio in <span class="font-semibold text-primary not-italic">Maneka Gandhi v. Union of India (1978 AIR 597)</span> and affirmed in <span class="font-semibold text-primary not-italic">K.S. Puttaswamy (2017)</span>.
+          </p>
+</div>
+<!-- Primary Conflict Investigation CTA -->
+<div class="flex items-center gap-2">
+<button class="flex-1 flex items-center justify-center gap-2 bg-[#913F40] text-surface-container-lowest py-2.5 px-space-md rounded-DEFAULT shadow-sm hover:bg-[#7e3435] transition-colors">
+<span class="material-symbols-outlined text-[17px]">gavel</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-white">Investigate Conflict</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center bg-surface-container text-primary hover:bg-surface-container-high rounded-DEFAULT shadow-sm transition-colors" title="Export Brief">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- Interactive script for client-side dropdown toggle & simple canvas interactions -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dropdownBtn = document.getElementById('statuteDropdownBtn');
+      const dropdown = document.getElementById('statuteDropdown');
+
+      if (dropdownBtn && dropdown) {
+        dropdownBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          dropdown.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', () => {
+          dropdown.classList.add('hidden');
+        });
+      }
+
+      // Simple click animation feedback on node selection
+      const nodeDHC = document.getElementById('nodeDHC');
+      if (nodeDHC) {
+        nodeDHC.addEventListener('click', () => {
+          nodeDHC.classList.add('scale-105');
+          setTimeout(() => nodeDHC.classList.remove('scale-105'), 200);
+        });
+      }
+    });
+  </script>
+</div></main></div></body></html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#372f23", "inverse-on-surface": "#feeedd", "primary-fixed": "#f2dfd5", "tertiary-fixed": "#ffddb7", "surface-container-highest": "#efe0cf", "outline-variant": "#d1c4be", "surface-tint": "#6a5b54", "surface-dim": "#e6d8c7", "secondary-container": "#ffd79c", "secondary-fixed-dim": "#e7c088", "on-secondary": "#ffffff", "tertiary-container": "#3a2200", "on-primary": "#ffffff", "surface-variant": "#efe0cf", "on-tertiary-container": "#b3864c", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "background": "#fff8f3", "tertiary": "#1e0f00", "primary-container": "#30251f", "primary-fixed-dim": "#d6c3ba", "on-tertiary-fixed": "#2a1700", "surface-container-low": "#fff2e3", "surface-container": "#fbecda", "on-tertiary-fixed-variant": "#623f0a", "tertiary-fixed-dim": "#f1bd7e", "on-secondary-container": "#795c2c", "on-surface-variant": "#4e4540", "on-secondary-fixed-variant": "#5c4215", "secondary": "#76592a", "on-secondary-fixed": "#281800", "on-surface": "#221a10", "surface": "#fff8f3", "on-primary-container": "#9c8b83", "on-background": "#221a10", "secondary-fixed": "#ffddaf", "outline": "#807570", "primary": "#1a110b", "on-tertiary": "#ffffff", "on-error": "#ffffff", "error": "#ba1a1a", "surface-bright": "#fff8f3", "on-primary-fixed": "#231914", "inverse-primary": "#d6c3ba", "on-primary-fixed-variant": "#51443d", "on-error-container": "#93000a", "surface-container-high": "#f5e6d4" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-xl": "2.5rem", "margin": "3rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-sm": [ "EB Garamond" ], "label-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-lg": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "label-md": [ "Inter" ], "body-lg": [ "Inter" ], "label-lg": [ "Inter" ], "body-sm": [ "Inter" ], "display-lg": [ "EB Garamond" ], "display-lg-mobile": [ "EB Garamond" ], "headline-lg-mobile": [ "EB Garamond" ] }, "fontSize": { "headline-sm": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "0.005em", "fontWeight": "600" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.006em", "fontWeight": "400" } ], "headline-lg": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.011em", "fontWeight": "400" } ], "label-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg": [ "3.25rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface-container font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[250px] bg-primary-container z-50 flex flex-col justify-between select-none shadow-[2px_0_12px_rgba(30,15,0,0.18)]"><div class="flex flex-col flex-1 min-h-0"><div class="pt-space-lg px-space-md pb-space-md border-b border-outline-variant/20 flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Refined geometric circular judicial seal emblem for NYAAYCHAKRA featuring a balanced scale of justice, concentric archival rings, and subtle chakra geometry in Espresso, Antique Brass, and Muted Gold." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold tracking-wider leading-none">NYAAYCHAKRA</span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-[0.14em] uppercase leading-tight mt-1">Judicial Intelligence</span></div></div></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-md flex flex-col gap-space-md" data-active-classes="bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim"><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Workspace</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="overview" href="#">Overview</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-radar" href="#">Conflict Radar</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="statute-explorer" href="#">Statute Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Investigation</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-investigation" href="#">Conflict Investigation</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="evidence-explorer" href="#">Evidence Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Operations</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="ingest-judgments" href="#">Ingest Judgments</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="live-processing" href="#">Live Processing</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="run-history" href="#">Run History</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Intelligence</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim" data-path="evaluation-metrics" href="#">Evaluation &amp; Metrics</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="forum-risk-briefs" href="#">Forum-Risk Briefs</a></div></nav></div><div class="p-space-md border-t border-outline-variant/20 flex flex-col gap-space-xs bg-primary/40"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim shadow-[0_0_8px_#e7c088]"></span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-wider uppercase font-semibold">System Status: Operational</span></div><p class="font-label-sm text-label-sm text-on-primary-container tracking-tight">NYAAYCHAKRA / JUDICIAL INTELLIGENCE • v4.8</p></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-highest z-40 px-space-lg flex items-center justify-between shadow-[0_1px_6px_rgba(48,37,31,0.03)]"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Workspace</span><span class="text-outline text-sm">/</span><span class="font-body-md text-body-md text-on-surface-variant font-medium">Evaluation &amp; Metrics</span></div><span class="hidden lg:inline-block h-4 w-px bg-surface-container-highest"></span><div class="hidden lg:flex items-center gap-2 text-outline font-label-sm text-label-sm tracking-wide uppercase"><span class="material-symbols-outlined text-[15px] text-secondary">monitoring</span><span>Judicial Alignment Benchmark — Validation &amp; Recall Audits</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded-DEFAULT border border-surface-container-highest"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>Sync Status: Synced • GET /api/v4/eval</span></div><span class="px-2.5 py-1 bg-surface-container font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider rounded-DEFAULT border border-secondary-fixed-dim/40">Active Bench Workspace</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-container px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Interactive Client-side Script to update active shell nav and handle folio switching -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Synchronize shell sidebar active state
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'statute-explorer') {
+          link.classList.add('bg-surface-container-highest/20', 'text-surface-container-lowest', 'font-medium', 'border-l-2', 'border-secondary-fixed-dim');
+          link.classList.remove('text-primary-fixed-dim');
+        } else if (link.getAttribute('data-path') === 'evaluation-metrics') {
+          link.classList.remove('bg-surface-container-highest/15', 'text-surface-container-lowest', 'font-medium', 'border-l-2', 'border-secondary-fixed-dim');
+          link.classList.add('text-primary-fixed-dim');
+        }
+      });
+
+      // Filter statutes client-side
+      const searchInput = document.getElementById('statute-search-input');
+      const statuteCards = document.querySelectorAll('[data-statute-row]');
+      
+      searchInput?.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        statuteCards.forEach(card => {
+          const name = card.getAttribute('data-name')?.toLowerCase() || '';
+          const key = card.getAttribute('data-key')?.toLowerCase() || '';
+          if (name.includes(query) || key.includes(query)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+
+      // Interactive Tab Filter Chips
+      const filterChips = document.querySelectorAll('[data-filter-chip]');
+      filterChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          filterChips.forEach(c => {
+            c.classList.remove('bg-primary', 'text-surface-container-lowest');
+            c.classList.add('bg-surface-container-highest/40', 'text-on-surface-variant');
+          });
+          chip.classList.add('bg-primary', 'text-surface-container-lowest');
+          chip.classList.remove('bg-surface-container-highest/40', 'text-on-surface-variant');
+
+          const category = chip.getAttribute('data-filter-chip');
+          statuteCards.forEach(card => {
+            const hasConflict = parseInt(card.getAttribute('data-conflicts') || '0', 10) > 0;
+            const isSettled = card.getAttribute('data-settled') === 'true';
+
+            if (category === 'all') {
+              card.classList.remove('hidden');
+            } else if (category === 'conflicts') {
+              card.classList.toggle('hidden', !hasConflict);
+            } else if (category === 'settled') {
+              card.classList.toggle('hidden', !isSettled);
+            } else if (category === 'divergence') {
+              card.classList.toggle('hidden', isSettled);
+            }
+          });
+        });
+      });
+    });
+  </script>
+<!-- Editorial Top Section Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-1 max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm tracking-[0.18em] text-secondary font-semibold uppercase">Legal Intelligence // Statutes</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider">Archival Code Matrix</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-semibold">Statute Explorer</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Explore statutory coverage, verified judicial propositions, and inter-bench antinomies across active legislative frameworks. Grounded in authoritative Supreme Court and High Court reporters.
+      </p>
+</div>
+<!-- Archival Coverage Chip -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest/80 px-space-md py-2.5 rounded-DEFAULT shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">account_balance</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">12 Enacted Codes • 1,420 Appellate Judgments</span>
+<span class="font-label-sm text-[0.625rem] text-secondary font-mono tracking-wider">GET /api/statutes • Sync Latency 14ms</span>
+</div>
+</div>
+</div>
+<!-- Aggregate Metric Ribbon -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Statutes Covered</span>
+<span class="material-symbols-outlined text-[18px] text-secondary/60">menu_book</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary font-semibold">12</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Frameworks</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span class="font-label-sm text-label-sm">Active legislative registry</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Appellate Decisions</span>
+<span class="material-symbols-outlined text-[18px] text-secondary/60">gavel</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary font-semibold">1,420</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Decisions</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-outline">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">SC (542) • HC Benches (878)</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Verified Holdings</span>
+<span class="material-symbols-outlined text-[18px] text-secondary/60">verified</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary font-semibold">3,894</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Holdings</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-secondary">
+<span class="font-label-sm text-label-sm font-medium">97.2% Grounding Precision</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Active Antinomies</span>
+<span class="material-symbols-outlined text-[18px] text-error">warning</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-error font-semibold">42</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Divergences</span>
+</div>
+<div class="mt-2 flex items-center gap-1.5 text-error">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold">14 Flagged in PMLA alone</span>
+</div>
+</div>
+</div>
+<!-- Filter & Search Archival Toolbar -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm mb-space-lg flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Field Styled as Archival Docket Slip -->
+<div class="relative flex-1 max-w-xl">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline">search</span>
+<input class="w-full bg-surface-container-low pl-9 pr-14 py-2 font-body-sm text-body-sm text-on-surface rounded-DEFAULT outline-none placeholder:text-outline/70 focus:bg-surface-container-lowest shadow-inner" id="statute-search-input" placeholder="Filter by statute title or key identifier (e.g. pmla_2002, crpc, uapa)..." type="text"/>
+<span class="absolute right-2.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-highest text-on-surface-variant font-label-sm text-[0.625rem] tracking-wider uppercase font-semibold">⌘K</span>
+</div>
+<!-- Filter Category Chips & Sort Selector -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-3 py-1.5 rounded-DEFAULT bg-primary text-surface-container-lowest font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-colors" data-filter-chip="all">
+        All Statutes (12)
+      </button>
+<button class="px-3 py-1.5 rounded-DEFAULT bg-surface-container-highest/40 hover:bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-colors" data-filter-chip="conflicts">
+        With Conflicts (7)
+      </button>
+<button class="px-3 py-1.5 rounded-DEFAULT bg-surface-container-highest/40 hover:bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-colors" data-filter-chip="settled">
+        Settled Precedent (8)
+      </button>
+<button class="px-3 py-1.5 rounded-DEFAULT bg-surface-container-highest/40 hover:bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-colors" data-filter-chip="divergence">
+        Bench Divergence (4)
+      </button>
+<div class="h-5 w-px bg-surface-container-highest mx-1 hidden sm:block"></div>
+<!-- Sort Selection -->
+<div class="flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1.5 rounded-DEFAULT">
+<span class="material-symbols-outlined text-[15px] text-outline">sort</span>
+<select class="bg-transparent font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold outline-none cursor-pointer">
+<option>Highest Conflict Count</option>
+<option>Most Judgments</option>
+<option>Alphabetical (A-Z)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Primary Workspace: Two-Column Split (Archive List vs Deep Inspector) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column (Statute Matrix Table/Cards - 7 Columns) -->
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<!-- List Title Ribbon -->
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Active Statutory Frameworks</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-[0.625rem] font-bold">12 TOTAL</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Sorted by Risk &amp; Precedent Drift</span>
+</div>
+<!-- STATUTE 1: PMLA 2002 (SELECTED STATE) -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-md relative group cursor-pointer transition-all bg-surface-container-low/40" data-conflicts="14" data-key="pmla_2002" data-name="Prevention of Money Laundering Act, 2002" data-settled="true" data-statute-row="">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-2 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Prevention of Money Laundering Act, 2002</h2>
+<span class="px-2 py-0.5 bg-primary/10 text-primary font-label-sm text-[0.625rem] uppercase font-bold tracking-wider rounded-DEFAULT">Primary Focus</span>
+</div>
+<span class="font-mono text-label-sm text-secondary font-medium">statute_key: pmla_2002</span>
+</div>
+<!-- Status Badge -->
+<span class="px-2.5 py-1 bg-surface-container-highest/60 text-secondary font-label-sm text-label-sm tracking-wider uppercase font-bold rounded-DEFAULT shrink-0">
+              Constitutional Bench Settled
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Covers Section 45 twin bail parameters, ED arrest guidelines (§ 19), predicate scheduled offenses, and the presumption of guilt under Section 24.
+          </p>
+<!-- Metrics Row -->
+<div class="grid grid-cols-4 gap-2 pt-space-xs mt-1 bg-surface-container/30 p-space-sm rounded-DEFAULT">
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Appellate Decisions</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">142</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Verified Holdings</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">489</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Filtered Hallucinations</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-mono">18</span>
+</div>
+<div class="flex flex-col items-end justify-center">
+<span class="px-2 py-1 bg-error-container text-error font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT shadow-xs">
+                14 Conflicts
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- STATUTE 2: CrPC Bail Provisions (Division Bench Conflict) -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm hover:shadow-md transition-shadow relative cursor-pointer" data-conflicts="9" data-key="crpc_bail_1973" data-name="Code of Criminal Procedure, 1973 (Bail Provisions §§ 436–439)" data-settled="false" data-statute-row="">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Code of Criminal Procedure, 1973 (Bail §§ 436–439)</h2>
+<span class="font-mono text-label-sm text-outline">statute_key: crpc_bail_1973</span>
+</div>
+<span class="px-2.5 py-1 bg-error-container/50 text-error font-label-sm text-label-sm tracking-wider uppercase font-bold rounded-DEFAULT shrink-0">
+              Division Bench Conflict (Open)
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Antinomies regarding default bail statutory clock under Section 167(2), parity in co-accused bail applications, and high court extraordinary discretion (§ 439).
+          </p>
+<div class="grid grid-cols-4 gap-2 pt-space-xs mt-1 bg-surface-container-low p-space-sm rounded-DEFAULT">
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Appellate Decisions</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">318</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Verified Holdings</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">842</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Filtered Hallucinations</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-mono">34</span>
+</div>
+<div class="flex flex-col items-end justify-center">
+<span class="px-2 py-1 bg-error-container text-error font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT">
+                9 Conflicts
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- STATUTE 3: UAPA 1967 -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm hover:shadow-md transition-shadow relative cursor-pointer" data-conflicts="6" data-key="uapa_1967" data-name="Unlawful Activities (Prevention) Act, 1967 (§ 43D Proviso)" data-settled="true" data-statute-row="">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Unlawful Activities (Prevention) Act, 1967 (§ 43D)</h2>
+<span class="font-mono text-label-sm text-outline">statute_key: uapa_1967</span>
+</div>
+<span class="px-2.5 py-1 bg-surface-container-highest/60 text-secondary font-label-sm text-label-sm tracking-wider uppercase font-bold rounded-DEFAULT shrink-0">
+              Full Bench Pronouncement
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Scrutiny of prima facie truth standard in § 43D(5) bail bar versus Article 21 speedy trial constitutional balance as resolved in Watali and Gurwinder Singh.
+          </p>
+<div class="grid grid-cols-4 gap-2 pt-space-xs mt-1 bg-surface-container-low p-space-sm rounded-DEFAULT">
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Appellate Decisions</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">96</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Verified Holdings</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">310</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Filtered Hallucinations</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-mono">12</span>
+</div>
+<div class="flex flex-col items-end justify-center">
+<span class="px-2 py-1 bg-error-container text-error font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT">
+                6 Conflicts
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- STATUTE 4: IBC 2016 -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm hover:shadow-md transition-shadow relative cursor-pointer" data-conflicts="5" data-key="ibc_2016" data-name="Insolvency and Bankruptcy Code, 2016 (§§ 7, 9 &amp; 14 Moratorium)" data-settled="true" data-statute-row="">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Insolvency and Bankruptcy Code, 2016 (§§ 7, 9, 14)</h2>
+<span class="font-mono text-label-sm text-outline">statute_key: ibc_2016</span>
+</div>
+<span class="px-2.5 py-1 bg-surface-container-highest/60 text-secondary font-label-sm text-label-sm tracking-wider uppercase font-bold rounded-DEFAULT shrink-0">
+              Settled Precedent
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Moratorium scope under Section 14 impacting parallel arbitration proceedings and personal guarantors, alongside pre-existing dispute thresholds in § 9 petitions.
+          </p>
+<div class="grid grid-cols-4 gap-2 pt-space-xs mt-1 bg-surface-container-low p-space-sm rounded-DEFAULT">
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Appellate Decisions</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">264</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Verified Holdings</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">712</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Filtered Hallucinations</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-mono">21</span>
+</div>
+<div class="flex flex-col items-end justify-center">
+<span class="px-2 py-1 bg-error-container text-error font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT">
+                5 Conflicts
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- STATUTE 5: Arbitration & Conciliation Act 1996 -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm hover:shadow-md transition-shadow relative cursor-pointer" data-conflicts="4" data-key="arbitration_1996" data-name="Arbitration and Conciliation Act, 1996 (§§ 11 &amp; 34 Setting Aside)" data-settled="false" data-statute-row="">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Arbitration and Conciliation Act, 1996 (§§ 11 &amp; 34)</h2>
+<span class="font-mono text-label-sm text-outline">statute_key: arbitration_1996</span>
+</div>
+<span class="px-2.5 py-1 bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm tracking-wider uppercase font-bold rounded-DEFAULT shrink-0">
+              Larger Bench Referred
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Scope of judicial scrutiny at appointment stage (§ 11) post-NN Global reference, and patent illegality standard under Section 34 challenging awards.
+          </p>
+<div class="grid grid-cols-4 gap-2 pt-space-xs mt-1 bg-surface-container-low p-space-sm rounded-DEFAULT">
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Appellate Decisions</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">188</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Verified Holdings</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">520</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Filtered Hallucinations</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-mono">16</span>
+</div>
+<div class="flex flex-col items-end justify-center">
+<span class="px-2 py-1 bg-error-container text-error font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT">
+                4 Conflicts
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- STATUTE 6: NI Act 1881 -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm hover:shadow-md transition-shadow relative cursor-pointer" data-conflicts="2" data-key="ni_act_1881" data-name="Negotiable Instruments Act, 1881 (§ 138 Dishonour of Cheque)" data-settled="true" data-statute-row="">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Negotiable Instruments Act, 1881 (§ 138 Dishonour)</h2>
+<span class="font-mono text-label-sm text-outline">statute_key: ni_act_1881</span>
+</div>
+<span class="px-2.5 py-1 bg-surface-container-highest/60 text-secondary font-label-sm text-label-sm tracking-wider uppercase font-bold rounded-DEFAULT shrink-0">
+              Jurisprudentially Harmonized
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Rebuttal of reverse statutory presumption under Section 139, standard of preponderance of probabilities, and vicarious liability of non-executive directors (§ 141).
+          </p>
+<div class="grid grid-cols-4 gap-2 pt-space-xs mt-1 bg-surface-container-low p-space-sm rounded-DEFAULT">
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Appellate Decisions</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">212</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Verified Holdings</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">630</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Filtered Hallucinations</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-mono">8</span>
+</div>
+<div class="flex flex-col items-end justify-center">
+<span class="px-2 py-1 bg-error-container text-error font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT">
+                2 Conflicts
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- STATUTE 7: Companies Act 2013 -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm hover:shadow-md transition-shadow relative cursor-pointer" data-conflicts="2" data-key="companies_act_2013" data-name="Companies Act, 2013 (§ 212 SFIO Investigation &amp; Fraud)" data-settled="true" data-statute-row="">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Companies Act, 2013 (§ 212 SFIO Investigation)</h2>
+<span class="font-mono text-label-sm text-outline">statute_key: companies_act_2013</span>
+</div>
+<span class="px-2.5 py-1 bg-surface-container-highest/60 text-secondary font-label-sm text-label-sm tracking-wider uppercase font-bold rounded-DEFAULT shrink-0">
+              Harmonized
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Investigation procedures by the Serious Fraud Investigation Office, stringent bail bars under Section 212(6), and harmonization with general CrPC provisions.
+          </p>
+<div class="grid grid-cols-4 gap-2 pt-space-xs mt-1 bg-surface-container-low p-space-sm rounded-DEFAULT">
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Appellate Decisions</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">85</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Verified Holdings</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">215</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Filtered Hallucinations</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-mono">7</span>
+</div>
+<div class="flex flex-col items-end justify-center">
+<span class="px-2 py-1 bg-error-container text-error font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT">
+                2 Conflicts
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- STATUTE 8: IT Act 2000 (Settled, 0 conflicts) -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm hover:shadow-md transition-shadow relative cursor-pointer" data-conflicts="0" data-key="it_act_2000" data-name="Information Technology Act, 2000 (§ 66A &amp; Intermediary Guidelines)" data-settled="true" data-statute-row="">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Information Technology Act, 2000 (§ 66A &amp; Intermediaries)</h2>
+<span class="font-mono text-label-sm text-outline">statute_key: it_act_2000</span>
+</div>
+<span class="px-2.5 py-1 bg-surface-container-highest/60 text-secondary font-label-sm text-label-sm tracking-wider uppercase font-bold rounded-DEFAULT shrink-0">
+              Settled Precedent
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Post-Shreya Singhal striking down of Section 66A, Section 79 intermediary safe harbor parameters, and compliance with judicial takedown notices.
+          </p>
+<div class="grid grid-cols-4 gap-2 pt-space-xs mt-1 bg-surface-container-low p-space-sm rounded-DEFAULT">
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Appellate Decisions</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">115</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Verified Holdings</span>
+<span class="font-body-md text-body-md text-primary font-semibold font-mono">176</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Filtered Hallucinations</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-mono">4</span>
+</div>
+<div class="flex flex-col items-end justify-center">
+<span class="px-2 py-1 bg-surface-container-highest text-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT">
+                0 Conflicts • Settled
+              </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Selected Statute Deep Inspector Folio (5 Columns, Sticky) -->
+<div class="xl:col-span-5 sticky top-20 flex flex-col gap-space-md">
+<!-- Tactile Folio Container -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-xl relative overflow-hidden">
+<!-- Folio Header Accents -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-[0.14em]">Selected Statutory Folio</span>
+</div>
+<span class="font-label-sm text-[0.625rem] font-mono text-outline">FOLIO ID: PMLA-2002-REF</span>
+</div>
+<!-- Archival Title & Nexus -->
+<div class="flex flex-col gap-1 mb-space-md">
+<h2 class="font-headline-lg text-headline-lg text-primary font-semibold leading-tight">
+            Prevention of Money Laundering Act, 2002
+          </h2>
+<div class="flex items-center gap-2 text-on-surface-variant flex-wrap mt-1">
+<span class="font-mono text-label-sm bg-surface-container-low px-2 py-0.5 rounded-DEFAULT text-secondary font-semibold">statute_key: pmla_2002</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-body-sm text-body-sm text-outline">Enacted 17 Jan 2003</span>
+</div>
+</div>
+<!-- Key Legal Focus Card -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT mb-space-md">
+<span class="font-label-sm text-[0.625rem] text-secondary font-bold uppercase tracking-wider block mb-1">Primary Constitutional Nexus</span>
+<p class="font-body-sm text-body-sm text-primary font-medium">
+            Section 45 Twin Bail Conditions vs. Article 21 Personal Liberty &amp; Speedy Trial Doctrine
+          </p>
+<div class="mt-2 text-on-surface-variant font-body-sm text-[0.8125rem] leading-relaxed">
+            The mandatory satisfaction of dual statutory filters under § 45(1) creates significant inter-bench friction regarding the standard of proof required before charge framing.
+          </div>
+</div>
+<!-- Status & Bench Pronouncement Pill -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-highest/30 rounded-DEFAULT mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">SC Precedent Alignment</span>
+</div>
+<span class="px-2 py-0.5 bg-surface-container-highest text-secondary font-label-sm text-[0.6875rem] font-bold tracking-wider uppercase rounded-DEFAULT">
+            Constitutional Bench Review
+          </span>
+</div>
+<!-- Visual Analytics: Proposition Grounding Sparkline / Breakdown -->
+<div class="mb-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Judicial Propositions Grounding</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono font-bold">489 Grounded (96.4%)</span>
+</div>
+<!-- Custom Visual Bar -->
+<div class="h-2 w-full bg-surface-container-highest/60 rounded-full overflow-hidden flex">
+<div class="h-full bg-secondary" style="width: 82%;"></div>
+<div class="h-full bg-secondary-fixed-dim" style="width: 14%;"></div>
+<div class="h-full bg-error" style="width: 4%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-[0.6875rem]">
+<span>SC Constitution Bench (401)</span>
+<span>HC Division Benches (88)</span>
+<span class="text-error font-medium">18 Filtered Hallucinations</span>
+</div>
+</div>
+<!-- Metrics Grid -->
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Indexed Judgments</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold font-mono">142</span>
+<span class="font-label-sm text-[0.625rem] text-on-surface-variant mt-0.5">SC: 68 • Del HC: 44 • Bom HC: 30</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT flex flex-col">
+<span class="font-label-sm text-[0.625rem] text-outline uppercase tracking-wider">Active Antinomies</span>
+<span class="font-headline-sm text-headline-sm text-error font-semibold font-mono">14</span>
+<span class="font-label-sm text-[0.625rem] text-error font-medium mt-0.5">High Severity Divergences</span>
+</div>
+</div>
+<!-- Forensic Divergence Mini-Summary -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT mb-space-lg flex flex-col gap-2">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">compare_arrows</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Primary Divergence Nexus</span>
+</div>
+<p class="font-body-sm text-[0.8125rem] text-on-surface leading-snug">
+<strong>Delhi High Court</strong> vs <strong>Bombay High Court</strong> on whether non-furnishing of grounds of arrest in writing violates Section 19 vitiating remand ab initio.
+          </p>
+<div class="flex items-center gap-1.5 text-outline font-label-sm text-[0.6875rem]">
+<span class="material-symbols-outlined text-[13px] text-secondary">auto_stories</span>
+<span>Leading Cases: <em>Vijay Madanlal Choudhary (2022)</em> &amp; <em>Pankaj Bansal (2023)</em></span>
+</div>
+</div>
+<!-- Call to Actions -->
+<div class="flex flex-col gap-2.5">
+<!-- Primary CTA Button -->
+<a class="flex items-center justify-between w-full bg-primary hover:bg-primary-container text-surface-container-lowest px-space-md py-3 rounded-DEFAULT transition-all group shadow-md" href="#">
+<div class="flex flex-col text-left">
+<span class="font-label-lg text-label-lg font-bold tracking-wide flex items-center gap-2">
+<span>Open Conflict Radar</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</span>
+<span class="font-label-sm text-[0.625rem] text-primary-fixed-dim/80 font-mono">
+                Loads force-directed graph via GET /api/statutes/pmla_2002/graph
+              </span>
+</div>
+<span class="material-symbols-outlined text-[24px] text-secondary-fixed-dim">radar</span>
+</a>
+<!-- Secondary Archival Action Row -->
+<div class="grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 px-space-sm py-2 bg-surface-container-low hover:bg-surface-container text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold rounded-DEFAULT transition-colors shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">picture_as_pdf</span>
+<span>Export Dossier</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 px-space-sm py-2 bg-surface-container-low hover:bg-surface-container text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold rounded-DEFAULT transition-colors shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">format_quote</span>
+<span>Evidence Quotes (489)</span>
+</button>
+</div>
+</div>
+<!-- Archival Seal Stamp Overlay (Decorative Subtle SVG watermark) -->
+<div class="absolute -right-8 -bottom-8 pointer-events-none opacity-5">
+<svg class="text-primary" fill="currentColor" height="220" viewbox="0 0 100 100" width="220">
+<circle cx="50" cy="50" fill="none" r="46" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="50" cy="50" fill="none" r="40" stroke="currentColor" stroke-dasharray="2 2" stroke-width="1"></circle>
+<path d="M50 15 L50 85 M15 50 L85 50" stroke="currentColor" stroke-width="1"></path>
+<polygon points="50,20 54,35 68,35 56,44 60,58 50,49 40,58 44,44 32,35 46,35"></polygon>
+</svg>
+</div>
+</div>
+<!-- Live Sync Footnote Card -->
+<div class="bg-surface-container-lowest/60 p-space-md rounded-DEFAULT shadow-xs flex items-center justify-between text-outline font-label-sm text-[0.6875rem]">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Indexed Precedent Cache: 99.8% Grounded</span>
+</div>
+<span class="font-mono">Checksum: #30251F-PMLA</span>
+</div>
+</div>
+</div>
+<!-- Operational Footer System Strip -->
+<div class="mt-space-xl pt-space-md mb-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-outline font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">hub</span>
+<span class="font-mono font-medium text-on-surface">API Endpoint: GET /api/statutes</span>
+<span>•</span>
+<span>Transport: HTTP 200 OK</span>
+<span>•</span>
+<span>Response Cache: 5m Stale-While-Revalidate</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-secondary font-semibold">Data Integrity: Lossless SQLite Grounded</span>
+<span>•</span>
+<span>NYAAYCHAKRA Statutory Engine v4.8</span>
+</div>
+</div>
+</div></main></div></body></html>

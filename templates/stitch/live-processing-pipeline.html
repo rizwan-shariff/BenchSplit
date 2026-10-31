@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#372f23", "inverse-on-surface": "#feeedd", "primary-fixed": "#f2dfd5", "tertiary-fixed": "#ffddb7", "surface-container-highest": "#efe0cf", "outline-variant": "#d1c4be", "surface-tint": "#6a5b54", "surface-dim": "#e6d8c7", "secondary-container": "#ffd79c", "secondary-fixed-dim": "#e7c088", "on-secondary": "#ffffff", "tertiary-container": "#3a2200", "on-primary": "#ffffff", "surface-variant": "#efe0cf", "on-tertiary-container": "#b3864c", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "background": "#fff8f3", "tertiary": "#1e0f00", "primary-container": "#30251f", "primary-fixed-dim": "#d6c3ba", "on-tertiary-fixed": "#2a1700", "surface-container-low": "#fff2e3", "surface-container": "#fbecda", "on-tertiary-fixed-variant": "#623f0a", "tertiary-fixed-dim": "#f1bd7e", "on-secondary-container": "#795c2c", "on-surface-variant": "#4e4540", "on-secondary-fixed-variant": "#5c4215", "secondary": "#76592a", "on-secondary-fixed": "#281800", "on-surface": "#221a10", "surface": "#fff8f3", "on-primary-container": "#9c8b83", "on-background": "#221a10", "secondary-fixed": "#ffddaf", "outline": "#807570", "primary": "#1a110b", "on-tertiary": "#ffffff", "on-error": "#ffffff", "error": "#ba1a1a", "surface-bright": "#fff8f3", "on-primary-fixed": "#231914", "inverse-primary": "#d6c3ba", "on-primary-fixed-variant": "#51443d", "on-error-container": "#93000a", "surface-container-high": "#f5e6d4" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-xl": "2.5rem", "margin": "3rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-sm": [ "EB Garamond" ], "label-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-lg": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "label-md": [ "Inter" ], "body-lg": [ "Inter" ], "label-lg": [ "Inter" ], "body-sm": [ "Inter" ], "display-lg": [ "EB Garamond" ], "display-lg-mobile": [ "EB Garamond" ], "headline-lg-mobile": [ "EB Garamond" ] }, "fontSize": { "headline-sm": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "0.005em", "fontWeight": "600" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.006em", "fontWeight": "400" } ], "headline-lg": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.011em", "fontWeight": "400" } ], "label-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg": [ "3.25rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface-container font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[250px] bg-primary-container z-50 flex flex-col justify-between select-none shadow-[2px_0_12px_rgba(30,15,0,0.18)]"><div class="flex flex-col flex-1 min-h-0"><div class="pt-space-lg px-space-md pb-space-md border-b border-outline-variant/20 flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Refined geometric circular judicial seal emblem for NYAAYCHAKRA featuring a balanced scale of justice, concentric archival rings, and subtle chakra geometry in Espresso, Antique Brass, and Muted Gold." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold tracking-wider leading-none">NYAAYCHAKRA</span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-[0.14em] uppercase leading-tight mt-1">Judicial Intelligence</span></div></div></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-md flex flex-col gap-space-md" data-active-classes="bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim"><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Workspace</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="overview" href="#">Overview</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-radar" href="#">Conflict Radar</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="statute-explorer" href="#">Statute Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Investigation</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-investigation" href="#">Conflict Investigation</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="evidence-explorer" href="#">Evidence Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Operations</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="ingest-judgments" href="#">Ingest Judgments</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="live-processing" href="#">Live Processing</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="run-history" href="#">Run History</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Intelligence</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="evaluation-metrics" href="#">Evaluation &amp; Metrics</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="forum-risk-briefs" href="#">Forum-Risk Briefs</a></div></nav></div><div class="p-space-md border-t border-outline-variant/20 flex flex-col gap-space-xs bg-primary/40"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim shadow-[0_0_8px_#e7c088]"></span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-wider uppercase font-semibold">System Status: Operational</span></div><p class="font-label-sm text-label-sm text-on-primary-container tracking-tight">NYAAYCHAKRA / JUDICIAL INTELLIGENCE • v4.8</p></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-highest z-40 px-space-lg flex items-center justify-between shadow-[0_1px_6px_rgba(48,37,31,0.03)]"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Workspace</span><span class="text-outline text-sm">/</span><span class="font-body-md text-body-md text-on-surface-variant font-medium">Ingest Judgments</span></div><span class="hidden lg:inline-block h-4 w-px bg-surface-container-highest"></span><div class="hidden lg:flex items-center gap-2 text-outline font-label-sm text-label-sm tracking-wide uppercase"><span class="material-symbols-outlined text-[15px] text-secondary">account_balance</span><span>Supreme Court &amp; High Court Archives — Realtime Ingestion</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded-DEFAULT border border-surface-container-highest"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>Ingestion Pipeline Ready • POST /api/ingest</span></div><span class="px-2.5 py-1 bg-surface-container font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider rounded-DEFAULT border border-secondary-fixed-dim/40">Active Bench Workspace</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-container px-space-lg py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- TOP CONTEXTUAL BAR: Status, SSE Stream, Run Switcher, Demo Trigger -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<div class="flex flex-wrap items-center gap-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary">Live Processing</span>
+<span class="px-2 py-0.5 rounded-DEFAULT text-label-sm font-label-sm uppercase tracking-wider bg-secondary-container/40 text-secondary">
+            RUN #RN-2025-042
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Deterministic LangGraph pipeline orchestration &amp; verifiable citation verification audit.
+        </p>
+</div>
+<div class="hidden lg:flex items-center gap-space-sm pl-space-md border-l border-surface-container-highest">
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">SSE Stream Connected</span>
+<span class="font-body-sm text-body-sm text-outline">GET /api/runs/RN-2025-042/events</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Run selector dropdown -->
+<div class="flex items-center bg-surface-container px-space-sm py-1.5 rounded-DEFAULT">
+<span class="material-symbols-outlined text-secondary text-[18px] mr-1.5">folder_open</span>
+<select class="bg-transparent font-label-md text-label-md text-primary focus:outline-none cursor-pointer pr-2">
+<option selected="">#RN-2025-042 (In-Flight Live)</option>
+<option>#RN-2025-041 (Committed • SC_CRIM_809)</option>
+<option>#RN-2025-040 (Rejected • DRIFT_EXCEEDED)</option>
+</select>
+</div>
+<!-- Reconnect button -->
+<button class="p-2 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container-highest text-primary transition-colors flex items-center justify-center" id="stream-reconnect-btn" title="Refresh SSE Stream">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+<!-- Run Live Demo Simulation CTA -->
+<button class="flex items-center gap-2 bg-primary text-on-primary hover:bg-primary-container px-space-md py-2 rounded-DEFAULT transition-all shadow-sm" id="demo-sim-btn">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">bolt</span>
+<span class="font-label-md text-label-md tracking-wide uppercase">Run Live Demo</span>
+</button>
+</div>
+</div>
+<!-- ACTIVE IN-FLIGHT RUN OVERVIEW RIBBON -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm bg-surface-container-low p-space-sm rounded-lg shadow-sm">
+<div class="flex items-center gap-3 p-space-sm bg-surface-container-lowest rounded-DEFAULT">
+<div class="w-9 h-9 rounded-DEFAULT bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-surface-container-lowest text-[20px]">description</span>
+</div>
+<div class="min-w-0">
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-outline">Target Instrument</span>
+<span class="block font-body-sm text-body-sm font-semibold text-primary truncate" title="SC_CIVIL_APPEAL_1104_2024.pdf">SC_CIVIL_APPEAL_1104_2024.pdf</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-space-sm bg-surface-container-lowest rounded-DEFAULT">
+<div class="w-9 h-9 rounded-DEFAULT bg-secondary-container/50 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
+</div>
+<div class="min-w-0">
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-outline">Forum / Bench</span>
+<span class="block font-body-sm text-body-sm font-semibold text-primary truncate">Supreme Court of India (Div. Bench)</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-space-sm bg-surface-container-lowest rounded-DEFAULT">
+<div class="w-9 h-9 rounded-DEFAULT bg-secondary-fixed-dim/30 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">hourglass_top</span>
+</div>
+<div class="min-w-0">
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-outline">Current Status</span>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Stage 4: Verification (Active)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-3 p-space-sm bg-surface-container-lowest rounded-DEFAULT">
+<div class="w-9 h-9 rounded-DEFAULT bg-surface-container-highest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-outline text-[20px]">memory</span>
+</div>
+<div class="min-w-0">
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-outline">Orchestrator Mode</span>
+<span class="block font-body-sm text-body-sm font-semibold text-primary">Deterministic LangGraph v4.8</span>
+</div>
+</div>
+</div>
+<!-- HERO VISUAL: 7-STAGE PIPELINE ORCHESTRATOR -->
+<section class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-xs gap-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.14em] text-secondary font-semibold">Orchestration Graph Topology</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">7-Stage Ingestion &amp; Verifiable Grounding Pipeline</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-outline">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-tint"></span>
+<span>Completed</span>
+</div>
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-outline">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<span class="text-secondary font-semibold">Executing</span>
+</div>
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-outline">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
+<span>Pending Loop</span>
+</div>
+</div>
+</div>
+<!-- PIPELINE CANVAS -->
+<div class="relative w-full py-space-sm overflow-x-auto">
+<div class="min-w-[1020px] relative pb-10">
+<!-- Connecting Architectural Lines (SVG Layer) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-0" xmlns="http://www.w3.org/2000/svg">
+<!-- Defs for markers and patterns -->
+<defs>
+<lineargradient id="flowGradCompleted" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#30251f"></stop>
+<stop offset="100%" stop-color="#76592a"></stop>
+</lineargradient>
+<lineargradient id="flowGradActive" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#76592a"></stop>
+<stop offset="100%" stop-color="#d1c4be"></stop>
+</lineargradient>
+</defs>
+<!-- 1 -> 2 -> 3 -> 4 Solid Completed Track -->
+<line class="opacity-80" stroke="#30251f" stroke-dasharray="6 4" stroke-width="2.5" x1="72" x2="520" y1="48" y2="48"></line>
+<!-- Dynamic Repair Branch: Curve from Node 4 (VERIFICATION) downward to Node 5 (REPAIR) and returning -->
+<path d="M 520 64 C 520 112, 650 118, 670 64" fill="none" stroke="#76592a" stroke-dasharray="4 4" stroke-width="2"></path>
+<!-- Return Path from Repair to Verification (Deterministic loop) -->
+<path d="M 660 62 C 630 134, 530 130, 508 62" fill="none" stroke="#b3864c" stroke-dasharray="3 3" stroke-width="1.5"></path>
+<!-- Forward connectors from 4 through 6, 7 -->
+<line stroke="#d1c4be" stroke-dasharray="4 4" stroke-width="2" x1="520" x2="980" y1="48" y2="48"></line>
+</svg>
+<!-- 7 Nodes Horizontal Flex Grid -->
+<div class="relative z-10 grid grid-cols-7 gap-3">
+<!-- STAGE 1: INGEST (COMPLETED) -->
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center shadow-md border-2 border-primary-container">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="mt-3 flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary">1. Ingest</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface mt-0.5">Checksum &amp; BBox</span>
+<span class="inline-block mt-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Done 420ms</span>
+</div>
+</div>
+<!-- STAGE 2: PASSAGE SELECTION (COMPLETED) -->
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center shadow-md border-2 border-primary-container">
+<span class="material-symbols-outlined text-[24px]">auto_stories</span>
+</div>
+<div class="mt-3 flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary">2. Passage</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface mt-0.5">Lossless Framing</span>
+<span class="inline-block mt-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">8 Folios Chunked</span>
+</div>
+</div>
+<!-- STAGE 3: EXTRACTION (COMPLETED) -->
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center shadow-md border-2 border-primary-container">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<div class="mt-3 flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-primary">3. Extraction</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface mt-0.5">Holdings Extracted</span>
+<span class="inline-block mt-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-on-surface-variant">¶ 34, 62, 112</span>
+</div>
+</div>
+<!-- STAGE 4: VERIFICATION (ACTIVE RUNNING) -->
+<div class="flex flex-col items-center text-center relative group cursor-pointer">
+<div class="relative w-14 h-14 rounded-full bg-secondary text-surface-container-lowest flex items-center justify-center shadow-md ring-4 ring-secondary-container">
+<span class="material-symbols-outlined text-[26px]">balance</span>
+<span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-secondary-fixed flex items-center justify-center text-[10px] font-bold text-on-secondary-fixed">
+                2
+              </span>
+</div>
+<div class="mt-3 flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary">4. Verification</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary mt-0.5">Token Alignment</span>
+<span class="inline-block mt-1 px-2 py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                In-Flight (Quote 2)
+              </span>
+</div>
+</div>
+<!-- STAGE 5: REPAIR (STANDBY ON DRIFT) -->
+<div class="flex flex-col items-center text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-surface-container-high text-secondary flex items-center justify-center shadow-sm border border-secondary-fixed-dim/60">
+<span class="material-symbols-outlined text-[24px]">build</span>
+</div>
+<div class="mt-3 flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary">5. Repair Loop</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface-variant mt-0.5">Folio Reconciliation</span>
+<span class="inline-block mt-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-outline">
+                Standby on Drift
+              </span>
+</div>
+</div>
+<!-- STAGE 6: ENTAILMENT (WAITING) -->
+<div class="flex flex-col items-center text-center group cursor-pointer opacity-80">
+<div class="w-14 h-14 rounded-full bg-surface-container-high text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">rule</span>
+</div>
+<div class="mt-3 flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline">6. Entailment</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface-variant mt-0.5">Premise Logic Gate</span>
+<span class="inline-block mt-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-outline">
+                Queued
+              </span>
+</div>
+</div>
+<!-- STAGE 7: COMMIT / LEDGER (WAITING) -->
+<div class="flex flex-col items-center text-center group cursor-pointer opacity-80">
+<div class="w-14 h-14 rounded-full bg-surface-container-high text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">lock</span>
+</div>
+<div class="mt-3 flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline">7. Commit</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface-variant mt-0.5">Immutable Edge</span>
+<span class="inline-block mt-1 px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-outline">
+                Queued
+              </span>
+</div>
+</div>
+</div>
+<!-- Annotation banner for repair loop mechanism -->
+<div class="mt-6 mx-auto max-w-lg bg-surface-container-low px-space-md py-2 rounded-DEFAULT flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">cached</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide font-semibold text-secondary">Deterministic Dispatch Guard:</span>
+<span class="font-body-sm text-body-sm">Returns to Repair upon token drift &gt; 0.05</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-outline">Max Retries: 3</span>
+</div>
+</div>
+</div>
+</section>
+<!-- LOWER TWO-COLUMN WORKSPACE: REPAIR CYCLE & SSE STREAM (LEFT) vs INSPECTOR & TELEMETRY (RIGHT) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT COLUMN (~65% width): REPAIR CYCLE VISUALIZER + SSE TERMINAL TIMELINE -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- THE SIGNATURE REPAIR CYCLE VISUALIZER -->
+<section class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">healing</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Self-Healing Verification Cycle</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Guaranteed zero-hallucination safeguard through multi-pass OCR reconciliation.
+              </p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider px-2 py-0.5 rounded-DEFAULT bg-secondary-container/40 text-secondary">
+            Verified Sub-Loop
+          </span>
+</div>
+<!-- Step-by-step repair transformation flow -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-2 mt-2">
+<!-- Step 1: Failed detection -->
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase font-bold text-error">Quote Failed</span>
+<span class="material-symbols-outlined text-error text-[16px]">warning</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Token Drift &gt; 0.05 detected on Folio 89 ¶34.</p>
+</div>
+<div class="mt-2 text-outline font-label-sm text-label-sm">Raw Levenshtein: 0.892</div>
+</div>
+<!-- Step 2: Repair Attempt -->
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary">Repair Attempt</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">transform</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Surya-OCR + PDFMiner multi-pass coordinate alignment.</p>
+</div>
+<div class="mt-2 text-secondary font-label-sm text-label-sm font-semibold">BBox Re-scanned</div>
+</div>
+<!-- Step 3: Quote Verified -->
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase font-bold text-surface-tint">Quote Verified</span>
+<span class="material-symbols-outlined text-surface-tint text-[16px]">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Exact verbatim grounding verified across folio token stream.</p>
+</div>
+<div class="mt-2 text-surface-tint font-label-sm text-label-sm font-bold">Match Score: 0.998</div>
+</div>
+<!-- Step 4: Graph Edge -->
+<div class="bg-surface-container p-space-sm rounded-DEFAULT flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary">New Graph Edge</span>
+<span class="material-symbols-outlined text-primary text-[16px]">hub</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Proposition connected to Art. 21 Precedent Ledger.</p>
+</div>
+<div class="mt-2 text-primary font-label-sm text-label-sm font-semibold">Edge #EDG-9023</div>
+</div>
+</div>
+</section>
+<!-- REAL-TIME EVENT STREAM TIMELINE (SSE Feed) -->
+<section class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Real-Time Event Stream (SSE Timeline)</h3>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase text-outline">Auto-Scroll: On</span>
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+</div>
+<!-- Terminal Ledger Feed -->
+<div class="flex flex-col gap-2 font-mono text-body-sm max-h-[380px] overflow-y-auto pr-1" id="sse-event-feed">
+<!-- Entry 1 (In Flight / Active) -->
+<div class="p-space-sm rounded-DEFAULT bg-secondary-container/20 flex flex-col gap-1 transition-all">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="text-secondary font-bold font-label-sm text-label-sm">[10:48:19.420]</span>
+<span class="text-primary font-semibold text-body-sm">node_04_verification</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase font-bold">
+                Transition In Progress
+              </span>
+</div>
+<p class="text-on-surface pl-4 text-body-sm">
+              Evaluating Proposition <span class="font-semibold text-primary">PROP_SC_1104_02</span> verbatim quote against Folio 45 lines 18-24. Token diff: 0.002.
+            </p>
+</div>
+<!-- Entry 2 (Completed) -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span class="text-outline font-label-sm text-label-sm">[10:48:18.102]</span>
+<span class="text-primary font-semibold text-body-sm">node_03_extraction</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-surface-tint font-bold uppercase">
+                Stage Completed
+              </span>
+</div>
+<p class="text-on-surface-variant pl-4 text-body-sm">
+              Extracted 3 candidate holdings from 8 passage frames. 0 ungrounded assertions discarded.
+            </p>
+</div>
+<!-- Entry 3 (Completed) -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span class="text-outline font-label-sm text-label-sm">[10:48:16.890]</span>
+<span class="text-primary font-semibold text-body-sm">node_02_passage_chunker</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-surface-tint font-bold uppercase">
+                Stage Completed
+              </span>
+</div>
+<p class="text-on-surface-variant pl-4 text-body-sm">
+              Surya-OCR bounding coordinates mapped across folios 40-52. 8 distinct semantic boundaries committed.
+            </p>
+</div>
+<!-- Entry 4 (Completed) -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span class="text-outline font-label-sm text-label-sm">[10:48:15.114]</span>
+<span class="text-primary font-semibold text-body-sm">node_01_ingest</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-surface-tint font-bold uppercase">
+                Stage Completed
+              </span>
+</div>
+<p class="text-on-surface-variant pl-4 text-body-sm">
+              SHA-256 Checksum verified (<span class="text-outline">d84e2a1b92cd8...</span>). File verified as certified true archival copy.
+            </p>
+</div>
+<!-- Entry 5 (Spawned) -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="text-outline font-label-sm text-label-sm">[10:48:14.002]</span>
+<span class="text-primary font-semibold text-body-sm">system_supervisor</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container font-label-sm text-label-sm text-outline font-bold uppercase">
+                Execution Spawned
+              </span>
+</div>
+<p class="text-on-surface-variant pl-4 text-body-sm">
+              LangGraph deterministic workflow instance initialized for Run #RN-2025-042 with concurrency=1.
+            </p>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN (~35% width): NODE INSPECTOR + RUN SUMMARY TELEMETRY -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- EXECUTION INSPECTOR CARD -->
+<section class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">manage_search</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Active Node Inspector</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">node_04_verification</h3>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase font-bold animate-pulse">
+            Active
+          </span>
+</div>
+<!-- Node Attributes Sheet -->
+<div class="flex flex-col gap-2.5 bg-surface-container-low p-space-sm rounded-DEFAULT">
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-outline">Supervisor Agent</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Node_04_GazetteInvariantVerifier</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-outline">Target Bounding Folio</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Page 45, Paragraph 19 (Lines 18–24)</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-outline mb-1">Verbatim Quote In-Flight</span>
+<div class="bg-surface-container-lowest p-space-sm rounded-DEFAULT text-on-surface italic font-body-sm text-body-sm shadow-sm">
+              “The procedure established by law under Art. 21 cannot be an arbitrary, whimsical or fanciful contrivance, but must be right, just, and fair...”
+            </div>
+</div>
+<!-- Alignment Meter Visualizer -->
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase text-outline">Alignment Confidence</span>
+<span class="font-label-md text-label-md font-bold text-secondary">0.998 / 1.000</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 99.8%"></div>
+</div>
+<span class="block text-right font-label-sm text-label-sm text-secondary mt-1">Lossless Grounding Validated</span>
+</div>
+</div>
+<!-- Inspector Actions -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<a class="flex items-center justify-between p-2 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container-highest transition-colors font-body-sm text-body-sm text-primary" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">picture_as_pdf</span>
+<span>Inspect Folio in PDF BBox Viewer</span>
+</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-2 rounded-DEFAULT bg-surface-container-low hover:bg-surface-container-highest transition-colors font-body-sm text-body-sm text-primary" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">account_tree</span>
+<span>Inspect Graph Precedent DAG</span>
+</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- RUN SUMMARY TELEMETRY CARD -->
+<section class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-2 pb-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">analytics</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Execution Telemetry</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Run Metrics Matrix</h3>
+</div>
+</div>
+<!-- Telemetry Data Grid -->
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT">
+<span class="block font-label-sm text-label-sm uppercase text-outline">Current Node</span>
+<span class="font-body-lg text-body-lg font-bold text-primary">04 / 07</span>
+<span class="block font-label-sm text-label-sm text-secondary">Verification</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT">
+<span class="block font-label-sm text-label-sm uppercase text-outline">Stages Completed</span>
+<span class="font-body-lg text-body-lg font-bold text-primary">3 of 7</span>
+<span class="block font-label-sm text-label-sm text-surface-tint">42.8% Pipeline</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT">
+<span class="block font-label-sm text-label-sm uppercase text-outline">Propositions Synthesized</span>
+<span class="font-body-lg text-body-lg font-bold text-primary">3 Total</span>
+<span class="block font-label-sm text-label-sm text-outline">All groundable</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT">
+<span class="block font-label-sm text-label-sm uppercase text-outline">Verifications OK</span>
+<span class="font-body-lg text-body-lg font-bold text-primary">2 / 3</span>
+<span class="block font-label-sm text-label-sm text-surface-tint">Quote 1 &amp; 3 Settled</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT">
+<span class="block font-label-sm text-label-sm uppercase text-outline">Repair Invocations</span>
+<span class="font-body-lg text-body-lg font-bold text-primary">1</span>
+<span class="block font-label-sm text-label-sm text-secondary">Auto-Resolved</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT">
+<span class="block font-label-sm text-label-sm uppercase text-outline">Cluster Latency</span>
+<span class="font-body-lg text-body-lg font-bold text-primary">18ms</span>
+<span class="block font-label-sm text-label-sm text-surface-tint">Normal Operating Range</span>
+</div>
+</div>
+<!-- Archival Cert Footer Seal -->
+<div class="mt-2 pt-2 border-t border-surface-container-highest flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Audit Protocol: ISO/IEC 27037 Certified</span>
+<span class="font-label-sm text-label-sm">v4.8-PROD</span>
+</div>
+</section>
+</div>
+</div>
+<!-- Interactive script to trigger live simulator demo and log fresh SSE items -->
+<script>
+    (function() {
+      const demoBtn = document.getElementById('demo-sim-btn');
+      const reconnectBtn = document.getElementById('stream-reconnect-btn');
+      const eventFeed = document.getElementById('sse-event-feed');
+
+      if (demoBtn && eventFeed) {
+        demoBtn.addEventListener('click', function() {
+          const now = new Date();
+          const timeStr = now.toTimeString().split(' ')[0] + '.' + String(now.getMilliseconds()).padStart(3, '0');
+          
+          const newEntry = document.createElement('div');
+          newEntry.className = 'p-space-sm rounded-DEFAULT bg-secondary-container/30 flex flex-col gap-1 transition-all';
+          newEntry.innerHTML = `
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+                <span class="text-secondary font-bold font-label-sm text-label-sm">[\${timeStr}]</span>
+                <span class="text-primary font-semibold text-body-sm">node_04_verification &rarr; node_06_entailment</span>
+              </div>
+              <span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase font-bold">
+                Transition Fired
+              </span>
+            </div>
+            <p class="text-on-surface pl-4 text-body-sm">
+              Quote 2 verified with 0.998 lossless confidence. Advancing proposition to Stage 6: Entailment Premise Logic Gate.
+            </p>
+          `;
+          
+          eventFeed.prepend(newEntry);
+          demoBtn.classList.add('scale-95');
+          setTimeout(() => demoBtn.classList.remove('scale-95'), 150);
+        });
+      }
+
+      if (reconnectBtn) {
+        reconnectBtn.addEventListener('click', function() {
+          const icon = reconnectBtn.querySelector('.material-symbols-outlined');
+          if (icon) {
+            icon.classList.add('animate-spin');
+            setTimeout(() => icon.classList.remove('animate-spin'), 600);
+          }
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

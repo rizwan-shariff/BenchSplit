@@ -1,0 +1,14 @@
+{
+  "fake_test_data": true,
+  "document_id": "FAKE-DELHI-138-001",
+  "court": "IN THE HIGH COURT OF DELHI",
+  "court_id": "DELHI_HC",
+  "level": "HC",
+  "title": "FAKE TEST: Northstar Exports v. State",
+  "case_number": "FAKE-CRL-002/2026",
+  "decision_date": "2026-02-10",
+  "statute_key": "NI_ACT_S138",
+  "question": "Does dispatch alone satisfy Section 138 notice service?",
+  "holding": "A complaint under Section 138 cannot proceed unless actual delivery of the statutory notice is proved.",
+  "source_uri": "fake://FAKE_TEST_DATA/FAKE-DELHI-138-001.txt"
+}

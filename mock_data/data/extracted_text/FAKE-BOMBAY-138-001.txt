@@ -1,0 +1,12 @@
+FAKE TEST DATA ONLY. This is fabricated text and is not a real judgment.
+
+IN THE HIGH COURT OF JUDICATURE AT BOMBAY
+FAKE TEST: Meridian Traders v. State
+Case No. FAKE-CRL-001/2026
+Decision date: 2026-01-15
+
+Question: Does dispatch of a Section 138 notice to the last known address satisfy the notice requirement without proof of actual delivery?
+
+FAKE HOLDING: Dispatch to the last known address is sufficient for Section 138 notice compliance; proof of actual delivery is unnecessary.
+
+A complaint under Section 138 may proceed when the statutory notice is dispatched to the last known address, even if delivery is not proved.

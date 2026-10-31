@@ -1,0 +1,18 @@
+[
+  {
+    "fake_test_data": true,
+    "statute_key": "NI_ACT_S138",
+    "prop_a": "FAKE-BOMBAY-138-001",
+    "prop_b": "FAKE-DELHI-138-001",
+    "label": "CONFLICT",
+    "reason": "Fabricated holdings intentionally state opposite answers to the same fabricated question."
+  },
+  {
+    "fake_test_data": true,
+    "statute_key": "NI_ACT_S138",
+    "prop_a": "FAKE-BENGALURU-138-001",
+    "prop_b": "FAKE-DELHI-138-001",
+    "label": "CONFLICT",
+    "reason": "Fabricated holdings intentionally state opposite answers to the same fabricated question."
+  }
+]

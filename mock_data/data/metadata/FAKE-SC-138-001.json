@@ -1,0 +1,14 @@
+{
+  "fake_test_data": true,
+  "document_id": "FAKE-SC-138-001",
+  "court": "IN THE SUPREME COURT OF INDIA",
+  "court_id": "SCI",
+  "level": "SC",
+  "title": "FAKE TEST: Apex Reference on Notice",
+  "case_number": "FAKE-CIV-004/2026",
+  "decision_date": "2026-04-20",
+  "statute_key": "NI_ACT_S138",
+  "question": "Does dispatch alone satisfy Section 138 notice service?",
+  "holding": "A complaint under Section 138 requires proof that the statutory notice reached the drawer or was deliberately avoided.",
+  "source_uri": "fake://FAKE_TEST_DATA/FAKE-SC-138-001.txt"
+}

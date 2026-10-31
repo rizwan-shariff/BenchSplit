@@ -1,0 +1,14 @@
+{
+  "fake_test_data": true,
+  "document_id": "FAKE-BENGALURU-138-001",
+  "court": "IN THE HIGH COURT OF KARNATAKA AT BENGALURU",
+  "court_id": "KARNATAKA_HC",
+  "level": "HC",
+  "title": "FAKE TEST: Riverstone Systems v. State",
+  "case_number": "FAKE-CRL-003/2026",
+  "decision_date": "2026-03-05",
+  "statute_key": "NI_ACT_S138",
+  "question": "Does dispatch alone satisfy Section 138 notice service?",
+  "holding": "A complaint under Section 138 may proceed when the statutory notice is dispatched to the last known address, even if delivery is not proved.",
+  "source_uri": "fake://FAKE_TEST_DATA/FAKE-BENGALURU-138-001.txt"
+}

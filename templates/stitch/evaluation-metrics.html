@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#372f23", "inverse-on-surface": "#feeedd", "primary-fixed": "#f2dfd5", "tertiary-fixed": "#ffddb7", "surface-container-highest": "#efe0cf", "outline-variant": "#d1c4be", "surface-tint": "#6a5b54", "surface-dim": "#e6d8c7", "secondary-container": "#ffd79c", "secondary-fixed-dim": "#e7c088", "on-secondary": "#ffffff", "tertiary-container": "#3a2200", "on-primary": "#ffffff", "surface-variant": "#efe0cf", "on-tertiary-container": "#b3864c", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "background": "#fff8f3", "tertiary": "#1e0f00", "primary-container": "#30251f", "primary-fixed-dim": "#d6c3ba", "on-tertiary-fixed": "#2a1700", "surface-container-low": "#fff2e3", "surface-container": "#fbecda", "on-tertiary-fixed-variant": "#623f0a", "tertiary-fixed-dim": "#f1bd7e", "on-secondary-container": "#795c2c", "on-surface-variant": "#4e4540", "on-secondary-fixed-variant": "#5c4215", "secondary": "#76592a", "on-secondary-fixed": "#281800", "on-surface": "#221a10", "surface": "#fff8f3", "on-primary-container": "#9c8b83", "on-background": "#221a10", "secondary-fixed": "#ffddaf", "outline": "#807570", "primary": "#1a110b", "on-tertiary": "#ffffff", "on-error": "#ffffff", "error": "#ba1a1a", "surface-bright": "#fff8f3", "on-primary-fixed": "#231914", "inverse-primary": "#d6c3ba", "on-primary-fixed-variant": "#51443d", "on-error-container": "#93000a", "surface-container-high": "#f5e6d4" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-xl": "2.5rem", "margin": "3rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-sm": [ "EB Garamond" ], "label-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-lg": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "label-md": [ "Inter" ], "body-lg": [ "Inter" ], "label-lg": [ "Inter" ], "body-sm": [ "Inter" ], "display-lg": [ "EB Garamond" ], "display-lg-mobile": [ "EB Garamond" ], "headline-lg-mobile": [ "EB Garamond" ] }, "fontSize": { "headline-sm": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "0.005em", "fontWeight": "600" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.006em", "fontWeight": "400" } ], "headline-lg": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.011em", "fontWeight": "400" } ], "label-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg": [ "3.25rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface-container font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[250px] bg-primary-container z-50 flex flex-col justify-between select-none shadow-[2px_0_12px_rgba(30,15,0,0.18)]"><div class="flex flex-col flex-1 min-h-0"><div class="pt-space-lg px-space-md pb-space-md border-b border-outline-variant/20 flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Refined geometric circular judicial seal emblem for NYAAYCHAKRA featuring a balanced scale of justice, concentric archival rings, and subtle chakra geometry in Espresso, Antique Brass, and Muted Gold." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold tracking-wider leading-none">NYAAYCHAKRA</span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-[0.14em] uppercase leading-tight mt-1">Judicial Intelligence</span></div></div></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-md flex flex-col gap-space-md" data-active-classes="bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim"><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Workspace</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="overview" href="#">Overview</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-radar" href="#">Conflict Radar</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="statute-explorer" href="#">Statute Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Investigation</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-investigation" href="#">Conflict Investigation</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="evidence-explorer" href="#">Evidence Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Operations</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="ingest-judgments" href="#">Ingest Judgments</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="live-processing" href="#">Live Processing</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="run-history" href="#">Run History</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Intelligence</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim" data-path="evaluation-metrics" href="#">Evaluation &amp; Metrics</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="forum-risk-briefs" href="#">Forum-Risk Briefs</a></div></nav></div><div class="p-space-md border-t border-outline-variant/20 flex flex-col gap-space-xs bg-primary/40"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim shadow-[0_0_8px_#e7c088]"></span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-wider uppercase font-semibold">System Status: Operational</span></div><p class="font-label-sm text-label-sm text-on-primary-container tracking-tight">NYAAYCHAKRA / JUDICIAL INTELLIGENCE • v4.8</p></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-highest z-40 px-space-lg flex items-center justify-between shadow-[0_1px_6px_rgba(48,37,31,0.03)]"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Workspace</span><span class="text-outline text-sm">/</span><span class="font-body-md text-body-md text-on-surface-variant font-medium">Evaluation &amp; Metrics</span></div><span class="hidden lg:inline-block h-4 w-px bg-surface-container-highest"></span><div class="hidden lg:flex items-center gap-2 text-outline font-label-sm text-label-sm tracking-wide uppercase"><span class="material-symbols-outlined text-[15px] text-secondary">monitoring</span><span>Judicial Alignment Benchmark — Validation &amp; Recall Audits</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded-DEFAULT border border-surface-container-highest"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>Sync Status: Synced • GET /api/v4/eval</span></div><span class="px-2.5 py-1 bg-surface-container font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider rounded-DEFAULT border border-secondary-fixed-dim/40">Active Bench Workspace</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-container px-space-lg py-space-lg"><div class="flex flex-col w-full text-on-surface">
+<!-- PAGE HEADER AREA -->
+<header class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg mb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="tracking-widest uppercase">Workspace</span>
+<span class="text-outline">/</span>
+<span class="text-secondary font-medium tracking-wide">Evaluation &amp; Metrics</span>
+</div>
+<div class="flex flex-wrap items-baseline gap-space-md pt-1">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-semibold">System Evaluation</h1>
+<span class="inline-flex items-center px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm tracking-[0.14em] uppercase font-bold shadow-sm">
+          Performance &amp; Reliability
+        </span>
+</div>
+</div>
+<!-- Header Actions & Meta-Audit Controls -->
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-2 bg-surface-container-low px-space-md py-2 rounded-DEFAULT shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_6px_#c5a16b] shrink-0"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+          Evaluation Dataset: <strong class="text-primary font-medium">Benchmark Gold Standard v4.8</strong> (lossless ground truth)
+        </span>
+</div>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-DEFAULT bg-primary text-on-primary font-label-lg text-label-lg tracking-wide hover:bg-primary-container transition-all active:scale-[0.98] shadow-sm cursor-pointer" id="re-eval-btn">
+<span class="material-symbols-outlined text-[17px] text-secondary-fixed" id="re-eval-icon">autorenew</span>
+<span>Re-Evaluate Run</span>
+</button>
+</div>
+</header>
+<!-- TOP HERO ROW: F1 GAUGE + TRI-METRIC & BASELINE COMPARISON -->
+<section class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Hero Panel 1: Dominant F1 Score Arc Gauge (5 cols) -->
+<div class="xl:col-span-5 bg-surface-bright rounded-DEFAULT p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<!-- Watermark emblem bg accent -->
+<div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-surface-container opacity-40 pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm tracking-[0.16em] uppercase text-on-surface-variant font-semibold">Core Verification Benchmark</span>
+<span class="font-headline-sm text-headline-sm text-primary font-serif">Harmonized F1 Measure</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm tracking-widest uppercase">
+          AUC-PR: 0.981
+        </span>
+</div>
+<!-- Semicircular Radial Gauge -->
+<div class="flex flex-col items-center justify-center my-space-md relative">
+<div class="relative w-64 h-36 flex items-end justify-center">
+<svg class="w-64 h-64 overflow-visible" fill="none" viewbox="0 0 240 140">
+<!-- Background track (180 deg arc) -->
+<path d="M 20 120 A 100 100 0 0 1 220 120" stroke="#E8DECE" stroke-linecap="round" stroke-width="14"></path>
+<!-- Reference Baseline Tick Marker (0.758 position: ~136.4 deg arc) -->
+<line stroke="#766B5D" stroke-linecap="round" stroke-width="2" x1="88" x2="84" y1="23" y2="35"></line>
+<!-- Dynamic Filled Arc (94.2% of 180° = ~169.5°) -->
+<!-- Arc length is approx 314.159. Stroke-dasharray 314. Dashoffset for 94.2% = 314 * (1 - 0.942) = 18.2 -->
+<path class="transition-all duration-1000 ease-out" d="M 20 120 A 100 100 0 0 1 220 120" stroke="#C5A16B" stroke-dasharray="314.16" stroke-dashoffset="18.2" stroke-linecap="round" stroke-width="14"></path>
+<!-- Center Terminal Tick Indicator -->
+<circle cx="214" cy="98" fill="#30251F" r="4.5"></circle>
+</svg>
+<!-- Centered Numerical Readout -->
+<div class="absolute bottom-0 inset-x-0 flex flex-col items-center text-center">
+<span class="font-headline-lg text-[3.25rem] leading-none text-primary font-bold tracking-tight">0.942</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.18em] text-on-surface-variant mt-2 font-medium">F1 Score • Lossless Harmonization</span>
+</div>
+</div>
+</div>
+<!-- Baseline Delta Pill & Metadata Strip -->
+<div class="flex items-center justify-between pt-space-md bg-surface-container-low px-space-md py-2.5 rounded-DEFAULT shadow-xs">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-5 h-5 rounded-full bg-[#426B53]/15 text-[#426B53]">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+</span>
+<span class="font-label-sm text-label-sm text-[#426B53] font-bold tracking-wide uppercase">+18.4% Over Baseline</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">
+          Threshold τ = 0.880
+        </span>
+</div>
+</div>
+<!-- Hero Panel 2: Tri-Metric Grid & Comparative Dumbbell Bars (7 cols) -->
+<div class="xl:col-span-7 bg-surface-bright rounded-DEFAULT p-space-lg shadow-sm flex flex-col justify-between">
+<!-- Upper Tri-Metric Matrix -->
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<span class="font-label-sm text-label-sm tracking-[0.16em] uppercase text-on-surface-variant font-semibold">Lossless Rigor Breakdown</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium tracking-wide">Calculated over N=1,240 Pairs</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Precision -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low shadow-xs flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-medium">Precision</span>
+<span class="w-2 h-2 rounded-full bg-[#426B53]" title="Verifiable Proposition Grounding"></span>
+</div>
+<div class="my-2">
+<span class="font-headline-md text-headline-md text-primary font-bold">0.961</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.775rem] leading-snug">
+              96.1% Verifiable proposition grounding with zero synthetic drift.
+            </span>
+</div>
+<!-- Recall -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low shadow-xs flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-medium">Recall</span>
+<span class="w-2 h-2 rounded-full bg-secondary" title="Constitutional Contradiction Capture"></span>
+</div>
+<div class="my-2">
+<span class="font-headline-md text-headline-md text-primary font-bold">0.924</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.775rem] leading-snug">
+              92.4% Constitutional contradiction capture across jurisdictional benches.
+            </span>
+</div>
+<!-- Cohen's Kappa -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low shadow-xs flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-medium">Cohen's Kappa</span>
+<span class="w-2 h-2 rounded-full bg-primary" title="Inter-Rater &amp; Model Accord"></span>
+</div>
+<div class="my-2">
+<span class="font-headline-md text-headline-md text-primary font-bold">0.892</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.775rem] leading-snug">
+              Near-perfect inter-rater consensus between senior constitutional jurists &amp; graph.
+            </span>
+</div>
+</div>
+</div>
+<!-- Lower Baseline Comparison Bar / Dumbbell Visual -->
+<div class="pt-space-md mt-space-md bg-surface-container-lowest/60 p-space-md rounded-DEFAULT shadow-xs">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.14em] text-primary font-semibold">Comparative Grounding Delta</span>
+<span class="font-label-sm text-label-sm text-[#426B53] font-bold">+0.184 F1 (+24.3% Relative Gain)</span>
+</div>
+<!-- Bar 1: Nyaaychakra -->
+<div class="flex flex-col gap-1 mb-3">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-primary font-medium flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+              NYAAYCHAKRA (Dual Invariant Entailment Graph)
+            </span>
+<span class="text-primary font-bold">0.942 F1</span>
+</div>
+<div class="w-full h-3 bg-surface-container-highest rounded-DEFAULT overflow-hidden relative">
+<div class="h-full bg-secondary transition-all duration-700" style="width: 94.2%;"></div>
+<div class="absolute right-[5.8%] top-0 bottom-0 w-0.5 bg-primary"></div>
+</div>
+</div>
+<!-- Bar 2: Generic Legal-LLM Baseline -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+              Baseline Legal-LLM (Direct Zero-Shot Prompting)
+            </span>
+<span class="text-on-surface-variant font-bold">0.758 F1</span>
+</div>
+<div class="w-full h-3 bg-surface-container-highest rounded-DEFAULT overflow-hidden relative">
+<div class="h-full bg-outline transition-all duration-700" style="width: 75.8%;"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MID SECTION: CONFUSION MATRIX & HALLUCINATION REJECTION GATE -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Confusion Matrix: ~58% (7 cols on lg) -->
+<div class="lg:col-span-7 bg-surface-bright rounded-DEFAULT p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md gap-2">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-serif">Judicial Conflict Detection Confusion Matrix</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Validated against verified Supreme Court &amp; High Court discordant pairs.</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">1,240 Pairs Tested</span>
+</div>
+</div>
+<!-- Matrix Layout -->
+<div class="overflow-x-auto py-2">
+<div class="min-w-[480px]">
+<!-- Column Labels Header -->
+<div class="grid grid-cols-12 gap-2 mb-2 text-center">
+<div class="col-span-3"></div>
+<div class="col-span-4 bg-surface-container-low py-1.5 px-2 rounded-DEFAULT font-label-sm text-label-sm tracking-wider uppercase text-primary font-bold">
+                Predicted Conflict (+)
+              </div>
+<div class="col-span-5 bg-surface-container-low py-1.5 px-2 rounded-DEFAULT font-label-sm text-label-sm tracking-wider uppercase text-on-surface-variant font-bold">
+                Predicted Concordant (-)
+              </div>
+</div>
+<!-- Row 1: Actual Conflict (+) -->
+<div class="grid grid-cols-12 gap-2 mb-2 items-stretch">
+<div class="col-span-3 bg-surface-container-low p-2 rounded-DEFAULT flex items-center justify-center text-center">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-primary font-bold leading-tight">
+                  Actual Conflict (+)
+                </span>
+</div>
+<!-- TP Cell -->
+<div class="col-span-4 bg-[#426B53]/10 p-space-md rounded-DEFAULT flex flex-col justify-between shadow-xs hover:bg-[#426B53]/15 transition-colors">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm tracking-widest text-[#426B53] font-bold">TP</span>
+<span class="font-label-sm text-label-sm text-[#426B53] font-semibold">92.4% Sens</span>
+</div>
+<div class="my-2">
+<span class="font-headline-md text-[2rem] leading-none text-primary font-bold">582</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-primary font-semibold block">True Positives</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.75rem] leading-tight">Verified Doctrinaire Conflicts</span>
+</div>
+</div>
+<!-- FN Cell -->
+<div class="col-span-5 bg-surface-bright p-space-md rounded-DEFAULT flex flex-col justify-between shadow-xs hover:bg-surface-container-high transition-colors">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm tracking-widest text-[#913F40] font-bold">FN</span>
+<span class="font-label-sm text-label-sm text-[#913F40] font-semibold">7.6% Miss</span>
+</div>
+<div class="my-2">
+<span class="font-headline-md text-[2rem] leading-none text-primary font-bold">48</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-primary font-semibold block">False Negatives</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.75rem] leading-tight">Missed subtle divergent obiter dicta</span>
+</div>
+</div>
+</div>
+<!-- Row 2: Actual Concordant (-) -->
+<div class="grid grid-cols-12 gap-2 items-stretch">
+<div class="col-span-3 bg-surface-container-low p-2 rounded-DEFAULT flex items-center justify-center text-center">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-on-surface-variant font-bold leading-tight">
+                  Actual Concordant (-)
+                </span>
+</div>
+<!-- FP Cell -->
+<div class="col-span-4 bg-surface-bright p-space-md rounded-DEFAULT flex flex-col justify-between shadow-xs hover:bg-surface-container-high transition-colors">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm tracking-widest text-[#913F40] font-bold">FP</span>
+<span class="font-label-sm text-label-sm text-[#913F40] font-semibold">3.9% Type I</span>
+</div>
+<div class="my-2">
+<span class="font-headline-md text-[2rem] leading-none text-primary font-bold">24</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-primary font-semibold block">False Positives</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.75rem] leading-tight">Type I synthetic false alarms</span>
+</div>
+</div>
+<!-- TN Cell -->
+<div class="col-span-5 bg-surface-container-low p-space-md rounded-DEFAULT flex flex-col justify-between shadow-xs hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm tracking-widest text-primary font-bold">TN</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">96.1% Spec</span>
+</div>
+<div class="my-2">
+<span class="font-headline-md text-[2rem] leading-none text-primary font-bold">586</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-primary font-semibold block">True Negatives</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.75rem] leading-tight">Confirmed concordant jurisprudence</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Diagnostic Metrics Footer Strip -->
+<div class="mt-space-md pt-space-md flex flex-wrap items-center justify-between gap-y-2 bg-surface-container-high px-space-md py-2.5 rounded-DEFAULT shadow-xs">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Specificity:</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">96.1%</span>
+</div>
+<span class="text-outline text-xs">•</span>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Sensitivity (Recall):</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">92.4%</span>
+</div>
+<span class="text-outline text-xs">•</span>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Diagnostic Odds Ratio:</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">294.8</span>
+</div>
+</div>
+</div>
+<!-- Hallucination Rejection & Filtering: ~42% (5 cols on lg) -->
+<div class="lg:col-span-5 bg-surface-bright rounded-DEFAULT p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between pb-space-sm mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.16em] text-on-surface-variant font-semibold">Invariant Safeguards</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-serif">Zero-Synthetic Hallucination Gate</h3>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-[#913F40]/10 text-[#913F40] font-label-sm text-label-sm font-bold uppercase tracking-wider">
+            Active Guard
+          </span>
+</div>
+<!-- Central Metric Callout -->
+<div class="flex items-center gap-space-lg mb-space-lg p-space-md bg-surface-container-low rounded-DEFAULT shadow-xs">
+<!-- Circular Segment Visual (Donut SVG) -->
+<div class="relative w-24 h-24 shrink-0">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 100 100">
+<!-- Total Ring -->
+<circle cx="50" cy="50" fill="none" r="40" stroke="#E8DECE" stroke-width="9"></circle>
+<!-- Dropped/Rejected Arc (9.64% of total extraction volume dropped = 24.2 circumference) -->
+<circle cx="50" cy="50" fill="none" r="40" stroke="#913F40" stroke-dasharray="251.3" stroke-dashoffset="227.1" stroke-linecap="round" stroke-width="9"></circle>
+<!-- Committed Arc (90.36% of extractions committed = 227.1 circumference) -->
+<circle cx="50" cy="50" fill="none" r="40" stroke="#426B53" stroke-dasharray="251.3" stroke-dashoffset="24.2" stroke-linecap="round" stroke-width="9"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-label-sm text-label-sm font-bold text-primary">8.4k</span>
+<span class="font-label-sm text-[0.625rem] text-on-surface-variant leading-none uppercase">Propositions</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-medium">Rejection Efficiency</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">96.4%</span>
+<span class="font-label-sm text-label-sm text-[#426B53] font-semibold">Drop Precision</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[0.775rem] leading-snug">
+              Synthetic &amp; ungrounded citations caught by Surya-OCR + invariant verifier.
+            </p>
+</div>
+</div>
+<!-- Extraction Breakdown Pipeline -->
+<div class="flex flex-col gap-space-sm mb-space-md">
+<div class="flex items-center justify-between text-body-sm font-body-sm pb-1">
+<span class="text-on-surface-variant">Total Extractions Processed:</span>
+<span class="font-semibold text-primary">8,420 Raw Clauses</span>
+</div>
+<!-- Extraction Bar Visual -->
+<div class="w-full h-3 bg-surface-container-highest rounded-DEFAULT overflow-hidden flex shadow-xs">
+<div class="h-full bg-[#426B53]" style="width: 90.35%;" title="Losslessly Grounded (7,608)"></div>
+<div class="h-full bg-[#913F40]" style="width: 9.65%;" title="Dropped / Filtered Out (812)"></div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-2">
+<div class="p-2.5 rounded-DEFAULT bg-surface-container-lowest/80 shadow-xs flex flex-col">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-2 h-2 rounded-full bg-[#426B53]"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Committed</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">7,608</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.7rem]">100% losslessly grounded</span>
+</div>
+<div class="p-2.5 rounded-DEFAULT bg-surface-container-lowest/80 shadow-xs flex flex-col">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="w-2 h-2 rounded-full bg-[#913F40]"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Vetted Out</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-[#913F40] font-bold">812</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.7rem]">Spurious obiter / hallucinations</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Telemetry Callout Box -->
+<div class="bg-surface-container-low p-space-md rounded-DEFAULT shadow-xs">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+<strong class="font-semibold text-primary">Entailment Gate Telemetry:</strong> Natural Language Premise Entailment filtered <strong>96.4%</strong> of candidate synthetic propositions prior to constitutional graph commit.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- BOTTOM AUDIT SUMMARY & FORMAL DEFINITION ACCORDION -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left: Archival Stats Strip (6 cols) -->
+<div class="lg:col-span-6 bg-surface-bright rounded-DEFAULT p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="font-label-sm text-label-sm tracking-[0.16em] uppercase text-on-surface-variant font-semibold">Evaluation Summary Strip</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium uppercase tracking-wider">REST /api/eval/summary</span>
+</div>
+<!-- High-Density Archival Stats Matrix -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-y-4 gap-x-space-md py-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Gold Pairs</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">1,240</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.7rem]">Lossless validation set</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Precision</span>
+<span class="font-headline-sm text-headline-sm text-[#426B53] font-bold">0.961</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.7rem]">± 0.003 bootstrap error</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Recall</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">0.924</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.7rem]">Cross-bench capture</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Cohen's Kappa</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">0.892</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.7rem]">Substantial accord (&gt;0.80)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Baseline F1</span>
+<span class="font-headline-sm text-headline-sm text-outline font-bold">0.758</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.7rem]">Direct prompting standard</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">F1 Delta</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">+0.184</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[0.7rem]">+24.3% relative boost</span>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm text-[0.775rem]">
+<span>Total Extractions: <strong class="text-primary font-medium">8,420</strong></span>
+<span>Filtered Drop Rate: <strong class="text-primary font-medium">96.4%</strong></span>
+<span>Confidence Interval: <strong class="text-primary font-medium">99.0%</strong></span>
+</div>
+</div>
+<!-- Right: Expandable Formal Conflict Definition Accordion (6 cols) -->
+<div class="lg:col-span-6 bg-surface-bright rounded-DEFAULT p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="font-label-sm text-label-sm tracking-[0.16em] uppercase text-on-surface-variant font-semibold">Jurisprudential Axiom</span>
+<button class="font-label-sm text-label-sm text-secondary hover:text-primary font-bold uppercase tracking-wider flex items-center gap-1 cursor-pointer" id="toggle-def-btn">
+<span id="toggle-def-text">View Axiomatic Formalism</span>
+<span class="material-symbols-outlined text-[16px]" id="toggle-def-icon">expand_more</span>
+</button>
+</div>
+<div class="flex items-start gap-space-md mb-space-md">
+<div class="w-10 h-10 rounded-DEFAULT bg-secondary-fixed/50 flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-serif">Formal Conflict Definition</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mathematical &amp; constitutional doctrine for contradiction classification.</p>
+</div>
+</div>
+<!-- Archival Quote Container -->
+<blockquote class="bg-surface-container-low p-space-md rounded-DEFAULT shadow-xs relative">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary rounded-l-DEFAULT"></div>
+<p class="font-headline-sm text-[1.05rem] leading-relaxed text-primary italic font-serif pl-2">
+            “Two judicial propositions P<sub>A</sub> and P<sub>B</sub> form a <span class="font-semibold not-italic text-secondary">CONFLICT</span> if and only if:
+          </p>
+<ol class="mt-2 space-y-2 font-body-sm text-body-sm text-on-surface pl-6 list-decimal leading-relaxed">
+<li>
+<strong class="text-primary">Statutory Alignment:</strong> Both cite identical or <em>pari materia</em> constitutional or statutory provisions;
+            </li>
+<li>
+<strong class="text-primary">Normative Opposition:</strong> Their normative operational holdings dictate diametrically opposing procedural or substantive directives on identical factual predicates; and
+            </li>
+<li>
+<strong class="text-primary">Stare Decisis Invariance:</strong> Neither judgment has been subsequently overruled or modified by a superior or larger Constitution Bench.
+            </li>
+</ol>
+</blockquote>
+<!-- Hidden Axiomatic Expansion Section (Toggled by JS) -->
+<div class="hidden mt-space-md pt-space-md flex flex-col gap-2" id="def-expanded-content">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-on-surface-variant font-semibold">Strict Entailment Formula</span>
+<pre class="bg-surface-container-high p-space-sm rounded-DEFAULT font-mono text-xs text-primary overflow-x-auto">Conflict(P_A, P_B) ⇔ [Premise(P_A) ≅ Premise(P_B)] ∧ [Holding(P_A) ⊥ Holding(P_B)] ∧ ¬Overruled(P_A, P_B)</pre>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm text-[0.775rem]">
+<span>Schema Version: <strong class="text-primary font-medium">v4.8-Constitutional</strong></span>
+<span class="flex items-center gap-1 text-[#426B53]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+          Strict Lossless Verification Enabled
+        </span>
+</div>
+</div>
+</section>
+<!-- Interactive Client-side Script for Accordion & Refresh Trigger -->
+<script>
+    (function() {
+      const toggleBtn = document.getElementById('toggle-def-btn');
+      const expandedBox = document.getElementById('def-expanded-content');
+      const toggleText = document.getElementById('toggle-def-text');
+      const toggleIcon = document.getElementById('toggle-def-icon');
+      const reEvalBtn = document.getElementById('re-eval-btn');
+      const reEvalIcon = document.getElementById('re-eval-icon');
+
+      if (toggleBtn && expandedBox) {
+        toggleBtn.addEventListener('click', function() {
+          const isHidden = expandedBox.classList.contains('hidden');
+          if (isHidden) {
+            expandedBox.classList.remove('hidden');
+            toggleText.textContent = 'Collapse Formalism';
+            toggleIcon.textContent = 'expand_less';
+          } else {
+            expandedBox.classList.add('hidden');
+            toggleText.textContent = 'View Axiomatic Formalism';
+            toggleIcon.textContent = 'expand_more';
+          }
+        });
+      }
+
+      if (reEvalBtn && reEvalIcon) {
+        reEvalBtn.addEventListener('click', function() {
+          reEvalIcon.classList.add('animate-spin');
+          reEvalBtn.classList.add('opacity-75');
+          setTimeout(function() {
+            reEvalIcon.classList.remove('animate-spin');
+            reEvalBtn.classList.remove('opacity-75');
+          }, 1200);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

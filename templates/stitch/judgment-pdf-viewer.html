@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#d6c3ba", "surface-container-highest": "#efe0cf", "on-secondary-fixed-variant": "#5c4215", "outline": "#807570", "on-error": "#ffffff", "outline-variant": "#d1c4be", "secondary-fixed-dim": "#e7c088", "on-primary-fixed": "#231914", "surface-container-high": "#f5e6d4", "on-secondary-container": "#795c2c", "primary-fixed-dim": "#d6c3ba", "on-secondary": "#ffffff", "primary-container": "#30251f", "surface-dim": "#e6d8c7", "on-primary-container": "#9c8b83", "secondary-container": "#ffd79c", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "inverse-on-surface": "#feeedd", "secondary-fixed": "#ffddaf", "on-tertiary-fixed-variant": "#623f0a", "on-tertiary-container": "#b3864c", "surface-bright": "#fff8f3", "on-surface": "#221a10", "surface-container-low": "#fff2e3", "tertiary-container": "#3a2200", "primary-fixed": "#f2dfd5", "on-error-container": "#93000a", "surface-variant": "#efe0cf", "surface": "#fff8f3", "on-secondary-fixed": "#281800", "error": "#ba1a1a", "on-surface-variant": "#4e4540", "tertiary-fixed-dim": "#f1bd7e", "background": "#fff8f3", "tertiary-fixed": "#ffddb7", "tertiary": "#1e0f00", "surface-tint": "#6a5b54", "primary": "#1a110b", "error-container": "#ffdad6", "on-primary-fixed-variant": "#51443d", "on-tertiary-fixed": "#2a1700", "surface-container": "#fbecda", "secondary": "#76592a", "surface-container-lowest": "#ffffff", "inverse-surface": "#372f23", "on-background": "#221a10" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-xl": "2.5rem", "margin": "3rem", "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "gutter": "1.5rem" }, "fontFamily": { "headline-lg": [ "EB Garamond" ], "body-sm": [ "Inter" ], "label-md": [ "Inter" ], "label-lg": [ "Inter" ], "body-lg": [ "Inter" ], "headline-sm": [ "EB Garamond" ], "body-md": [ "Inter" ], "display-lg-mobile": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "headline-lg-mobile": [ "EB Garamond" ], "display-lg": [ "EB Garamond" ], "label-sm": [ "Inter" ] }, "fontSize": { "headline-lg": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" } ], "label-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.011em", "fontWeight": "400" } ], "headline-sm": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "0.005em", "fontWeight": "600" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.006em", "fontWeight": "400" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-md": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ], "display-lg": [ "3.25rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface-container font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[250px] bg-primary-container z-50 flex flex-col justify-between select-none shadow-[2px_0_12px_rgba(30,15,0,0.18)]"><div class="flex flex-col flex-1 min-h-0"><div class="pt-space-lg px-space-md pb-space-md border-b border-outline-variant/20 flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Refined geometric circular judicial seal emblem for NYAAYCHAKRA featuring a balanced scale of justice, concentric archival rings, and subtle chakra geometry in Espresso, Antique Brass, and Muted Gold." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold tracking-wider leading-none">NYAAYCHAKRA</span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-[0.14em] uppercase leading-tight mt-1">Judicial Intelligence</span></div></div></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-md flex flex-col gap-space-md" data-active-classes="bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim"><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Workspace</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="overview" href="#">Overview</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-radar" href="#">Conflict Radar</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="statute-explorer" href="#">Statute Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Investigation</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-investigation" href="#">Conflict Investigation</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="evidence-explorer" href="#">Evidence Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Operations</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="ingest-judgments" href="#">Ingest Judgments</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="live-processing" href="#">Live Processing</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="run-history" href="#">Run History</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Intelligence</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="evaluation-metrics" href="#">Evaluation &amp; Metrics</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="forum-risk-briefs" href="#">Forum-Risk Briefs</a></div></nav></div><div class="p-space-md border-t border-outline-variant/20 flex flex-col gap-space-xs bg-primary/40"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim shadow-[0_0_8px_#e7c088]"></span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-wider uppercase font-semibold">System Status: Operational</span></div><p class="font-label-sm text-label-sm text-on-primary-container tracking-tight">NYAAYCHAKRA / JUDICIAL INTELLIGENCE • v4.8</p></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-highest z-40 px-space-lg flex items-center justify-between shadow-[0_1px_6px_rgba(48,37,31,0.03)]"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Workspace</span><span class="text-outline text-sm">/</span><span class="font-body-md text-body-md text-on-surface-variant">Evidence Explorer</span></div><span class="hidden lg:inline-block h-4 w-px bg-surface-container-highest"></span><div class="hidden lg:flex items-center gap-2 text-outline font-label-sm text-label-sm tracking-wide uppercase"><span class="material-symbols-outlined text-[15px] text-secondary">account_balance</span><span>Supreme Court &amp; High Court Archives — Realtime Repository</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded-DEFAULT border border-surface-container-highest"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>Ingestion Pipeline Synchronized • Deterministic Hash v4.8</span></div><span class="px-2.5 py-1 bg-surface-container font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider rounded-DEFAULT border border-secondary-fixed-dim/40">Active Bench Workspace</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-container px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Document Intelligence Command Bar -->
+<section class="bg-surface-container-lowest shadow-sm rounded-DEFAULT mb-space-md p-space-md flex flex-col xl:flex-row xl:items-center xl:justify-between gap-space-md">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Workspace</span>
+<span class="text-outline text-xs">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Evidence Explorer</span>
+<span class="text-outline text-xs">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-medium">Judgment Viewer</span>
+<span class="mx-1 h-3 w-px bg-surface-container-highest"></span>
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-DEFAULT bg-[#426B53]/10 text-[#426B53] font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#426B53] animate-pulse"></span>
+          Verified Gazette Record
+        </span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-0.5 flex-wrap">
+<h1 class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold">
+          Court on its own motion <span class="font-normal italic text-on-surface-variant text-base">v.</span> Union of India &amp; Ors.
+        </h1>
+<span class="font-label-md text-label-md text-secondary font-medium tracking-wide">
+          WP(CRL) 4921/2023 • Delhi HC Full Bench
+        </span>
+</div>
+<div class="flex items-center gap-x-space-md gap-y-1 font-label-sm text-label-sm text-on-surface-variant flex-wrap mt-0.5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">gavel</span>
+<span>Coram: Sharma CJ, Subramonium Prasad J</span>
+</div>
+<span class="h-2.5 w-px bg-surface-container-highest"></span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">event</span>
+<span>Decision: 04 Aug 2023</span>
+</div>
+<span class="h-2.5 w-px bg-surface-container-highest"></span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">fingerprint</span>
+<span class="font-mono">CNR: DHC010049212023</span>
+</div>
+<span class="h-2.5 w-px bg-surface-container-highest"></span>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span class="font-mono">SHA256: 9b2d...c308</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Tray -->
+<div class="flex items-center gap-2 shrink-0 self-start xl:self-center">
+<button class="px-2.5 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-DEFAULT transition-colors flex items-center gap-1.5" id="toggle-thumbs-btn">
+<span class="material-symbols-outlined text-[16px] text-secondary">view_sidebar</span>
+<span>Thumbnails</span>
+</button>
+<button class="px-2.5 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-DEFAULT transition-colors flex items-center gap-1.5" id="toggle-inspector-btn">
+<span class="material-symbols-outlined text-[16px] text-secondary">dock_to_left</span>
+<span>Evidence Rail</span>
+</button>
+<a class="px-3 py-1.5 bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm uppercase tracking-wider rounded-DEFAULT transition-all flex items-center gap-1.5 shadow-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Original Facsimile</span>
+</a>
+</div>
+</section>
+<!-- Precision PDF Floating / Docked Control Bar -->
+<section class="sticky top-[64px] z-30 bg-surface-container-lowest/95 backdrop-blur-md rounded-DEFAULT shadow-md px-space-md py-space-sm mb-space-md flex items-center justify-between gap-space-md">
+<!-- Folio Paging -->
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-low rounded-DEFAULT px-1 py-0.5">
+<button class="w-7 h-7 flex items-center justify-center hover:bg-surface-container rounded-DEFAULT text-on-surface transition-colors" title="Previous Folio">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-2 font-label-sm text-label-sm font-semibold text-primary uppercase tracking-wide">
+          Folio 89 <span class="text-outline font-normal">of</span> 240
+        </span>
+<button class="w-7 h-7 flex items-center justify-center hover:bg-surface-container rounded-DEFAULT text-on-surface transition-colors" title="Next Folio">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<span class="h-4 w-px bg-surface-container-highest"></span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-DEFAULT bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm uppercase font-semibold">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span>
+<span>Part IV: Ratio Decidendi</span>
+</span>
+</div>
+<!-- Zoom & Layout Mode -->
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-low rounded-DEFAULT px-1 py-0.5">
+<button class="w-7 h-7 flex items-center justify-center hover:bg-surface-container rounded-DEFAULT text-on-surface transition-colors" title="Zoom Out">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="px-2.5 font-label-sm text-label-sm font-mono font-medium text-primary">100%</span>
+<button class="w-7 h-7 flex items-center justify-center hover:bg-surface-container rounded-DEFAULT text-on-surface transition-colors" title="Zoom In">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="hidden md:flex items-center bg-surface-container-low rounded-DEFAULT p-0.5">
+<button class="px-2.5 py-1 text-on-surface font-label-sm text-label-sm hover:bg-surface-container rounded-DEFAULT transition-colors">
+          Fit Width
+        </button>
+<button class="px-2.5 py-1 bg-surface-container-highest text-primary font-label-sm text-label-sm rounded-DEFAULT font-semibold">
+          Fit Page
+        </button>
+</div>
+</div>
+<!-- Analytical Layers & Display Toggles -->
+<div class="flex items-center gap-2">
+<button class="hidden lg:flex items-center gap-1.5 px-2.5 py-1 bg-[#426B53]/15 text-[#426B53] font-label-sm text-label-sm rounded-DEFAULT font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+<span>Anchors (2)</span>
+</button>
+<button class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded-DEFAULT transition-colors">
+<span class="material-symbols-outlined text-[15px] text-secondary">layers</span>
+<span>OCR Active</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-DEFAULT bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Full Desk View">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+</div>
+</section>
+<!-- Tri-Panel Workbench: Thumbnails / Authentic Gazette / Evidence Inspector -->
+<div class="flex items-start gap-space-md w-full relative">
+<!-- Left Rail: Folio Thumbnails (Collapsible) -->
+<aside class="w-[130px] shrink-0 flex flex-col gap-space-sm transition-all duration-300" id="thumbnail-rail">
+<div class="p-space-xs bg-surface-container-lowest rounded-DEFAULT shadow-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold pl-1">Folios</span>
+<button class="text-outline hover:text-primary p-0.5">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+</button>
+</div>
+<!-- Thumbnail 87 -->
+<div class="group cursor-pointer bg-surface-container-lowest p-2 rounded-DEFAULT shadow-sm hover:shadow transition-all flex flex-col items-center">
+<div class="w-full h-28 bg-surface-container-low rounded-DEFAULT p-1.5 flex flex-col gap-1 overflow-hidden relative">
+<div class="h-1.5 w-1/2 bg-outline-variant rounded"></div>
+<div class="h-1 w-full bg-surface-container-high rounded"></div>
+<div class="h-1 w-5/6 bg-surface-container-high rounded"></div>
+<div class="h-1 w-full bg-surface-container-high rounded"></div>
+<div class="h-1 w-4/6 bg-surface-container-high rounded"></div>
+<div class="mt-auto h-1 w-1/3 bg-outline-variant/60 rounded"></div>
+</div>
+<span class="mt-1 font-label-sm text-label-sm text-outline group-hover:text-primary">Folio 87</span>
+</div>
+<!-- Thumbnail 88 -->
+<div class="group cursor-pointer bg-surface-container-lowest p-2 rounded-DEFAULT shadow-sm hover:shadow transition-all flex flex-col items-center">
+<div class="w-full h-28 bg-surface-container-low rounded-DEFAULT p-1.5 flex flex-col gap-1 overflow-hidden relative">
+<div class="h-1 w-full bg-surface-container-high rounded"></div>
+<div class="h-1 w-11/12 bg-surface-container-high rounded"></div>
+<div class="h-1 w-4/5 bg-surface-container-high rounded"></div>
+<div class="h-1 w-full bg-surface-container-high rounded"></div>
+<div class="h-1 w-3/4 bg-surface-container-high rounded"></div>
+<div class="mt-auto h-1 w-1/3 bg-outline-variant/60 rounded"></div>
+</div>
+<span class="mt-1 font-label-sm text-label-sm text-outline group-hover:text-primary">Folio 88</span>
+</div>
+<!-- Thumbnail 89 (ACTIVE SELECTION WITH PIN) -->
+<div class="cursor-pointer bg-surface-container-lowest p-2 rounded-DEFAULT shadow-md flex flex-col items-center relative ring-2 ring-secondary/60">
+<span class="absolute -top-1.5 -right-1 px-1.5 py-0.2 bg-[#426B53] text-surface-container-lowest font-label-sm text-[9px] uppercase tracking-wider rounded-DEFAULT font-bold flex items-center gap-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[10px]">push_pin</span> 2
+        </span>
+<div class="w-full h-28 bg-[#fffcf6] rounded-DEFAULT p-1.5 flex flex-col gap-1 overflow-hidden relative">
+<div class="h-1.5 w-2/3 bg-primary/40 rounded"></div>
+<div class="h-1 w-full bg-outline-variant rounded"></div>
+<div class="h-1.5 w-full bg-secondary-container/70 rounded"></div>
+<div class="h-1.5 w-11/12 bg-secondary-container/70 rounded"></div>
+<div class="h-1 w-full bg-outline-variant rounded"></div>
+<div class="mt-auto flex justify-between items-center w-full">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<div class="h-1 w-1/4 bg-outline-variant rounded"></div>
+</div>
+</div>
+<span class="mt-1 font-label-sm text-label-sm text-secondary font-bold">Folio 89</span>
+</div>
+<!-- Thumbnail 90 (Has Minor Flag) -->
+<div class="group cursor-pointer bg-surface-container-lowest p-2 rounded-DEFAULT shadow-sm hover:shadow transition-all flex flex-col items-center relative">
+<span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-secondary-container"></span>
+<div class="w-full h-28 bg-surface-container-low rounded-DEFAULT p-1.5 flex flex-col gap-1 overflow-hidden relative">
+<div class="h-1 w-full bg-surface-container-high rounded"></div>
+<div class="h-1 w-5/6 bg-surface-container-high rounded"></div>
+<div class="h-1 w-3/4 bg-secondary-container/60 rounded"></div>
+<div class="h-1 w-full bg-surface-container-high rounded"></div>
+<div class="mt-auto h-1 w-1/3 bg-outline-variant/60 rounded"></div>
+</div>
+<span class="mt-1 font-label-sm text-label-sm text-outline group-hover:text-primary">Folio 90</span>
+</div>
+<!-- Thumbnail 91 -->
+<div class="group cursor-pointer bg-surface-container-lowest p-2 rounded-DEFAULT shadow-sm hover:shadow transition-all flex flex-col items-center">
+<div class="w-full h-28 bg-surface-container-low rounded-DEFAULT p-1.5 flex flex-col gap-1 overflow-hidden relative">
+<div class="h-1 w-full bg-surface-container-high rounded"></div>
+<div class="h-1 w-4/5 bg-surface-container-high rounded"></div>
+<div class="h-1 w-full bg-surface-container-high rounded"></div>
+<div class="mt-auto h-1 w-1/3 bg-outline-variant/60 rounded"></div>
+</div>
+<span class="mt-1 font-label-sm text-label-sm text-outline group-hover:text-primary">Folio 91</span>
+</div>
+</aside>
+<!-- Center Workspace: Authentic Judicial Facsimile (~68% width) -->
+<main class="flex-1 min-w-0 flex flex-col items-center justify-start pb-space-xl">
+<!-- The Court Document Sheet -->
+<article class="w-full max-w-[860px] bg-[#fffcf6] text-primary shadow-xl rounded-DEFAULT px-8 sm:px-14 py-12 relative select-text transition-all">
+<!-- Watermark/Security Seal Overlay -->
+<div class="absolute inset-0 pointer-events-none opacity-[0.03] flex items-center justify-center overflow-hidden">
+<div class="w-[520px] h-[520px] rounded-full border-[28px] border-primary flex items-center justify-center">
+<span class="font-headline-lg text-display-lg font-bold tracking-widest uppercase">DELHI HC</span>
+</div>
+</div>
+<!-- Archival Gazette Header -->
+<header class="flex flex-col items-center text-center pb-8 border-b-2 border-secondary/30">
+<div class="inline-flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-[24px] text-secondary">account_balance</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] font-semibold text-secondary">Official Bench Record • Certified True Copy</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">
+            IN THE HIGH COURT OF DELHI AT NEW DELHI
+          </h2>
+<p class="font-label-md text-label-md uppercase tracking-[0.16em] text-on-surface-variant font-semibold mt-1">
+            Criminal Original Jurisdiction • Full Bench
+          </p>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-outline mt-0.5">
+            Criminal Writ Petition No. 4921 of 2023
+          </p>
+<div class="w-24 h-px bg-secondary/40 my-3"></div>
+<div class="text-center font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+<p><span class="font-semibold text-primary uppercase font-label-sm">Coram:</span> Hon'ble Mr. Justice Satish Chandra Sharma, Chief Justice &amp; Hon'ble Mr. Justice Subramonium Prasad, Judge</p>
+<p class="mt-0.5"><span class="font-semibold text-primary uppercase font-label-sm">Date of Decision:</span> 04.08.2023</p>
+</div>
+<div class="mt-4 pt-3 border-t border-surface-container-highest w-full max-w-md">
+<p class="font-headline-sm text-headline-sm font-medium text-primary">Court on its own motion</p>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-outline my-0.5">... Petitioner</p>
+<p class="font-headline-sm text-headline-sm italic text-on-surface-variant text-sm">versus</p>
+<p class="font-headline-sm text-headline-sm font-medium text-primary">Union of India &amp; Ors.</p>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-outline my-0.5">... Respondents</p>
+</div>
+</header>
+<!-- Paragraph Digest & Line Numbers Grid -->
+<div class="pt-8 flex flex-col gap-6 text-on-surface">
+<!-- Paragraph 32 -->
+<div class="flex items-start gap-4">
+<span class="font-mono text-outline/60 text-xs pt-1 select-none w-8 text-right shrink-0">1204</span>
+<div class="flex-1 font-body-lg text-body-lg leading-relaxed text-justify">
+<p>
+<strong class="font-semibold text-primary">32.</strong> Mr. Tushar Mehta, learned Additional Solicitor General appearing on behalf of the Union, placed vehement reliance upon the doctrine of harmonious construction. It was urged that procedural limitations embedded in general codes cannot override the express intention of the sovereign Parliament when enacting special statutes aimed at curbing high-order cross-jurisdictional subversions.
+              </p>
+</div>
+</div>
+<!-- Paragraph 33 -->
+<div class="flex items-start gap-4">
+<span class="font-mono text-outline/60 text-xs pt-1 select-none w-8 text-right shrink-0">1214</span>
+<div class="flex-1 font-body-lg text-body-lg leading-relaxed text-justify">
+<p>
+<strong class="font-semibold text-primary">33.</strong> In counter, the learned Amicus Curiae submitted that personal liberty under Article 21 constitutes the sacrosanct bedrock of our constitutional order. Any detention in police custody extending beyond the normative fortnight recognized by general procedural statutes must undergo strict constitutional scrutiny, failing which the mandate of liberty suffers irreparable derogation.
+              </p>
+</div>
+</div>
+<!-- Paragraph 34 (PRIMARY EVIDENCE SELECTION) -->
+<div class="relative -mx-4 sm:-mx-6 px-4 sm:px-6 py-4 bg-secondary-fixed/20 rounded-DEFAULT border-l-4 border-secondary shadow-sm transition-all duration-200" id="target-prop-34">
+<!-- Anchor Badge Pill -->
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 bg-secondary text-surface-container-lowest font-label-sm text-[10px] uppercase font-bold tracking-widest rounded-DEFAULT">
+<span class="material-symbols-outlined text-[12px]">bookmark</span>
+                  Ratio Decidendi #PROP_DHC_2023_09
+                </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 bg-[#426B53]/15 text-[#426B53] font-label-sm text-[10px] uppercase font-semibold tracking-wider rounded-DEFAULT">
+                  Verified Invariant 0.984
+                </span>
+</div>
+<span class="font-label-sm text-label-sm font-mono text-secondary font-semibold">Lines 1225–1242</span>
+</div>
+<div class="flex items-start gap-4">
+<span class="font-mono text-secondary text-xs pt-1 select-none w-8 text-right shrink-0 font-semibold">1225</span>
+<div class="flex-1 font-body-lg text-body-lg leading-relaxed text-justify text-primary font-medium">
+<p>
+<strong class="font-bold text-primary">34.</strong> The rigours of constitutional liberty must yield to proportionate custodial scrutiny where statutory enactments provide express exclusion of general procedural defaults. Consequently, the Magistrate possessed full competency to extend remand periods beyond the initial 15-day window without violating the constitutional baseline recognized in general procedural statutes. The petitioner’s reliance on ordinary bail guidelines under Section 167(2) of the Code is thus distinguished and held inapplicable to the case at hand; the special enactment constitutes a standalone procedural code for the duration of custodial interrogation.
+                </p>
+</div>
+</div>
+<!-- Inline Evidence Quick Actions -->
+<div class="mt-3 pt-2 border-t border-secondary/20 flex items-center justify-between text-xs">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">anchor</span>
+<span>Synthesized proposition bound to Citation Corpus v4.8</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-2 py-0.5 bg-surface-container-lowest hover:bg-surface-container text-primary font-label-sm rounded-DEFAULT shadow-xs">Copy Citation</button>
+<button class="px-2 py-0.5 bg-secondary text-on-secondary font-label-sm rounded-DEFAULT shadow-xs">Pin to Brief</button>
+</div>
+</div>
+</div>
+<!-- Paragraph 35 (SECONDARY EVIDENCE PASSAGE) -->
+<div class="relative -mx-4 sm:-mx-6 px-4 sm:px-6 py-3 bg-surface-container-high/40 rounded-DEFAULT border-l-2 border-dashed border-secondary/50">
+<div class="flex items-center justify-between mb-1.5">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 bg-surface-container-highest text-on-surface-variant font-label-sm text-[9px] uppercase font-semibold tracking-wider rounded-DEFAULT">
+                [PROP_DHC_2023_10 • Secondary Holding]
+              </span>
+<span class="font-label-sm text-[10px] font-mono text-outline">Lines 1243–1255</span>
+</div>
+<div class="flex items-start gap-4">
+<span class="font-mono text-outline/60 text-xs pt-1 select-none w-8 text-right shrink-0">1243</span>
+<div class="flex-1 font-body-lg text-body-lg leading-relaxed text-justify">
+<p>
+<strong class="font-semibold text-primary">35.</strong> We must nonetheless reiterate that prolonged detention without commencement of formal charge sheet framing cannot be normalized into a standard inquisitorial instrument. Judicial officers must record explicit objective grounds when granting consecutive extensions under the specialized schedule.
+                </p>
+</div>
+</div>
+</div>
+<!-- Paragraph 36 -->
+<div class="flex items-start gap-4">
+<span class="font-mono text-outline/60 text-xs pt-1 select-none w-8 text-right shrink-0">1256</span>
+<div class="flex-1 font-body-lg text-body-lg leading-relaxed text-justify">
+<p>
+<strong class="font-semibold text-primary">36.</strong> In view of the aforesaid findings, the reference is answered in the affirmative. The registry is directed to list the respective individual bail applications before the roster benches for adjudication in light of this settled ratio.
+              </p>
+</div>
+</div>
+</div>
+<!-- Archival Bottom Folio Footer -->
+<footer class="mt-14 pt-6 border-t border-surface-container-highest flex flex-col sm:flex-row items-center justify-between text-outline font-label-sm text-label-sm gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full border border-secondary/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-semibold text-primary uppercase text-[10px] tracking-widest">Registrar (Judicial) Delhi HC</span>
+<span class="text-[10px] font-mono">Digital Signature Valid • SHA-256 Match OK</span>
+</div>
+</div>
+<div class="font-headline-sm text-headline-sm text-primary font-semibold">
+            Page 89 of 240
+          </div>
+<div class="font-mono text-[10px] text-right">
+<span>S3-DHC-IN-2023-08-04-4921-ENC</span>
+</div>
+</footer>
+</article>
+<!-- Folio Navigation Bar Beneath Sheet -->
+<div class="mt-space-md flex items-center justify-center gap-space-md">
+<button class="px-4 py-2 bg-surface-container-lowest hover:bg-surface-container-low text-primary font-label-sm text-label-sm uppercase tracking-wider rounded-DEFAULT shadow-sm flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Previous: Folio 88</span>
+</button>
+<span class="font-label-sm text-label-sm text-outline">Viewing Master Facsimile</span>
+<button class="px-4 py-2 bg-surface-container-lowest hover:bg-surface-container-low text-primary font-label-sm text-label-sm uppercase tracking-wider rounded-DEFAULT shadow-sm flex items-center gap-1.5 transition-colors">
+<span>Next: Folio 90</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Right Rail: Evidence Inspector (~22% width) -->
+<aside class="w-[340px] shrink-0 bg-surface-container-lowest rounded-DEFAULT shadow-md p-space-md flex flex-col gap-space-md transition-all duration-300" id="inspector-rail">
+<!-- Inspector Header -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-highest">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline font-bold">Evidence Inspector</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Linked Proposition</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-[10px] uppercase font-bold tracking-wider">
+          Ratio Decidendi
+        </span>
+</div>
+<!-- Verification Invariant Score -->
+<div class="bg-[#426B53]/10 p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#426B53] text-[20px]">verified</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-[#426B53] uppercase tracking-wide">Gazette Invariant</span>
+<span class="font-label-sm text-[10px] text-[#426B53]">Deterministic Hash 100% Lossless</span>
+</div>
+</div>
+<span class="font-mono text-label-sm font-bold text-[#426B53]">0.984</span>
+</div>
+<!-- Anchor Metadata Digest -->
+<div class="bg-surface-container-low p-space-sm rounded-DEFAULT flex flex-col gap-2">
+<div class="flex justify-between items-center text-xs">
+<span class="text-outline uppercase font-label-sm text-[10px] tracking-wider">Proposition ID</span>
+<span class="font-mono font-semibold text-primary">#PROP_DHC_2023_09</span>
+</div>
+<div class="h-px bg-surface-container-highest"></div>
+<div class="flex justify-between items-center text-xs">
+<span class="text-outline uppercase font-label-sm text-[10px] tracking-wider">Source Coordinate</span>
+<span class="font-medium text-primary">Folio 89 • Para 34</span>
+</div>
+<div class="h-px bg-surface-container-highest"></div>
+<div class="flex justify-between items-center text-xs">
+<span class="text-outline uppercase font-label-sm text-[10px] tracking-wider">Character Offset</span>
+<span class="font-mono text-primary text-[11px]">14,290 → 14,682</span>
+</div>
+<div class="h-px bg-surface-container-highest"></div>
+<div class="flex justify-between items-center text-xs">
+<span class="text-outline uppercase font-label-sm text-[10px] tracking-wider">Court Authority</span>
+<span class="font-medium text-primary">Delhi HC (Full Bench)</span>
+</div>
+</div>
+<!-- Core Extracted Proposition Holding -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Synthesized Ratio</span>
+<div class="p-space-sm bg-surface-container-low rounded-DEFAULT border-l-2 border-secondary font-body-sm text-body-sm text-on-surface leading-relaxed">
+          Interpreting procedural safeguards under Art. 21 in custodial interrogation contexts; diverging from strict retrospective timelines where state agencies invoke specialized statutory security strictures.
+        </div>
+</div>
+<!-- Verbatim Excerpt Deckle Callout -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Verbatim Record Excerpt</span>
+<blockquote class="p-space-sm bg-[#fffcf6] rounded-DEFAULT shadow-xs border-l-2 border-secondary text-primary font-headline-sm text-sm italic leading-snug">
+          “The rigours of constitutional liberty must yield to proportionate custodial scrutiny where statutory enactments provide express exclusion of general procedural defaults.”
+        </blockquote>
+</div>
+<!-- Statutory Nexus Tagging -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Statutory Matrix</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded-DEFAULT bg-surface-container-high text-primary font-label-sm text-xs font-medium">
+            Constitution — Art. 21
+          </span>
+<span class="px-2 py-1 rounded-DEFAULT bg-surface-container-high text-primary font-label-sm text-xs font-medium">
+            CrPC § 167(2)
+          </span>
+<span class="px-2 py-1 rounded-DEFAULT bg-surface-container-high text-primary font-label-sm text-xs font-medium">
+            UAPA § 43D(2)
+          </span>
+</div>
+</div>
+<!-- Action Cluster -->
+<div class="flex flex-col gap-2 mt-auto pt-space-sm border-t border-surface-container-highest">
+<button class="w-full py-2 bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold rounded-DEFAULT transition-all flex items-center justify-center gap-1.5 shadow-sm">
+<span>Open in Evidence Explorer</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<button class="w-full py-2 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-DEFAULT transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified</span>
+<span>Inspect Gazette Folio Hash</span>
+</button>
+</div>
+</aside>
+</div>
+</div>
+<script>
+  (function() {
+    // Interactivity: toggle thumbnail rail
+    const toggleThumbsBtn = document.getElementById('toggle-thumbs-btn');
+    const thumbRail = document.getElementById('thumbnail-rail');
+    if (toggleThumbsBtn && thumbRail) {
+      toggleThumbsBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        thumbRail.classList.toggle('hidden');
+      });
+    }
+
+    // Interactivity: toggle evidence inspector rail
+    const toggleInspectorBtn = document.getElementById('toggle-inspector-btn');
+    const inspectorRail = document.getElementById('inspector-rail');
+    if (toggleInspectorBtn && inspectorRail) {
+      toggleInspectorBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        inspectorRail.classList.toggle('hidden');
+      });
+    }
+  })();
+</script></main></div></body></html>

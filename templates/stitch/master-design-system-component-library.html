@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#372f23", "inverse-on-surface": "#feeedd", "primary-fixed": "#f2dfd5", "tertiary-fixed": "#ffddb7", "surface-container-highest": "#efe0cf", "outline-variant": "#d1c4be", "surface-tint": "#6a5b54", "surface-dim": "#e6d8c7", "secondary-container": "#ffd79c", "secondary-fixed-dim": "#e7c088", "on-secondary": "#ffffff", "tertiary-container": "#3a2200", "on-primary": "#ffffff", "surface-variant": "#efe0cf", "on-tertiary-container": "#b3864c", "error-container": "#ffdad6", "surface-container-lowest": "#ffffff", "background": "#fff8f3", "tertiary": "#1e0f00", "primary-container": "#30251f", "primary-fixed-dim": "#d6c3ba", "on-tertiary-fixed": "#2a1700", "surface-container-low": "#fff2e3", "surface-container": "#fbecda", "on-tertiary-fixed-variant": "#623f0a", "tertiary-fixed-dim": "#f1bd7e", "on-secondary-container": "#795c2c", "on-surface-variant": "#4e4540", "on-secondary-fixed-variant": "#5c4215", "secondary": "#76592a", "on-secondary-fixed": "#281800", "on-surface": "#221a10", "surface": "#fff8f3", "on-primary-container": "#9c8b83", "on-background": "#221a10", "secondary-fixed": "#ffddaf", "outline": "#807570", "primary": "#1a110b", "on-tertiary": "#ffffff", "on-error": "#ffffff", "error": "#ba1a1a", "surface-bright": "#fff8f3", "on-primary-fixed": "#231914", "inverse-primary": "#d6c3ba", "on-primary-fixed-variant": "#51443d", "on-error-container": "#93000a", "surface-container-high": "#f5e6d4" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-xl": "2.5rem", "margin": "3rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-sm": [ "EB Garamond" ], "label-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-lg": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "label-md": [ "Inter" ], "body-lg": [ "Inter" ], "label-lg": [ "Inter" ], "body-sm": [ "Inter" ], "display-lg": [ "EB Garamond" ], "display-lg-mobile": [ "EB Garamond" ], "headline-lg-mobile": [ "EB Garamond" ] }, "fontSize": { "headline-sm": [ "1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "0.005em", "fontWeight": "600" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.006em", "fontWeight": "400" } ], "headline-lg": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.011em", "fontWeight": "400" } ], "label-lg": [ "0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.02em", "fontWeight": "600" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg": [ "3.25rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "display-lg-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "0em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface-container font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[250px] bg-primary-container z-50 flex flex-col justify-between select-none shadow-[2px_0_12px_rgba(30,15,0,0.18)]"><div class="flex flex-col flex-1 min-h-0"><div class="pt-space-lg px-space-md pb-space-md border-b border-outline-variant/20 flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Refined geometric circular judicial seal emblem for NYAAYCHAKRA featuring a balanced scale of justice, concentric archival rings, and subtle chakra geometry in Espresso, Antique Brass, and Muted Gold." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-surface-container-lowest font-semibold tracking-wider leading-none">NYAAYCHAKRA</span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-[0.14em] uppercase leading-tight mt-1">Judicial Intelligence</span></div></div></div><nav class="flex-1 overflow-y-auto px-space-xs py-space-md flex flex-col gap-space-md" data-active-classes="bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim"><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Workspace</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="overview" href="#">Overview</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-radar" href="#">Conflict Radar</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="statute-explorer" href="#">Statute Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Investigation</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="conflict-investigation" href="#">Conflict Investigation</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="evidence-explorer" href="#">Evidence Explorer</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Operations</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="ingest-judgments" href="#">Ingest Judgments</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="live-processing" href="#">Live Processing</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="run-history" href="#">Run History</a></div><div class="flex flex-col gap-1"><span class="px-space-sm font-label-sm text-label-sm tracking-[0.12em] text-outline-variant/70 uppercase font-semibold">Intelligence</span><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm bg-surface-container-highest/15 text-surface-container-lowest font-medium border-l-2 border-secondary-fixed-dim" data-path="evaluation-metrics" href="#">Evaluation &amp; Metrics</a><a class="flex items-center px-space-sm py-1.5 rounded-DEFAULT text-primary-fixed-dim hover:text-surface-container-lowest hover:bg-surface-container-highest/10 transition-colors font-body-sm text-body-sm" data-path="forum-risk-briefs" href="#">Forum-Risk Briefs</a></div></nav></div><div class="p-space-md border-t border-outline-variant/20 flex flex-col gap-space-xs bg-primary/40"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary-fixed-dim shadow-[0_0_8px_#e7c088]"></span><span class="font-label-sm text-label-sm text-secondary-fixed tracking-wider uppercase font-semibold">System Status: Operational</span></div><p class="font-label-sm text-label-sm text-on-primary-container tracking-tight">NYAAYCHAKRA / JUDICIAL INTELLIGENCE • v4.8</p></div></aside><div class="pl-[250px]"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-highest z-40 px-space-lg flex items-center justify-between shadow-[0_1px_6px_rgba(48,37,31,0.03)]"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Workspace</span><span class="text-outline text-sm">/</span><span class="font-body-md text-body-md text-on-surface-variant font-medium">Evaluation &amp; Metrics</span></div><span class="hidden lg:inline-block h-4 w-px bg-surface-container-highest"></span><div class="hidden lg:flex items-center gap-2 text-outline font-label-sm text-label-sm tracking-wide uppercase"><span class="material-symbols-outlined text-[15px] text-secondary">monitoring</span><span>Judicial Alignment Benchmark — Validation &amp; Recall Audits</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden xl:flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded-DEFAULT border border-surface-container-highest"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>Sync Status: Synced • GET /api/v4/eval</span></div><span class="px-2.5 py-1 bg-surface-container font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider rounded-DEFAULT border border-secondary-fixed-dim/40">Active Bench Workspace</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface-container px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- MASTHEAD & ARCHIVAL TITLE STRIP -->
+<header class="relative w-full bg-surface-container-lowest p-space-xl mb-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-4xl">
+<div class="flex items-center gap-space-sm text-secondary font-label-sm uppercase tracking-widest">
+<span class="inline-block w-2.5 h-2.5 bg-secondary"></span>
+<span>NYAAYCHAKRA // CORE DESIGN SPECIFICATION v4.8</span>
+<span class="text-outline-variant">/</span>
+<span>CONSTITUTIONAL BENCH BENCHMARK</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight">
+          Master Visual Design System &amp; Component Architecture
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+          Authoritative design tokens, tactile paper primitives, judicial graph semantics, and interactive component specimens governing all constitutional bench and appellate inquiry surfaces.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shrink-0">
+<div class="bg-surface-container px-space-md py-space-sm rounded-DEFAULT text-right">
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Engine Token Spec</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">SHA-256 / 4.8.2</span>
+</div>
+<button class="bg-primary text-surface-container-lowest px-space-md py-space-sm rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">download</span>
+          Export Token Registry (.json)
+        </button>
+</div>
+</div>
+<!-- QUICK NAV TRAY -->
+<nav class="mt-space-lg pt-space-md bg-surface-container-low px-space-md py-space-sm rounded-DEFAULT overflow-x-auto flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider whitespace-nowrap">
+<span class="text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">bookmark</span> Index:
+      </span>
+<a class="hover:text-primary hover:underline" href="#section-brand">01 Brand Identity</a>
+<span class="text-outline-variant">|</span>
+<a class="hover:text-primary hover:underline" href="#section-color">02 Master Color Matrix</a>
+<span class="text-outline-variant">|</span>
+<a class="hover:text-primary hover:underline" href="#section-typography">03 Typographic Scale</a>
+<span class="text-outline-variant">|</span>
+<a class="hover:text-primary hover:underline" href="#section-spatial">04 Spatial Geometry</a>
+<span class="text-outline-variant">|</span>
+<a class="hover:text-primary hover:underline" href="#section-components">05 Component Library</a>
+<span class="text-outline-variant">|</span>
+<a class="hover:text-primary hover:underline" href="#section-judicial">06 Signature Primitives</a>
+<span class="text-outline-variant">|</span>
+<a class="hover:text-primary hover:underline" href="#section-dataviz">07 Scientific Lab &amp; Charts</a>
+<span class="text-outline-variant">|</span>
+<a class="hover:text-primary hover:underline" href="#section-miniatures">08 App Archetypes</a>
+</nav>
+</header>
+<!-- SECTION 01: BRAND IDENTITY & LOGOMARKS -->
+<section class="mb-space-xl space-y-space-md" id="section-brand">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-high px-space-md py-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">01</span>
+<h2 class="font-headline-md text-headline-md text-primary">Brand Identity &amp; Seal Mechanics</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Archival Heraldry &amp; Clear-space Rules</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Main Seal Card -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block mb-space-sm">Primary Seal Lockup</span>
+<div class="p-space-lg bg-surface-container flex flex-col items-center justify-center text-center rounded-DEFAULT">
+<div class="relative w-36 h-36 mb-space-md p-2 bg-surface-container-lowest rounded-full shadow-inner flex items-center justify-center">
+<img alt="NYAAYCHAKRA Judicial Seal" class="w-28 h-28 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary tracking-widest">NYAAYCHAKRA</h3>
+<p class="font-label-md text-label-md text-secondary tracking-[0.2em] uppercase mt-1">Judicial Archival Intelligence</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm max-w-xs">
+              Concentric chakra geometry framing the scales of equitable precedent and constitutional jurisprudence.
+            </p>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low p-space-sm rounded-DEFAULT flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Vector Master: SVG / PDF</span>
+<span class="text-primary font-semibold">Asset ID: NYK-SEAL-V4</span>
+</div>
+</div>
+<!-- Lockup Variations & Geometry -->
+<div class="lg:col-span-7 space-y-space-md">
+<!-- Lockups Grid -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm space-y-space-md">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block">Lockup Variations &amp; Reproduction Minimums</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Horizontal Primary Lockup -->
+<div class="bg-surface p-space-md rounded-DEFAULT space-y-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase">Horizontal Signature Lockup</span>
+<div class="flex items-center gap-space-sm py-space-sm">
+<img alt="Seal Icon" class="w-10 h-10 object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary leading-none tracking-wider font-semibold">NYAAYCHAKRA</div>
+<div class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-1">Judicial Archival Intelligence</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Min. Reproduction Width: <strong>140px</strong> (Digital) / 38mm (Print).</p>
+</div>
+<!-- Monochromatic Espresso Reverse -->
+<div class="bg-primary-container p-space-md rounded-DEFAULT space-y-space-xs text-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase">Monochrome Reverse Lockup</span>
+<div class="flex items-center gap-space-sm py-space-sm">
+<img alt="Seal Inverted" class="w-10 h-10 object-contain brightness-200 contrast-125 shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/>
+<div>
+<div class="font-headline-sm text-headline-sm text-surface-container-lowest leading-none tracking-wider font-semibold">NYAAYCHAKRA</div>
+<div class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest mt-1">Bench Repository</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">Reserved exclusively for deep espresso structural navigations and hard covers.</p>
+</div>
+</div>
+<!-- Micro Favicon / Clearspace Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-sm">
+<div class="bg-surface-container p-space-sm rounded-DEFAULT text-center">
+<span class="font-label-sm text-label-sm text-outline block mb-1 uppercase">32px App Icon</span>
+<div class="w-8 h-8 mx-auto bg-surface-container-lowest rounded-full p-0.5 flex items-center justify-center">
+<img alt="32px Icon" class="w-6 h-6 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2 block">Desktop Dock / Tab</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-DEFAULT text-center">
+<span class="font-label-sm text-label-sm text-outline block mb-1 uppercase">24px Micro Node</span>
+<div class="w-6 h-6 mx-auto bg-primary rounded-full p-0.5 flex items-center justify-center">
+<img alt="24px Icon" class="w-5 h-5 object-contain brightness-200" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2 block">Absolute Minimum Size</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-DEFAULT text-center">
+<span class="font-label-sm text-label-sm text-outline block mb-1 uppercase">Clearspace Ratio</span>
+<div class="text-headline-sm font-headline-sm text-secondary">1.5 × X</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2 block">Where X = Seal Center Radius</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 02: MASTER COLOR PALETTE & SEMANTIC TOKENS -->
+<section class="mb-space-xl space-y-space-md" id="section-color">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-high px-space-md py-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">02</span>
+<h2 class="font-headline-md text-headline-md text-primary">Master Archival Color Matrix &amp; Token Semantics</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">WCAG AAA Grounded Precedent Standards</span>
+</div>
+<!-- Color Group Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Primary Tone Palette -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm space-y-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">01. Primary Tokens</span>
+<div class="space-y-space-xs">
+<!-- Espresso -->
+<div class="bg-primary text-surface-container-lowest p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md block font-semibold">Espresso (Primary)</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">#30251F • rgb(48, 37, 31)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary-container px-2 py-1 rounded-DEFAULT text-surface-container-lowest">Structural</span>
+</div>
+<!-- Antique Brass -->
+<div class="bg-[#A77B42] text-surface-container-lowest p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md block font-semibold">Antique Brass</span>
+<span class="font-label-sm text-label-sm opacity-90">#A77B42 • rgb(167, 123, 66)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-black/20 px-2 py-1 rounded-DEFAULT">Accent / Rule</span>
+</div>
+<!-- Muted Gold -->
+<div class="bg-[#C5A16B] text-primary p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md block font-semibold">Muted Gold</span>
+<span class="font-label-sm text-label-sm opacity-80">#C5A16B • rgb(197, 161, 107)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/60 px-2 py-1 rounded-DEFAULT">Aura / Focus</span>
+</div>
+<!-- Warm Sand -->
+<div class="bg-[#E8DECE] text-primary p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md block font-semibold">Warm Sand</span>
+<span class="font-label-sm text-label-sm opacity-80">#E8DECE • rgb(232, 222, 206)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/60 px-2 py-1 rounded-DEFAULT">Desk Recess</span>
+</div>
+</div>
+</div>
+<!-- Supporting Canvas Hierarchy -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm space-y-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">02. Parchment Surfaces</span>
+<div class="space-y-space-xs">
+<!-- Courtroom Ivory -->
+<div class="bg-[#F5F0E6] text-primary p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md block font-semibold">Courtroom Ivory</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#F5F0E6 • rgb(245, 240, 230)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest px-2 py-1 rounded-DEFAULT">Base Canvas</span>
+</div>
+<!-- Soft Ivory -->
+<div class="bg-[#FFFCF6] text-primary p-space-sm rounded-DEFAULT flex items-center justify-between shadow-inner">
+<div>
+<span class="font-label-md text-label-md block font-semibold">Soft Ivory</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#FFFCF6 • rgb(255, 252, 246)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded-DEFAULT">Folio Active</span>
+</div>
+<!-- Stone Grey -->
+<div class="bg-[#766B5D] text-surface-container-lowest p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md block font-semibold">Stone Grey</span>
+<span class="font-label-sm text-label-sm opacity-90">#766B5D • rgb(118, 107, 93)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-black/20 px-2 py-1 rounded-DEFAULT">De-emphasized</span>
+</div>
+<!-- Deep Archive Container -->
+<div class="bg-surface-container-highest text-primary p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md block font-semibold">Highest Elevation</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#EFE0CF • System High</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest px-2 py-1 rounded-DEFAULT">Trays</span>
+</div>
+</div>
+</div>
+<!-- Functional Precedent Statuses -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm space-y-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">03. Judicial Semantics</span>
+<div class="space-y-space-xs">
+<!-- Conflict Oxblood -->
+<div class="bg-[#913F40] text-surface-container-lowest p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md block font-semibold">Oxblood / Conflict</span>
+<span class="font-label-sm text-label-sm opacity-90">#913F40 • Judicial Antinomy</span>
+</div>
+<span class="font-label-sm text-label-sm bg-black/20 px-2 py-1 rounded-DEFAULT font-bold">CONFLICT</span>
+</div>
+<!-- Forest Green -->
+<div class="bg-[#426B53] text-surface-container-lowest p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md block font-semibold">Forest / Verified</span>
+<span class="font-label-sm text-label-sm opacity-90">#426B53 • Grounded Entailment</span>
+</div>
+<span class="font-label-sm text-label-sm bg-black/20 px-2 py-1 rounded-DEFAULT font-bold">VERIFIED</span>
+</div>
+<!-- Processing Brass -->
+<div class="bg-[#A77B42] text-surface-container-lowest p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md block font-semibold">Antique Brass / In-Flight</span>
+<span class="font-label-sm text-label-sm opacity-90">#A77B42 • Processing Pipeline</span>
+</div>
+<span class="font-label-sm text-label-sm bg-black/20 px-2 py-1 rounded-DEFAULT font-bold">RUNNING</span>
+</div>
+<!-- Distinguishable Muted Gold -->
+<div class="bg-[#C5A16B] text-primary p-space-sm rounded-DEFAULT flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md block font-semibold">Muted Gold / Fact-Bound</span>
+<span class="font-label-sm text-label-sm opacity-90">#C5A16B • Distinguishable</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest px-2 py-1 rounded-DEFAULT font-bold">DISTING.</span>
+</div>
+</div>
+</div>
+<!-- Contrast Verification Grid -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider block mb-space-xs">04. Accessibility Audit</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Tested against 18-point Garamond &amp; 14-point Inter reading bodies on parchment.</p>
+<div class="space-y-space-xs">
+<div class="bg-[#FFFCF6] p-space-xs rounded-DEFAULT flex items-center justify-between text-primary">
+<span class="font-body-sm text-body-sm font-semibold">Espresso on Soft Ivory</span>
+<span class="font-label-sm text-label-sm bg-[#426B53]/15 text-[#426B53] px-2 py-0.5 rounded-DEFAULT font-bold">14.2:1 (AAA)</span>
+</div>
+<div class="bg-[#F5F0E6] p-space-xs rounded-DEFAULT flex items-center justify-between text-[#913F40]">
+<span class="font-body-sm text-body-sm font-semibold">Oxblood on Court Ivory</span>
+<span class="font-label-sm text-label-sm bg-[#426B53]/15 text-[#426B53] px-2 py-0.5 rounded-DEFAULT font-bold">7.8:1 (AAA)</span>
+</div>
+<div class="bg-[#30251F] p-space-xs rounded-DEFAULT flex items-center justify-between text-[#E8DECE]">
+<span class="font-body-sm text-body-sm font-semibold">Warm Sand on Espresso</span>
+<span class="font-label-sm text-label-sm bg-[#426B53]/15 text-[#426B53] px-2 py-0.5 rounded-DEFAULT font-bold">9.6:1 (AAA)</span>
+</div>
+<div class="bg-[#FFFCF6] p-space-xs rounded-DEFAULT flex items-center justify-between text-[#426B53]">
+<span class="font-body-sm text-body-sm font-semibold">Forest on Soft Ivory</span>
+<span class="font-label-sm text-label-sm bg-[#426B53]/15 text-[#426B53] px-2 py-0.5 rounded-DEFAULT font-bold">7.1:1 (AAA)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs bg-surface-container p-space-xs rounded-DEFAULT text-center font-label-sm text-label-sm text-secondary font-semibold">
+          100% WCAG 2.1 AAA Compliant
+        </div>
+</div>
+</div>
+</section>
+<!-- SECTION 03: TYPOGRAPHY HIERARCHY & TYPE SPECIMENS -->
+<section class="mb-space-xl space-y-space-md" id="section-typography">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-high px-space-md py-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">03</span>
+<h2 class="font-headline-md text-headline-md text-primary">Typographic Scale &amp; Archival Type Specimens</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Dual Type Foundry System: EB Garamond + Inter</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Editorial Serif Specimens (EB Garamond) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm space-y-space-md">
+<div class="flex items-center justify-between bg-surface-container-low p-space-sm rounded-DEFAULT">
+<div>
+<span class="font-headline-sm text-headline-sm text-primary">EB Garamond / Cormorant Heritage</span>
+<span class="block font-label-sm text-label-sm text-outline">Editorial Headings • Constitutional Pronouncements • Judgments</span>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary/10 text-secondary px-2.5 py-1 rounded-DEFAULT font-semibold">Serif Core</span>
+</div>
+<!-- Scale Breakdown -->
+<div class="space-y-space-md">
+<div class="space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Display XL • 48px (3.25rem) / Line 1.1 • Weight 500</span>
+<span>display-lg</span>
+</div>
+<p class="font-display-lg text-display-lg text-primary tracking-tight leading-none">
+              Constitutional Sovereignty
+            </p>
+</div>
+<div class="space-y-1 pt-space-xs bg-surface-container-low/40 p-space-sm rounded-DEFAULT">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Display L • 36px (2.25rem) / Line 1.2 • Weight 600</span>
+<span>headline-lg</span>
+</div>
+<p class="font-headline-lg text-headline-lg text-primary">
+              Doctrine of Harmonious Construction
+            </p>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Heading 1 • 28px (1.75rem) / Line 1.25 • Weight 600</span>
+<span>headline-md</span>
+</div>
+<p class="font-headline-md text-headline-md text-primary">
+              Irreconcilable Conflict in Territorial Bench Rulings
+            </p>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Heading 2 • 22px (1.375rem) / Line 1.35 • Weight 600</span>
+<span>headline-sm</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-secondary">
+              “Statutory provisions must be read in pari materia to prevent statutory negation.”
+            </p>
+</div>
+</div>
+<!-- Specimen Body Quote -->
+<div class="bg-surface p-space-md rounded-DEFAULT space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Verbatim Judicial Specimen (32 Bench Inquiries)</span>
+<p class="font-headline-sm text-headline-sm text-primary italic leading-relaxed">
+            “Constitutional jurisprudence rendered with tactile digital dignity across High Court and Supreme Court benches, ensuring that stare decisis maintains authoritative integrity against algorithmic distortion.”
+          </p>
+<span class="font-label-sm text-label-sm text-outline block text-right">— Bench Memorandum No. 419 (SCR 2024 VII, ¶128)</span>
+</div>
+</div>
+<!-- Functional UI Specimen (Inter) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm space-y-space-md">
+<div class="flex items-center justify-between bg-surface-container-low p-space-sm rounded-DEFAULT">
+<div>
+<span class="font-headline-sm text-headline-sm text-primary">Inter Typography System</span>
+<span class="block font-label-sm text-label-sm text-outline">Metadata • Micro-labels • Data Grids • Analytical Folios</span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary/10 text-primary px-2.5 py-1 rounded-DEFAULT font-semibold">Sans-Serif</span>
+</div>
+<div class="space-y-space-sm">
+<div class="p-space-sm bg-surface rounded-DEFAULT space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Body Large (18px / 1.5)</span>
+<span>body-lg</span>
+</div>
+<p class="font-body-lg text-body-lg text-primary">
+              Analysis verified against 14 constitutional precedent trees spanning 1952–2024.
+            </p>
+</div>
+<div class="p-space-sm bg-surface rounded-DEFAULT space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Body Regular (15px / 1.5)</span>
+<span>body-md</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              The high court bench distinguished the precedent by examining specific factual predicates regarding territorial jurisdiction over non-resident respondents.
+            </p>
+</div>
+<div class="p-space-sm bg-surface rounded-DEFAULT space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Body Small (13px / 1.45)</span>
+<span>body-sm</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">
+              Timestamp: 2025-02-14T08:34:11Z • Session Token: 9f82a-bc91 • Latency: 142ms
+            </p>
+</div>
+<div class="p-space-sm bg-surface rounded-DEFAULT space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Operational Labels (+0.05em track)</span>
+<span>label-sm / label-md</span>
+</div>
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded-DEFAULT text-primary uppercase font-bold tracking-wider">FOLIO_ID: 9812</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded-DEFAULT text-secondary uppercase font-bold tracking-wider">STATUS: VERIFIED</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded-DEFAULT text-error uppercase font-bold tracking-wider">ANTINOMY_DETECTED</span>
+</div>
+</div>
+<!-- Tabular Figure Proof -->
+<div class="p-space-sm bg-primary text-surface-container-lowest rounded-DEFAULT space-y-1">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider block font-semibold">Tabular Figures for Bench Auditing</span>
+<div class="grid grid-cols-3 gap-2 font-mono text-center text-sm pt-1">
+<div class="bg-primary-container p-1 rounded-DEFAULT">F1: 0.9984</div>
+<div class="bg-primary-container p-1 rounded-DEFAULT">ACC: 99.42%</div>
+<div class="bg-primary-container p-1 rounded-DEFAULT">P-VAL: &lt;0.001</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 04: SPATIAL GRID, DENSITY & SURFACE ARCHITECTURE -->
+<section class="mb-space-xl space-y-space-md" id="section-spatial">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-high px-space-md py-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">04</span>
+<h2 class="font-headline-md text-headline-md text-primary">Spatial Cadence, Densities &amp; Paper Layering</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">4px Base Rhythm • Asymmetric Bench Canvas</span>
+</div>
+<!-- Stepped Dimension Chips -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">4px Incremental Rhythm Chips</span>
+<span class="font-label-sm text-label-sm text-outline">Consistent Spacing Scale Applied Across Platform</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-10 gap-space-sm items-end">
+<div class="flex flex-col items-center">
+<div class="w-full h-1 bg-secondary rounded-DEFAULT mb-2"></div>
+<span class="font-label-sm text-label-sm font-bold text-primary">4px</span>
+<span class="font-label-sm text-label-sm text-outline">space-xs</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full h-2 bg-secondary rounded-DEFAULT mb-2"></div>
+<span class="font-label-sm text-label-sm font-bold text-primary">8px</span>
+<span class="font-label-sm text-label-sm text-outline">space-sm</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full h-3 bg-secondary rounded-DEFAULT mb-2"></div>
+<span class="font-label-sm text-label-sm font-bold text-primary">12px</span>
+<span class="font-label-sm text-label-sm text-outline">gutter-sm</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full h-4 bg-secondary rounded-DEFAULT mb-2"></div>
+<span class="font-label-sm text-label-sm font-bold text-primary">16px</span>
+<span class="font-label-sm text-label-sm text-outline">space-md</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full h-6 bg-secondary rounded-DEFAULT mb-2"></div>
+<span class="font-label-sm text-label-sm font-bold text-primary">24px</span>
+<span class="font-label-sm text-label-sm text-outline">space-lg</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full h-8 bg-secondary rounded-DEFAULT mb-2"></div>
+<span class="font-label-sm text-label-sm font-bold text-primary">32px</span>
+<span class="font-label-sm text-label-sm text-outline">space-xl</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full h-10 bg-secondary rounded-DEFAULT mb-2"></div>
+<span class="font-label-sm text-label-sm font-bold text-primary">40px</span>
+<span class="font-label-sm text-label-sm text-outline">block-sm</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full h-12 bg-secondary rounded-DEFAULT mb-2"></div>
+<span class="font-label-sm text-label-sm font-bold text-primary">48px</span>
+<span class="font-label-sm text-label-sm text-outline">block-md</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full h-16 bg-secondary rounded-DEFAULT mb-2"></div>
+<span class="font-label-sm text-label-sm font-bold text-primary">64px</span>
+<span class="font-label-sm text-label-sm text-outline">header-h</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-full h-20 bg-secondary rounded-DEFAULT mb-2"></div>
+<span class="font-label-sm text-label-sm font-bold text-primary">80px</span>
+<span class="font-label-sm text-label-sm text-outline">hero-pad</span>
+</div>
+</div>
+</div>
+<!-- Surface Stratification Diagram -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container p-space-md rounded-DEFAULT space-y-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase">Level 0: Desk Recess</span>
+<span class="font-label-sm text-label-sm bg-surface-container-highest px-2 py-0.5 rounded-DEFAULT">#E8DECE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Applied across tool gutters, query filters, search input cavities, and recessed tab tracks.
+        </p>
+</div>
+<div class="bg-surface p-space-md rounded-DEFAULT space-y-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase">Level 1: Courtroom Ivory</span>
+<span class="font-label-sm text-label-sm bg-surface-container-highest px-2 py-0.5 rounded-DEFAULT">#F5F0E6</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          The ubiquitous workspace canvas representing the natural desk parchment beneath all briefs.
+        </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT space-y-space-xs shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase">Level 2: Soft Ivory Folio</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-DEFAULT">#FFFCF6</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Active document layer with ambient daylight espresso shadows: <code>rgba(48,37,31,0.08)</code>.
+        </p>
+</div>
+</div>
+</section>
+<!-- SECTION 05: MASTER COMPONENT LIBRARY -->
+<section class="mb-space-xl space-y-space-md" id="section-components">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-high px-space-md py-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">05</span>
+<h2 class="font-headline-md text-headline-md text-primary">Master Interactive Component Specimens</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Atomic Interface Units for Engineering</span>
+</div>
+<!-- Component Showcase Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- BUTTON SPECIMEN MATRIX -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Button Hierarchy &amp; Micro-States</span>
+<span class="font-label-sm text-label-sm text-outline">Active / Hover / Loading / Destructive</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Primary Actions -->
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase">Primary Action (Espresso Solid)</span>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="bg-primary text-surface-container-lowest px-4 py-2 rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-all shadow-sm">
+                Commit Precedent
+              </button>
+<button class="bg-primary-container text-surface-container-lowest px-4 py-2 rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider shadow-sm flex items-center gap-2">
+<span class="inline-block w-3.5 h-3.5 border-2 border-secondary-fixed border-t-transparent rounded-full animate-spin"></span>
+                Evaluating Tree...
+              </button>
+<button class="bg-outline-variant/50 text-outline px-4 py-2 rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider cursor-not-allowed" disabled="">
+                Disabled State
+              </button>
+</div>
+</div>
+<!-- Secondary Actions -->
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase">Secondary Action (Antique Brass Frame)</span>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="bg-surface-container-lowest text-primary px-4 py-2 rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container transition-all shadow-sm">
+                Examine Citations
+              </button>
+<button class="bg-surface-container-lowest text-secondary px-4 py-2 rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container transition-all flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+                Inspect Folio
+              </button>
+</div>
+</div>
+<!-- Destructive & Ghost Actions -->
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase">Destructive &amp; Ghost Utilities</span>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="bg-error text-surface-container-lowest px-4 py-2 rounded-DEFAULT font-label-md text-label-md uppercase tracking-wider hover:bg-on-error-container transition-all shadow-sm">
+                Purge Antinomy Cache
+              </button>
+<button class="text-secondary font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors flex items-center gap-1">
+<span>View Full Registry</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- FORM CONTROLS & SELECTORS -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Archival Registry Slips &amp; Form Inputs</span>
+<span class="font-label-sm text-label-sm text-outline">Search • Select • Switches</span>
+</div>
+<div class="space-y-space-sm">
+<!-- Search Input with Command Badge -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Universal Case Law Registry Search</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[20px]">search</span>
+<input class="w-full pl-10 pr-20 py-2.5 bg-surface rounded-DEFAULT text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-secondary transition-all" placeholder="Search constitutional doctrine, judgment citations, or judge benches..." type="text" value="AIR 1973 SC 1461 Kesavananda Bharati"/>
+<div class="absolute right-3 flex items-center gap-1 bg-surface-container-highest px-1.5 py-0.5 rounded-DEFAULT text-on-surface-variant font-label-sm text-label-sm">
+<span>⌘</span><span>K</span>
+</div>
+</div>
+</div>
+<!-- Bench Selector & Toggle Strip -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Appellate Jurisdiction Bench</label>
+<select class="w-full bg-surface py-2 px-3 rounded-DEFAULT text-primary font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-secondary">
+<option>Supreme Court of India (Full Bench)</option>
+<option>High Court of Delhi (Division Bench)</option>
+<option>High Court of Bombay (Constitutional)</option>
+<option>High Court of Madras</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Verification Threshold</label>
+<div class="flex items-center gap-space-sm pt-2">
+<label class="flex items-center gap-2 cursor-pointer font-body-sm text-body-sm text-primary">
+<input checked="" class="w-4 h-4 text-primary rounded-DEFAULT accent-primary" type="checkbox"/>
+<span>Strictest Entailment (≥0.98)</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Custom Radio Filter Bar -->
+<div class="p-space-sm bg-surface rounded-DEFAULT flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Filter Scope</span>
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-DEFAULT text-on-surface-variant font-label-sm text-label-sm">
+<span class="bg-surface-container-lowest text-primary px-3 py-1 rounded-DEFAULT font-bold shadow-xs">Constitutional</span>
+<span class="px-3 py-1 hover:text-primary cursor-pointer">Commercial</span>
+<span class="px-3 py-1 hover:text-primary cursor-pointer">Criminal</span>
+</div>
+</div>
+</div>
+</div>
+<!-- BADGES, TAGS & STATUS INDICATORS -->
+<div class="lg:col-span-12 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Judicial Status Badges &amp; Folio Chips</span>
+<span class="font-label-sm text-label-sm text-outline">Constrained to 22px Height • Micro-Radii</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Verified -->
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 bg-[#426B53]/15 text-[#426B53] font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Verified Precedent (0.998)
+            </span>
+</div>
+<!-- Conflict Detected -->
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 bg-[#913F40]/15 text-[#913F40] font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Conflict Detected (Antinomy)
+            </span>
+</div>
+<!-- In-Flight Processing -->
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 bg-[#A77B42]/15 text-[#A77B42] font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] animate-spin">refresh</span> Processing Stage IV
+            </span>
+</div>
+<!-- Distinguishable -->
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 bg-[#C5A16B]/20 text-primary font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">rule</span> Distinguishable on Facts
+            </span>
+</div>
+<!-- Obiter Dictum -->
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase font-semibold tracking-wider rounded-DEFAULT">
+              Obiter Dictum
+            </span>
+</div>
+<!-- Ratio Decidendi -->
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 bg-primary text-surface-container-lowest font-label-sm text-label-sm uppercase font-bold tracking-wider rounded-DEFAULT">
+              Ratio Decidendi
+            </span>
+</div>
+</div>
+</div>
+<!-- TOAST NOTIFICATIONS & OVERLAYS -->
+<div class="lg:col-span-12 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm space-y-space-md">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider block">Contextual Feedback Toasts &amp; Banners</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Success Toast -->
+<div class="bg-surface p-space-md rounded-DEFAULT flex items-start gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[#426B53] text-[20px] shrink-0 mt-0.5">check_circle</span>
+<div class="space-y-0.5">
+<span class="font-label-md text-label-md text-primary font-bold block">Folio Citation Verified</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Grounding entailment verified against gazette volume 412 with zero hallucination.</p>
+</div>
+</div>
+<!-- Warning Conflict Toast -->
+<div class="bg-surface p-space-md rounded-DEFAULT flex items-start gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[#913F40] text-[20px] shrink-0 mt-0.5">report_problem</span>
+<div class="space-y-0.5">
+<span class="font-label-md text-label-md text-[#913F40] font-bold block">Antinomy Triggered</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct holding divergence discovered against Maneka Gandhi v. UOI (1978).</p>
+</div>
+</div>
+<!-- System Processing Toast -->
+<div class="bg-surface p-space-md rounded-DEFAULT flex items-start gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">sync</span>
+<div class="space-y-0.5">
+<span class="font-label-md text-label-md text-primary font-bold block">Batch Ingestion Active</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">42 judgments currently traversing Stage 3 (Semantic Decomposition).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 06: SIGNATURE NYAAYCHAKRA JUDICIAL PRIMITIVES -->
+<section class="mb-space-xl space-y-space-md" id="section-judicial">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-high px-space-md py-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">06</span>
+<h2 class="font-headline-md text-headline-md text-primary">Signature Judicial Intelligence Primitives</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Graph Semantics • Evidence Cards • Pipeline Engine</span>
+</div>
+<!-- 1. GRAPH NODES & RELATIONSHIP EDGES -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Graph Node Types -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">A. Judicial Relationship Nodes</span>
+<span class="font-label-sm text-label-sm text-outline">Graph Taxonomy</span>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<!-- Supreme Court Node -->
+<div class="p-space-md bg-surface rounded-DEFAULT flex flex-col items-center text-center space-y-space-xs">
+<div class="w-16 h-16 rounded-full bg-primary-container p-1 shadow-md flex items-center justify-center relative">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-secondary-fixed font-headline-sm font-bold">
+                SC
+              </div>
+<span class="absolute -top-1 -right-1 w-4 h-4 bg-[#C5A16B] rounded-full flex items-center justify-center text-[10px] text-primary font-bold">★</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-primary block">Supreme Court Node</span>
+<span class="font-label-sm text-label-sm text-outline">Double Concentric Ring</span>
+</div>
+</div>
+<!-- High Court Node -->
+<div class="p-space-md bg-surface rounded-DEFAULT flex flex-col items-center text-center space-y-space-xs">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest p-1 shadow-sm flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-secondary font-headline-sm font-bold">
+                HC
+              </div>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-primary block">High Court Node</span>
+<span class="font-label-sm text-label-sm text-outline">Single Brass Delineation</span>
+</div>
+</div>
+<!-- Selected State with Aura -->
+<div class="p-space-md bg-surface rounded-DEFAULT flex flex-col items-center text-center space-y-space-xs">
+<div class="w-16 h-16 rounded-full bg-[#C5A16B]/30 p-1 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary text-surface-container-lowest flex items-center justify-center font-bold">
+                SEL
+              </div>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-secondary block">Selected Active State</span>
+<span class="font-label-sm text-label-sm text-outline">Muted Gold Radial Aura</span>
+</div>
+</div>
+<!-- Filtered Out Unselected -->
+<div class="p-space-md bg-surface rounded-DEFAULT flex flex-col items-center text-center space-y-space-xs opacity-50">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest p-1 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-surface-container text-outline flex items-center justify-center font-bold">
+                INA
+              </div>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-outline block">Inactive / Filtered</span>
+<span class="font-label-sm text-label-sm text-outline">Desaturated Stone Grey</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Graph Semantic Edges -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">B. Precedent Edge Semantics</span>
+<span class="font-label-sm text-label-sm text-outline">Directed Graph Vectors</span>
+</div>
+<div class="space-y-space-md pt-space-xs">
+<!-- Antinomy / Conflict Edge -->
+<div class="p-space-sm bg-surface rounded-DEFAULT space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-[#913F40] font-bold uppercase">CONFLICT / ANTINOMY</span>
+<span class="text-outline">Solid Stroke 2.5px • Oxblood (#913F40)</span>
+</div>
+<div class="py-3 flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-[#913F40]"></span>
+<div class="h-0.5 bg-[#913F40] flex-1 relative">
+<span class="absolute -top-1.5 right-1/2 text-[10px] bg-[#913F40] text-surface-container-lowest px-1.5 py-0.2 rounded-DEFAULT uppercase">Irreconcilable</span>
+</div>
+<span class="w-3 h-3 rounded-full bg-[#913F40]"></span>
+</div>
+</div>
+<!-- Harmonized Edge -->
+<div class="p-space-sm bg-surface rounded-DEFAULT space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-[#426B53] font-bold uppercase">AGREE / HARMONIZED</span>
+<span class="text-outline">Solid Stroke 1.5px • Forest (#426B53)</span>
+</div>
+<div class="py-3 flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-[#426B53]"></span>
+<div class="h-0.5 bg-[#426B53] flex-1 relative">
+<span class="absolute -top-1.5 right-1/2 text-[10px] bg-[#426B53] text-surface-container-lowest px-1.5 py-0.2 rounded-DEFAULT uppercase">Harmonious</span>
+</div>
+<span class="w-3 h-3 rounded-full bg-[#426B53]"></span>
+</div>
+</div>
+<!-- Distinguishable Edge -->
+<div class="p-space-sm bg-surface rounded-DEFAULT space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-bold uppercase">DISTINGUISHABLE_ON_FACTS</span>
+<span class="text-outline">Dashed (4px dash, 4px gap) • Muted Gold (#C5A16B)</span>
+</div>
+<div class="py-3 flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-[#C5A16B]"></span>
+<div class="h-0.5 bg-repeat-x flex-1 bg-[linear-gradient(to_right,#C5A16B_50%,transparent_50%)] bg-[length:8px_2px]"></div>
+<span class="w-3 h-3 rounded-full bg-[#C5A16B]"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. EVIDENCE QUOTATION CARD & LOSSLESS DOCUMENT SPECIMEN -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Legal Evidence Folio Card -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-md space-y-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">C. Legal Evidence Folio Card</span>
+<span class="font-label-sm text-label-sm bg-[#426B53]/15 text-[#426B53] px-2 py-0.5 rounded-DEFAULT font-bold">Grounding: 0.9984</span>
+</div>
+<div class="bg-surface p-space-md rounded-DEFAULT space-y-space-sm shadow-inner relative">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">menu_book</span>
+              Folio 18 • Paragraph 29 • SCR Official Rep.
+            </span>
+<span>Bespoke Citation ID: #CR-7819</span>
+</div>
+<blockquote class="font-headline-sm text-headline-sm text-primary italic leading-relaxed pl-space-md">
+            “The legislative intent underpinning Section 14 does not confer unbridled discretion; rather, it mandates prior adherence to procedural fairness before custodial attachment can lawfully proceed.”
+          </blockquote>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Extracted From: <em>Union of India v. Standard Holdings (2021)</em></span>
+<span class="text-secondary font-bold">Verbatim Match Confirmed</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span>Token Count: <strong>38</strong></span>
+<span>Cosine Alignment: <strong>0.961</strong></span>
+<span>Registrar Hash: <strong>SHA-00a4</strong></span>
+</div>
+</div>
+<!-- Lossless Legal Document Mockup -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-md space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">D. Lossless Archival Document Slice</span>
+<span class="font-label-sm text-label-sm text-outline">Gazette Bounding Box Coordinate Overlay</span>
+</div>
+<!-- Document Paper Canvas -->
+<div class="bg-surface p-space-md rounded-DEFAULT relative font-mono text-xs text-on-surface-variant space-y-2 shadow-inner">
+<div class="flex items-center justify-between text-[10px] text-outline font-sans pb-1">
+<span>IN THE SUPREME COURT OF INDIA • APPELLATE JURISDICTION</span>
+<span>P. 144 / 320</span>
+</div>
+<!-- Text lines with margin line numbering -->
+<div class="flex gap-4">
+<div class="text-outline/60 select-none text-right font-sans text-[11px] leading-relaxed space-y-1">
+<div>01</div>
+<div>02</div>
+<div>03</div>
+<div>04</div>
+</div>
+<div class="font-body-sm text-body-sm text-primary leading-relaxed space-y-1 flex-1">
+<div>12. We have heard the learned Additional Solicitor General at extensive length.</div>
+<!-- Highlighted Bounding Box -->
+<div class="bg-[#C5A16B]/25 p-1 rounded-DEFAULT text-primary font-semibold relative">
+<span>13. The foundational precedent established in Maneka Gandhi (supra) remains unassailed; procedural due process is not an ornamental guarantee.</span>
+<span class="absolute -top-2.5 right-1 bg-secondary text-surface-container-lowest text-[9px] px-1 rounded-DEFAULT uppercase">BOX [x:42, y:180, w:420, h:24]</span>
+</div>
+<div>14. Consequently, the High Court erred in adopting an attenuated reading.</div>
+<div>15. The appeals are accordingly allowed without order as to costs.</div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between font-sans text-[11px] text-outline">
+<span class="flex items-center gap-1 text-[#426B53]">
+<span class="material-symbols-outlined text-[14px]">check</span> OCR Grounding Lossless
+            </span>
+<span>Registrar Seal Stamp: <strong>VERIFIED_BENCH_IV</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. 7-STAGE PIPELINE ORCHESTRATOR -->
+<div class="bg-surface-container-lowest p-space-lg rounded-DEFAULT shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">E. 7-Stage Pipeline Orchestrator Component</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Zero-Synthetic Verification Pipeline State Flow</h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-[#426B53]"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Engine Throughput: 120 ms / Stage</span>
+</div>
+</div>
+<!-- 7 Stages Ribbon -->
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-space-sm">
+<!-- Stage 1 -->
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-outline">01</span>
+<span class="material-symbols-outlined text-[#426B53] text-[16px]">check_circle</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold block">Ingestion</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">OCR &amp; Layout Parse</span>
+</div>
+<!-- Stage 2 -->
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-outline">02</span>
+<span class="material-symbols-outlined text-[#426B53] text-[16px]">check_circle</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold block">Selection</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Folio Windowing</span>
+</div>
+<!-- Stage 3 -->
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-outline">03</span>
+<span class="material-symbols-outlined text-[#426B53] text-[16px]">check_circle</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold block">Extraction</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ratio Extraction</span>
+</div>
+<!-- Stage 4: ACTIVE -->
+<div class="bg-surface-container-high p-space-sm rounded-DEFAULT space-y-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-secondary">04 ACTIVE</span>
+<span class="material-symbols-outlined text-secondary text-[16px] animate-spin">refresh</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold block">Verification</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">NLI Entailment Probe</span>
+</div>
+<!-- Stage 5: QUEUED -->
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-1 opacity-75">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-outline">05</span>
+<span class="material-symbols-outlined text-outline text-[16px]">hourglass_empty</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold block">Repair</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Citation Healing</span>
+</div>
+<!-- Stage 6: QUEUED -->
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-1 opacity-75">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-outline">06</span>
+<span class="material-symbols-outlined text-outline text-[16px]">schedule</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold block">Entailment</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cross-Bench Matrix</span>
+</div>
+<!-- Stage 7: ACCEPT/DROP -->
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-1 opacity-75">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-outline">07</span>
+<span class="material-symbols-outlined text-outline text-[16px]">gavel</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold block">Accept / Drop</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Final Precedent Gate</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 07: DATA VISUALIZATION & SCIENTIFIC LAB SPECIMENS -->
+<section class="mb-space-xl space-y-space-md" id="section-dataviz">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-high px-space-md py-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">07</span>
+<h2 class="font-headline-md text-headline-md text-primary">Data Visualization &amp; Scientific Bench Specimens</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Statistical Proofs &amp; Model Convergence</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- 1. Harmonized F1 Gauge -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between items-center text-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider mb-2">Harmonized F1 Score Arc</span>
+<!-- Inline Arc SVG -->
+<div class="relative w-36 h-24 my-2">
+<svg class="w-36 h-36 -rotate-90" viewbox="0 0 100 100">
+<!-- Background Arc -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#E8DECE" stroke-dasharray="125 125" stroke-width="8"></circle>
+<!-- Progress Arc (0.942 * 125 ≈ 118) -->
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#A77B42" stroke-dasharray="118 125" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center -mt-8">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">0.942</span>
+<span class="font-label-sm text-label-sm text-outline">Target: 0.900</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Statutory alignment metric evaluated across 1,240 appellate decisions.
+        </p>
+</div>
+<!-- 2. 2x2 Confusion Matrix -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm space-y-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider block">Confusion Matrix (Antinomy)</span>
+<span class="font-label-sm text-label-sm text-outline block mb-2">Predicted vs. Empirical Holdings</span>
+<div class="grid grid-cols-2 gap-2 text-center">
+<div class="bg-surface p-2 rounded-DEFAULT">
+<span class="font-label-sm text-label-sm text-[#426B53] font-bold block">TP: 582</span>
+<span class="font-label-sm text-label-sm text-outline">True Conflicts</span>
+</div>
+<div class="bg-surface p-2 rounded-DEFAULT">
+<span class="font-label-sm text-label-sm text-[#913F40] font-bold block">FP: 24</span>
+<span class="font-label-sm text-label-sm text-outline">False Alarms</span>
+</div>
+<div class="bg-surface p-2 rounded-DEFAULT">
+<span class="font-label-sm text-label-sm text-[#913F40] font-bold block">FN: 48</span>
+<span class="font-label-sm text-label-sm text-outline">Missed Antinomy</span>
+</div>
+<div class="bg-surface p-2 rounded-DEFAULT">
+<span class="font-label-sm text-label-sm text-[#426B53] font-bold block">TN: 586</span>
+<span class="font-label-sm text-label-sm text-outline">True Harmonic</span>
+</div>
+</div>
+<div class="text-center font-label-sm text-label-sm text-primary font-bold pt-1">
+          Precision: 96.0% • Recall: 92.4%
+        </div>
+</div>
+<!-- 3. Zero-Synthetic Hallucination Gate -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm flex flex-col justify-between items-center text-center">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider mb-2">Zero-Hallucination Gate</span>
+<!-- Progress Ring SVG -->
+<div class="relative w-28 h-28 my-1 flex items-center justify-center">
+<svg class="w-28 h-28 -rotate-90" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="transparent" r="42" stroke="#E8DECE" stroke-width="6"></circle>
+<circle cx="50" cy="50" fill="transparent" r="42" stroke="#426B53" stroke-dasharray="254 264" stroke-linecap="round" stroke-width="6"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-sm text-headline-sm text-[#426B53] font-bold">96.4%</span>
+<span class="font-label-sm text-label-sm text-outline">Drop Rate</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Ungrounded generative assertions systematically dropped before presentation.
+        </p>
+</div>
+<!-- 4. Comparative Bar Chart -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm space-y-space-xs flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider block">Comparative Bench Score</span>
+<span class="font-label-sm text-label-sm text-outline block mb-3">NYAAYCHAKRA vs Baseline LLM</span>
+<!-- Bars -->
+<div class="space-y-3">
+<div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="font-bold text-primary">NYAAYCHAKRA v4.8</span>
+<span class="font-bold text-secondary">0.942 F1</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-DEFAULT overflow-hidden">
+<div class="h-full bg-secondary rounded-DEFAULT" style="width: 94.2%;"></div>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between font-label-sm text-label-sm mb-1">
+<span class="text-outline">Generic Baseline</span>
+<span class="text-outline">0.758 F1</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-DEFAULT overflow-hidden">
+<div class="h-full bg-outline-variant rounded-DEFAULT" style="width: 75.8%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-space-xs rounded-DEFAULT text-center font-label-sm text-label-sm text-secondary font-semibold mt-3">
+          +24.3% Gain in Precedent Precision
+        </div>
+</div>
+</div>
+</section>
+<!-- SECTION 08: RESPONSIVE BEHAVIOR MATRIX & APPLICATION MINIATURES -->
+<section class="mb-space-xl space-y-space-md" id="section-miniatures">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-high px-space-md py-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">08</span>
+<h2 class="font-headline-md text-headline-md text-primary">Responsive Archetypes &amp; Screen Miniatures</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">6 Canonical Platform Archetypes</span>
+</div>
+<!-- 6 Interactive Application Previews -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Mini 1: Overview Dashboard -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm space-y-space-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">Archetype 01</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">WORKSPACE</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Overview Dashboard</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High-level statutory overview, real-time ingestion counters, and benchmark gauges.</p>
+</div>
+<!-- Miniature Preview Sketch -->
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-2 shadow-inner">
+<div class="h-3 w-1/3 bg-secondary/30 rounded-DEFAULT"></div>
+<div class="grid grid-cols-3 gap-1">
+<div class="h-8 bg-surface-container-lowest rounded-DEFAULT"></div>
+<div class="h-8 bg-surface-container-lowest rounded-DEFAULT"></div>
+<div class="h-8 bg-surface-container-lowest rounded-DEFAULT"></div>
+</div>
+<div class="h-14 bg-surface-container-lowest rounded-DEFAULT"></div>
+</div>
+</div>
+<!-- Mini 2: Conflict Radar -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm space-y-space-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">Archetype 02</span>
+<span class="font-label-sm text-label-sm text-[#913F40] font-bold">RADAR</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Conflict Radar</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Topological precedent graph highlighting antinomy spikes and judicial fractures.</p>
+</div>
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-2 shadow-inner">
+<div class="h-3 w-2/5 bg-secondary/30 rounded-DEFAULT"></div>
+<div class="h-24 bg-surface-container-lowest rounded-DEFAULT flex items-center justify-center relative overflow-hidden">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-[10px] text-surface-container-lowest font-bold">SC</div>
+<div class="absolute left-6 w-5 h-5 rounded-full bg-[#913F40] flex items-center justify-center text-[8px] text-surface-container-lowest">HC</div>
+<div class="absolute right-6 w-5 h-5 rounded-full bg-[#426B53] flex items-center justify-center text-[8px] text-surface-container-lowest">HC</div>
+</div>
+</div>
+</div>
+<!-- Mini 3: Conflict Investigation -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm space-y-space-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">Archetype 03</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">INVESTIGATE</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Conflict Investigation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dual-pane split folio view juxtaposing contradictory High Court decisions.</p>
+</div>
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-2 shadow-inner">
+<div class="grid grid-cols-2 gap-2">
+<div class="h-24 bg-surface-container-lowest p-1 rounded-DEFAULT space-y-1">
+<div class="h-2 bg-[#913F40]/30 rounded-DEFAULT w-3/4"></div>
+<div class="h-1 bg-outline-variant rounded-DEFAULT"></div>
+<div class="h-1 bg-outline-variant rounded-DEFAULT w-5/6"></div>
+</div>
+<div class="h-24 bg-surface-container-lowest p-1 rounded-DEFAULT space-y-1">
+<div class="h-2 bg-[#426B53]/30 rounded-DEFAULT w-3/4"></div>
+<div class="h-1 bg-outline-variant rounded-DEFAULT"></div>
+<div class="h-1 bg-outline-variant rounded-DEFAULT w-5/6"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mini 4: Evidence Explorer -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm space-y-space-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">Archetype 04</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">EVIDENCE</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Evidence Explorer</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bounding box gazette viewer displaying exact line coordinates for ratio decidendi.</p>
+</div>
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-2 shadow-inner">
+<div class="h-24 bg-surface-container-lowest p-2 rounded-DEFAULT space-y-1.5">
+<div class="h-1.5 bg-outline-variant rounded-DEFAULT w-full"></div>
+<div class="h-2.5 bg-[#C5A16B]/40 rounded-DEFAULT w-4/5"></div>
+<div class="h-1.5 bg-outline-variant rounded-DEFAULT w-3/4"></div>
+<div class="h-1.5 bg-outline-variant rounded-DEFAULT w-full"></div>
+</div>
+</div>
+</div>
+<!-- Mini 5: Live Processing -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm space-y-space-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">Archetype 05</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">OPERATIONS</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Live Processing Stream</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time terminal-grade execution stream of judgments undergoing 7-stage verification.</p>
+</div>
+<div class="bg-primary p-space-sm rounded-DEFAULT space-y-1.5 shadow-inner">
+<div class="h-2 bg-secondary-fixed/50 rounded-DEFAULT w-1/2"></div>
+<div class="h-1 bg-surface-container-lowest/30 rounded-DEFAULT"></div>
+<div class="h-1 bg-surface-container-lowest/30 rounded-DEFAULT w-2/3"></div>
+<div class="h-1 bg-[#426B53] rounded-DEFAULT w-5/6"></div>
+</div>
+</div>
+<!-- Mini 6: Forum-Risk Briefs -->
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm space-y-space-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm bg-primary text-surface-container-lowest px-2 py-0.5 rounded-DEFAULT">Archetype 06</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">BRIEFS</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Forum-Risk Briefs</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Appellate bench vulnerability briefs formatted for immediate print export.</p>
+</div>
+<div class="bg-surface p-space-sm rounded-DEFAULT space-y-2 shadow-inner">
+<div class="h-24 bg-surface-container-lowest p-2 rounded-DEFAULT flex flex-col justify-between">
+<div class="space-y-1">
+<div class="h-2 bg-primary/80 rounded-DEFAULT w-1/3"></div>
+<div class="h-1 bg-outline-variant rounded-DEFAULT w-full"></div>
+</div>
+<div class="flex justify-between items-center text-[8px] text-outline">
+<span>BENCH RISK: 18.4%</span>
+<span class="text-[#426B53]">CERTIFIED</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MASTER SPECIFICATION FOOTER STRIP -->
+<footer class="mt-space-lg p-space-lg bg-surface-container-lowest rounded-DEFAULT shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<div class="flex items-center gap-space-sm">
+<img alt="NYAAYCHAKRA Seal" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W5RjHHOvO5JOab-OTWTb_O9uugBwgQIfzWjXpNncVeceg0XIvCdvrWYnzt1XQTVKV0VmVVCM3OsI3AK7ljljD5jE8MjdH7pxUNXWS_ylG6oUv0zrwHaPIP9lTp7dDlw1N0W-LwsiCcoi1Vs5HbwpSUfgoAdnjkcyLHBuUAfH-znB3TRhZML7Mj-Ksg2EbPhyxUnHG9wz29nJhIghF_PsvrGzccLgG1kF1L5nr5MudYqA"/>
+<div>
+<span class="font-bold text-primary block leading-none">NYAAYCHAKRA JUDICIAL INTELLIGENCE</span>
+<span class="text-outline text-[10px] mt-0.5 block">Constitutional Archival Design Tokens &amp; Component System v4.8</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-md text-outline">
+<span>Color Space: sRGB / Display P3</span>
+<span>•</span>
+<span>Grid: 4px Incremental Rhythm</span>
+<span>•</span>
+<span class="text-secondary font-bold">100% WCAG AAA Compliant</span>
+</div>
+</footer>
+</div>
+<script>
+  // Micro-interaction: Smooth anchor scrolling for quick index
+  document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetEl = document.getElementById(targetId);
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script></main></div></body></html>
